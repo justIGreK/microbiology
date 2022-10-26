@@ -1,0 +1,33 @@
+concept_animal<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Животные] (*<-lang_ru;;*);
+[Animal] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Животные)](*<-lang_ru;;*);
+[Def.(Animal)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_eukaryota;
+concept_biology;
+concept_Animalia
+};;
+<=nrel_sc_text_translation:...(*
+->[Животныел-многоклеточные эукариотические организмы, составляющие биологическое царство Animalia.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Animal are multicellular eukaryotic organisms that form the biological kingdom Animalia.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Животные)](*<-lang_ru;;*);
+[Stat.(Animal)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_breath
+};;
+<=nrel_sc_text_translation:...(*
+->[Слово «животное» происходит от латинского animalis, что означает наличие дыхания, души или живого существа.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The word "animal" comes from the Latin animalis, meaning having breath, having soul or living being.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,18 @@
+
+section_of_protists_classification<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Классификация проитстов] (*<-lang_ru;;*);
+[Section. Protists classification] (*<-lang_en;;*);;
+
+section_of_protists_classification-> rrel_key_sc_element:
+concept_protist_nutrition_type;
+concept_protist_method_of_movement;
+concept_protist_taxon;;
+
+section_of_protists_classification<= nrel_section_decomposition:{
+section_of_protists_classification_methods
+};;
+
+concept_protist_nutrition_type<-sc_node_not_relation;;
+concept_protist_method_of_movement<-sc_node_not_relation;;
+concept_protist_taxon<-sc_node_not_relation;;

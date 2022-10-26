@@ -1,0 +1,20 @@
+ui_menu_fungi_search_operation2<- ui_user_command_class_atom; ui_user_command_class_view_kb;; 
+// Указываем русский идентификатор нашей команды меню 
+ui_menu_fungi_search_operation2 =>nrel_main_idtf: [Какие разделы содержат больше видов, чем данный?] (* <- lang_ru;; *);; 
+// Указываем английский идентификатор нашей команды меню 
+ui_menu_fungi_search_operation2 =>nrel_main_idtf: [Which classification contains more species then this one?] (* <- lang_en;; *);; 
+// Указываем шаблон нашей команды 
+ui_menu_fungi_search_operation2 =>ui_nrel_command_template: 
+ [* 
+  question_fungi_search_operation2 _-> ._question_fungi_search_operation2_instance 
+   (* 
+    _-> ui_arg_1;;     
+   *);; 
+  ._question_fungi_search_operation2_instance _<- question;; 
+ *];; 
+// Указываем текстовый шаблон для истории диалога на русском языке 
+ui_menu_fungi_search_operation2 =>ui_nrel_command_lang_template:  [Запрос  поиска:  $ui_arg_1] (* 
+<- lang_ru;; *);; 
+// Указываем текстовый шаблон для истории диалога на английском языке 
+ui_menu_fungi_search_operation2  =>ui_nrel_command_lang_template:  [Search request:  $ui_arg_1] 
+(* <- lang_en;; *);;

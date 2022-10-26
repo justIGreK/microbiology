@@ -1,0 +1,33 @@
+concept_angiosperm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Покрытосеменные] (*<-lang_ru;;*);
+[Angiosperm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Покрытосеменные)](*<-lang_ru;;*);
+[Def.(Angiosperm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_plant;
+concept_flower;
+concept_organ
+};;
+<=nrel_sc_text_translation:...(*
+->[Покрытосеменные —   отдел высших растений, отличительной особенностью которых является наличие цветка в качестве органа полового размножения и замкнутого вместилища у семяпочки .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Angiosperm — department of higher plants, a distinctive feature of which is the presence of a flower as an organ of sexual reproduction and a closed container at the ovule.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Покрытосеменные)](*<-lang_ru;;*);
+[Stat.(Angiosperm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fertilization
+};;
+<=nrel_sc_text_translation:...(*
+->[Особенность покрытосеменных растений — двойное оплодотворение.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Feature of Angiosperm plants - double fertilization.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

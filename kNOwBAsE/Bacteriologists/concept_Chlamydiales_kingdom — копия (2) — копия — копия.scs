@@ -1,0 +1,47 @@
+concept_Chlamydiales_orders<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Chlamydiales] (*<-lang_ru;;*);
+[Chlamydiales orders] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Chlamydiales)](*<-lang_ru;;*);
+[Def.(Chlamydiales orders)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Chlamydiales)](*<-lang_ru;;*);
+[Stat.(Chlamydiales orders)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Rhabdochlamydiaceae_family;
+concept_Chlamydiaceae_family;
+concept_Parachlamydiaceae_family;
+concept_Simkaniaceae_family;
+concept_Waddliaceae_family
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Chlamydiales_orders<-concept_bacteria_order;;
+concept_Chlamydiales_orders<=nrel_inclusion:{
+concept_Rhabdochlamydiaceae_family;
+concept_Chlamydiaceae_family;
+concept_Parachlamydiaceae_family;
+concept_Simkaniaceae_family;
+concept_Waddliaceae_family
+};;

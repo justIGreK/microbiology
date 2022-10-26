@@ -1,0 +1,57 @@
+concept_Euryarchaeota_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Euryarchaeota] (*<-lang_ru;;*);
+[Euryarchaeota phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Euryarchaeota)](*<-lang_ru;;*);
+[Def.(Euryarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[ Эвриархеи очень разнообразны и включают метаногены,
+ которые производят метан и часто встречаются в кишечнике,
+ галобактерии, которые выживают при экстремальных концентрациях соли, 
+а также некоторые чрезвычайно термофильные аэробы и анаэробы, которые обычно живут 
+при температуре от 41 до 122 ° C. Они отделены от других архей в основном
+ на основе последовательностей рРНК и их уникальной ДНК-полимеразы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Euryarchaeota are highly diverse and include methanogens,
+ which produce methane and are often found in intestines, halobacteria, 
+which survive extreme concentrations of salt, and some extremely thermophilic 
+aerobes and anaerobes, which generally live at temperatures between 41 and 122 °C.
+ They are separated from the other archaeans based mainly on 
+rRNA sequences and their unique DNA polymerase.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Euryarchaeota)](*<-lang_ru;;*);
+[Stat.(Euryarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Hydrothermarchaeota_class;
+concept_Hadarchaeota_class;
+concept_Methanobacteriota_class;
+concept_Thermoplasmatota_class;
+concept_Halobacteriota_class
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Euryarchaeota_phylum<-concept_bacteria_phylum;;
+concept_Euryarchaeota_phylum<=nrel_inclusion:{
+concept_Hydrothermarchaeota_class;
+concept_Hadarchaeota_class;
+concept_Methanobacteriota_class;
+concept_Thermoplasmatota_class;
+concept_Halobacteriota_class
+
+};;

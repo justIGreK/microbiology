@@ -1,0 +1,52 @@
+concept_Cyanobacteria_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Cyanobacteria] (*<-lang_ru;;*);
+[Cyanobacteria phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Cyanobacteria)](*<-lang_ru;;*);
+[Def.(Cyanobacteria phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Цианобактерии, также известные как Cyanophyta, представляют собой тип грамотрицательных бактерий, которые получают энергию посредством фотосинтеза. Название цианобактерии происходит от их цвета, что дает им другое название: «сине-зеленые водоросли», хотя современные ботаники ограничивают термин «водоросли» эукариотами и не применяют его к цианобактериям, которые являются прокариотами. Похоже, они произошли в пресной воде или в наземной среде. .
+
+В отличие от гетеротрофных прокариот, цианобактерии имеют внутренние мембраны. Это уплощенные мешочки, называемые тилакоидами, в которых осуществляется фотосинтез.
+
+Фототрофные эукариоты, такие как зеленые растения, осуществляют фотосинтез в пластидах, которые, как считается, произошли от цианобактерий, приобретенных давным-давно в результате процесса, называемого эндосимбиозом. Эти эндосимбиотические цианобактерии у эукариот затем эволюционировали и дифференцировались в специализированные органеллы, такие как хлоропласты, этиопласты и лейкопласты.
+
+Производя и выделяя кислород в качестве побочного продукта фотосинтеза, цианобактерии, как полагают, превратили раннюю бедную кислородом восстановительную атмосферу в окисляющую, что вызвало Великое событие оксигенации и «ржавление Земли», которое резко изменило состав формы жизни Земли и привели к почти исчезновению анаэробных организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cyanobacteria , also known as Cyanophyta, are a phylum of Gram-negative bacteria that obtain energy via photosynthesis. The name cyanobacteria comes from their color , giving them their other name, "blue-green algae though modern botanists restrict the term algae to eukaryotes and do not apply it to cyanobacteria, which are prokaryotes They appear to have originated in freshwater or a terrestrial environment.
+
+Unlike heterotrophic prokaryotes, cyanobacteria have internal membranes. These are flattened sacs called thylakoids where photosynthesis is performed.
+
+Phototrophic eukaryotes such as green plants perform photosynthesis in plastids that are thought to have their ancestry in cyanobacteria, acquired long ago via a process called endosymbiosis. These endosymbiotic cyanobacteria in eukaryotes then evolved and differentiated into specialized organelles such as chloroplasts, etioplasts and leucoplasts.
+
+By producing and releasing oxygen as a byproduct of photosynthesis, cyanobacteria are thought to have converted the early oxygen-poor, reducing atmosphere into an oxidizing one, causing the Great Oxygenation Event and the "rusting of the Earth", which dramatically changed the composition of the Earth's life forms and led to the near-extinction of anaerobic organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Cyanobacteria)](*<-lang_ru;;*);
+[Stat.(Cyanobacteria phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Cyanophyceae_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Cyanobacteria_phylum<-concept_bacteria_phylum;;
+concept_Cyanobacteria_phylum<=nrel_inclusion:{
+concept_Cyanophyceae_class
+
+};;

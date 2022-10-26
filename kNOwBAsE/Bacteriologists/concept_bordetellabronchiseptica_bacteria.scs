@@ -1,0 +1,34 @@
+concept_bordetellabronchiseptica_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[bordetellabronchiseptica бактерия] (*<-lang_ru;;*);
+[bordetellabronchiseptica Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(bordetellabronchiseptica бактерия)](*<-lang_ru;;*);
+[Def.(bordetellabronchiseptica bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[микроаэрофильная (обитающая в условиях с повышенным содержанием углекислого газа) бактерия, способная фиксировать азот в аэробных условиях.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[microaerophilic (living in conditions with an increased content of carbon dioxide) bacteria , capable of fixing nitrogen in aerobic conditions.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(bordetellabronchiseptica бактерия)](*<-lang_ru;;*);
+[Stat.(bordetellabronchiseptica bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Для обитания в подходящих условиях, она производит три фермента (каталазу, пероксидазу и супероксиддисмутазу), чтобы «нейтрализовать» активные формы кислорода.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[To live in suitable conditions, it produces three enzymes (catalase, peroxidase and superoxide dismutase) to "neutralize" reactive oxygen species.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_bordetellabronchiseptica_bacteria<=nrel_inclusion:concept_microorganism;; 

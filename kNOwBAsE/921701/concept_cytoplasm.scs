@@ -1,0 +1,35 @@
+concept_cytoplasm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Цитоплазма] (*<-lang_ru;;*);
+[Cytoplasm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Цитоплазма)](*<-lang_ru;;*);
+[Def.(Cytoplasm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_nucleus;
+concept_vacuole;
+concept_plasma_membrain
+};;
+<=nrel_sc_text_translation:...(*
+->[Цитоплазма - полужидкое содержимое клетки, ее внутрення среда, кроме ядра и вакуоли, ограниченная плазматической мембраной.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cytoplasm is a semi-liquid contents of the cell, it's internal environment, except of the nucleus and vacuole, limited by the plasma membrain.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Цитоплазма)](*<-lang_ru;;*);
+[Stat.(Cytoplasm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_hyaloplasm;
+concept_organoid
+};;
+<=nrel_sc_text_translation:...(*
+->[Включает гиалоплазму, находящиеся в ней органоиды, а также включения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[It includes the hyaloplasm, the organoids in it, as well as inclusions.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

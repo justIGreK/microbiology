@@ -1,0 +1,39 @@
+concept_Guttaviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Guttaviridae] (*<-lang_ru;;*);
+[Guttaviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Guttaviridae)](*<-lang_ru;;*);
+[Def.(Guttaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Guttaviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Guttaviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Guttaviridae)](*<-lang_ru;;*);
+[Stat.(Guttaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphaguttavirus_genus;
+concept_Betaguttavirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Alphaguttavirus, Betaguttavirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Guttaviridae family contains the following genera: Alphaguttavirus, Betaguttavirus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Guttaviridae_family<-concept_virus_family;;
+concept_Guttaviridae_family<=nrel_inclusion:
+concept_Betaguttavirus_genus;
+concept_Alphaguttavirus_genus;;
+
+concept_Guttaviridae_family<-incertae_sedis;;

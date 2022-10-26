@@ -1,0 +1,7 @@
+concept_human<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Человек] (*<-lang_ru;;*);
+[Human] (*<-lang_en;;*);;
+
+concept_human<=nrel_inclusion:concept_organism;;
+

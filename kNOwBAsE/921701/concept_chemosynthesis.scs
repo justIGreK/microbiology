@@ -1,0 +1,32 @@
+concept_chemosynthesis<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Хемосинтез] (*<-lang_ru;;*);
+[Chemosynthesis] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Хемосинтез)](*<-lang_ru;;*);
+[Def.(Chemosynthesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_autotrophic
+};;
+<=nrel_sc_text_translation:...(*
+->[Хемосинтез — способ автотрофного питания, при котором источником энергии для синтеза органических веществ из CO2 служат реакции окисления неорганических соединений.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chemosynthesis — a method of autotrophic nutrition, in which the oxidation reactions of inorganic compounds serve as a source of energy for the synthesis of organic substances from CO2.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Хемосинтез)](*<-lang_ru;;*);
+[Stat.(Chemosynthesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_archaea;
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Подобный вариант получения энергии используется только бактериями или археями.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This option for obtaining energy is used only by bacteria or archaea.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

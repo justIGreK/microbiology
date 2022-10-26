@@ -1,0 +1,16 @@
+
+section_of_known_bacteria_phylum<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные phyla бактерий] (*<-lang_ru;;*);
+[Section. Known bacteria phyla] (*<-lang_en;;*);;
+
+
+section_of_known_bacteria_phylum-> rrel_key_sc_element:
+concept_Chlamydiae_phylum;
+concept_Crenarchaeota_phylum;
+concept_Cyanobacteria_phylum;
+concept_DPANN_phylum;
+concept_Euryarchaeota_phylum;
+concept_Gram_positive_phylum;
+concept_Korarchaeota_phylum;
+concept_Spirochaete_phylum;;

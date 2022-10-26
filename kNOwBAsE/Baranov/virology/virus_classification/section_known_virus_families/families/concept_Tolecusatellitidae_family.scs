@@ -1,0 +1,39 @@
+concept_Tolecusatellitidae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Tolecusatellitidae] (*<-lang_ru;;*);
+[Tolecusatellitidae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Tolecusatellitidae)](*<-lang_ru;;*);
+[Def.(Tolecusatellitidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Tolecusatellitidae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Tolecusatellitidae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Tolecusatellitidae)](*<-lang_ru;;*);
+[Stat.(Tolecusatellitidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Betasatellite_genus;
+concept_Deltasatellite_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Betasatellite, Deltasatellite.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Tolecusatellitidae family contains the following genera: Betasatellite, Deltasatellite.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Tolecusatellitidae_family<-concept_virus_family;;
+concept_Tolecusatellitidae_family<=nrel_inclusion:
+concept_Betasatellite_genus;
+concept_Deltasatellite_genus;;
+
+concept_Tolecusatellitidae_family<-incertae_sedis;;

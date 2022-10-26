@@ -1,0 +1,15 @@
+sc_node_struct -> subject_domain_of_campylobacter_bacteria;;
+subject_domain_of_campylobacter_bacteria <- subject_domain;;
+subject_domain_of_campylobacter_bacteria => nrel_main_idtf:
+	[Предметная область campylobacter Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of campylobacter Bacteria] (* <- lang_en;; *);;
+
+subject_domain_of_campylobacter_bacteria -> rrel_maximum_studied_object_class: 
+concept_coli_bacteria;
+concept_escherichiacoli_bacteria;
+concept_salmonellatyphi_bacteria;
+concept_vibriocholerae_bacteria;
+concept_parachlamydiaacanthamoebae_bacteria;
+concept_neochlmydiahartmannellae_bacteria;;
+
+

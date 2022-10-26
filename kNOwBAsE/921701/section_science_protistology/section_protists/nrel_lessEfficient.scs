@@ -1,0 +1,11 @@
+nrel_lessEfficient<-sc_node_norole_relation;;
+
+nrel_lessEfficient=> nrel_main_idtf:[Менее эффективная водоросль*](* <- lang_ru;; *);;
+nrel_lessEfficient=> nrel_main_idtf:[Less efficient algae*](* <- lang_en;; *);;
+
+
+nrel_lessEfficient => nrel_first_domain: 
+concept_algae;;
+nrel_lessEfficient => nrel_second_domain: concept_algae;;
+
+arity_2->nrel_lessEfficient;;

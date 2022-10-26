@@ -1,0 +1,9 @@
+test_virus_species_2<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тест-вид 2] (*<-lang_ru;;*);
+[Test_species2] (*<-lang_en;;*);;
+
+
+test_virus_species_2<-concept_virus_species;;
+
+test_virus_species_2=>nrel_causes_disease:test_virus_disease_2;;

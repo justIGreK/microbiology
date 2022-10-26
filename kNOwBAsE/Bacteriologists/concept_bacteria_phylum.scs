@@ -1,0 +1,32 @@
+concept_bacteria_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тип бактерий] (*<-lang_ru;;*);
+[bacteria phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Тип вирусов)](*<-lang_ru;;*);
+[Def.(bacteria phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Тип бактерий - один из уровней классификации бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[bacteria phylum is one of the levels of bacteria classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Тип бактерий)](*<-lang_ru;;*);
+[Stat.(bacteria phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_class
+};;
+<=nrel_sc_text_translation:...(*
+->[Типы делятся на классы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Phylums are divided into classes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

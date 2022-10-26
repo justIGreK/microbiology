@@ -1,0 +1,32 @@
+concept_virus_species<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Вид вирусов] (*<-lang_ru;;*);
+[Virus species] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Вид вирусов)](*<-lang_ru;;*);
+[Def.(Virus species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид вирусов - один из уровней классификации вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Virus species is one of the levels of virus classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Вид вирусов)](*<-lang_ru;;*);
+[Stat.(Virus species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_species
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид - низший уровень классификации вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Species is the lowest level of virus classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

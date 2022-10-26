@@ -1,0 +1,13 @@
+test_bacteria_disease_6<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тест-заболевание 6] (*<-lang_ru;;*);
+[Test_disease6] (*<-lang_en;;*);;
+
+
+test_bacteria_disease_6<-concept_disease;;
+test_bacteria_disease_6<-concept_human_bacteria_disease;;
+
+test_bacteria_disease_6=>nrel_dead:[300];;
+test_bacteria_disease_6=>nrel_ill:[900];;
+
+test_bacteria_disease_6=>nrel_disease_object:concept_human;;

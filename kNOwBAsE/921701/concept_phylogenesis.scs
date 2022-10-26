@@ -1,0 +1,33 @@
+concept_phylogenesis<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Филогенез] (*<-lang_ru;;*);
+[Phylogenesis] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Филогенез)](*<-lang_ru;;*);
+[Def.(Phylogenesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_biology
+};;
+<=nrel_sc_text_translation:...(*
+->[Филогенез - развитие биологического вида во времени.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Phylogenesis - development of a biological species in time) until the end of life.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Филогенез)](*<-lang_ru;;*);
+[Stat.(Phylogenesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_evoluiton;
+concept_genetic;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Филогенез рассматривает эволюцию в качестве процесса, в котором генетическая линия — организмы от предка к потомкам — разветвляется во времени, и её отдельные ветви могут приобретать те или иные изменения или исчезать в результате вымирания.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Phylogenesis considers evolution as a process in which a genetic line - organisms from ancestor to descendant - branches in time, and its individual branches can acquire certain changes or disappear as a result of extinction.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

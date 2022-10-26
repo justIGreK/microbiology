@@ -1,0 +1,12 @@
+
+section_of_known_virus_realms<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные реалмы вирусов] (*<-lang_ru;;*);
+[Section. Known virus realms] (*<-lang_en;;*);;
+
+
+section_of_known_virus_realms-> rrel_key_sc_element:
+concept_Monodnaviria_realm;
+concept_Riboviria_realm;
+concept_Duplodnaviria_realm;
+concept_Varidnaviria_realm;;

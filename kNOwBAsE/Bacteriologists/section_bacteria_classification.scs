@@ -1,0 +1,29 @@
+
+section_of_bacteria_taxonomy<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Таксономия бактерий] (*<-lang_ru;;*);
+[Section. bacteria taxonomy] (*<-lang_en;;*);;
+
+section_of_bacteria_taxonomy-> rrel_key_sc_element:
+concept_bacteria_domain;
+concept_bacteria_kingdom;
+concept_bacteria_phylum;
+concept_bacteria_class;
+concept_bacteria_order;
+concept_bacteria_family;
+concept_bacteria_genus;
+concept_bacteria_species;;
+
+section_of_bacteria_taxonomy<= nrel_section_decomposition:{
+section_of_known_bacteria_taxonomy
+};;
+
+concept_bacteria_domain<-sc_node_not_relation;;
+concept_bacteria_kingdom<-sc_node_not_relation;;
+concept_bacteria_phylum<-sc_node_not_relation;;
+concept_bacteria_class<-sc_node_not_relation;;
+concept_bacteria_order<-sc_node_not_relation;;
+concept_bacteria_family<-sc_node_not_relation;;
+concept_bacteria_genus<-sc_node_not_relation;;
+concept_bacteria_species<-sc_node_not_relation;;
+

@@ -1,0 +1,48 @@
+
+section_subject_domain_of_viruses<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Вирусы] (*<-lang_ru;;*);
+[Section. Вирусы] (*<-lang_en;;*);;
+
+section_subject_domain_of_viruses<= nrel_section_decomposition:{
+section_of_virus_ICTV_classification 
+};;
+
+section_subject_domain_of_viruses-> rrel_key_sc_element:
+concept_virus;
+concept_RNA_virus;
+concept_DNA_virus;
+nrel_complementation_of_viruses;
+nrel_virus_host;
+subject_domain_of_viruses;;
+
+section_subject_domain_of_viruses= [*
+subject_domain_of_viruses<-sc_node_struct;;
+
+subject_domain_of_viruses<-subject_domain;
+=>nrel_main_idtf:
+[Предметная область вирусов] (*<-lang_ru;;*);
+[Subject domain of viruses] (*<-lang_en;;*);;
+
+concept_virus<-sc_node_not_relation;;
+concept_RNA_virus<-sc_node_not_relation;;
+concept_DNA_virus<-sc_node_not_relation;;
+
+nrel_complementation_of_viruses<-sc_node_norole_relation;;
+nrel_virus_host<-sc_node_norole_relation;;
+
+subject_domain_of_viruses->rrel_maximum_studied_object_class:concept_virus;;
+
+subject_domain_of_viruses->rrel_not_maximum_studied_object_class:
+concept_RNA_virus;
+concept_DNA_virus;;
+
+subject_domain_of_viruses->rrel_explored_relation:
+nrel_complementation_of_viruses;
+nrel_virus_host;;
+
+concept_virus=>nrel_inclusion:
+concept_RNA_virus;
+concept_DNA_virus;;
+*];;
+

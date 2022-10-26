@@ -1,0 +1,32 @@
+concept_bacteria_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство бактерий] (*<-lang_ru;;*);
+[bacteria family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство вирусов)](*<-lang_ru;;*);
+[Def.(bacteria family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Семейство бактерий - один из уровней классификации бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[bacteria family is one of the levels of bacteria classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство бактерий)](*<-lang_ru;;*);
+[Stat.(bacteria family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Семейства делятся на роды.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Families are divided into genera.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

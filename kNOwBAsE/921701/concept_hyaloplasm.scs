@@ -1,0 +1,33 @@
+concept_hyaloplasm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Гиалоплазма] (*<-lang_ru;;*);
+[Hyaloplasm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Гиалоплазма)](*<-lang_ru;;*);
+[Def.(Hyaloplasm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_nucleus;
+concept_membrane;
+concept_cytoplasm
+};;
+<=nrel_sc_text_translation:...(*
+->[Гиалоплазма -  основное вещество цитоплазмы, заполняет все пространство между плазматической мембраной, оболочкой ядра и другими внутриклеточными структурами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Hyaloplasm - the main substance of the cytoplasm, fills all the space between the plasma membrane, the nuclear membrane and other intracellular structures.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Гиалоплазма)](*<-lang_ru;;*);
+[Stat.(Hyaloplasm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_colloidal_system
+};;
+<=nrel_sc_text_translation:...(*
+->[Гиалоплазму можно рассматривать как сложную коллоидную систему, способную существовать в двух состояниях: золеобразном (жидком) и гелеобразном, которые взаимно переходят одно в другое.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Hyaloplasm can be considered as a complex colloidal system capable of existing in two states: ash-like (liquid) and gel-like, which mutually transform into one another.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

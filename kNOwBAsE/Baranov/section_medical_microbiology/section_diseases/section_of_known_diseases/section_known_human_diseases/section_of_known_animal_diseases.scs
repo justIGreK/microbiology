@@ -1,0 +1,12 @@
+
+section_of_known_animal_diseases<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные заболевания животных] (*<-lang_ru;;*);
+[Section. Known animal diseases] (*<-lang_en;;*);;
+
+
+section_of_known_human_diseases-> rrel_key_sc_element:
+test_virus_disease_4;;
+
+
+

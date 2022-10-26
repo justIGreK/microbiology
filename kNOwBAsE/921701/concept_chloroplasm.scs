@@ -1,0 +1,34 @@
+concept_chloroplast<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Хлоропласт] (*<-lang_ru;;*);
+[Cloroplast] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Хлоропласт)](*<-lang_ru;;*);
+[Def.(Cloroplast)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_plastid;
+concept_cell;
+concept_photosynthesis;
+concept_eukaryota
+};;
+<=nrel_sc_text_translation:...(*
+->[Хлоропласт - зелёные пластиды, которые встречаются в клетках фотосинтезирующих эукариот.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cloroplast - green plastids, which are found in the cells of photosynthetic eukaryotes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Хлоропласт)](*<-lang_ru;;*);
+[Stat.(Cloroplast)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cyanobacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Хлоропласты возникли из цианобактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chloroplasts originated from cyanobacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

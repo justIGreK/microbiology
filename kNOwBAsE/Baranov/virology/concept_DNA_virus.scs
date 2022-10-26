@@ -1,0 +1,32 @@
+concept_DNA_virus<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ДНК-содержащий вирус] (*<-lang_ru;;*);
+[DNA virus] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(ДНК-содержащий вирус)](*<-lang_ru;;*);
+[Def.(DNA virus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus;
+concept_DNA
+};;
+<=nrel_sc_text_translation:...(*
+->[ДНК-содержащие вирусы — вирусы, геном которых представлен дезоксирибонуклеиновой кислотой и репликация идёт посредством ДНК-зависимой ДНК-полимеразы, без использования промежуточного звена-посредника РНК.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[DNA virus is a virus that has a genome made of deoxyribonucleic acid (DNA) that is replicated by a DNA polymerase.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(ДНК-содержащий вирус)](*<-lang_ru;;*);
+[Stat.(DNA virus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_DNA
+};;
+<=nrel_sc_text_translation:...(*
+->[Геномная ДНК этих вирусов может быть двуцепочечной или одноцепочечной и иметь линейную или кольцевую форму.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[These viruses can be divided between those that have two strands of DNA in their genome, called double-stranded DNA (dsDNA) viruses, and those that have one strand of DNA in their genome, called single-stranded DNA (ssDNA) viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

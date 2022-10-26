@@ -1,0 +1,32 @@
+concept_cytoskeletal<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Цитоскелет] (*<-lang_ru;;*);
+[Сytoskeletal] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Цитоскелет)](*<-lang_ru;;*);
+[Def.(Сytoskeletal)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cytoplasm;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Цитоскелет -  это клеточный каркас или скелет, находящийся в цитоплазме живой клетки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Сytoskeletals - it is a cell framework or skeleton located in the cytoplasm of a living cell.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Цитоскелет)](*<-lang_ru;;*);
+[Stat.(Сytoskeletal)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protein
+};;
+<=nrel_sc_text_translation:...(*
+->[Цитоскелет образован белками.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The cytoskeleton is made up of proteins.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

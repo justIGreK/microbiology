@@ -1,0 +1,31 @@
+concept_ribozyme<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Рибозимы] (*<-lang_ru;;*);
+[Rybozyme] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Рибозимы)](*<-lang_ru;;*);
+[Def.(Rybozyme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule
+};;
+<=nrel_sc_text_translation:...(*
+->[Рибозимы-это молекула РНК, обладающая каталитическим действием.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Rybozyme it is an RNA molecule with a catalytic effect.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Рибозимы)](*<-lang_ru;;*);
+[Stat.(Rybozyme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule
+};;
+<=nrel_sc_text_translation:...(*
+->[Рибозимы естественного происхождения катализируют расщепление самих себя или других молекул РНК.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Naturally occurring ribozymes catalyze the cleavage of themselves or other RNA molecules.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

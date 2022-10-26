@@ -1,0 +1,44 @@
+concept_Chlamydiae_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Chlamydiae] (*<-lang_ru;;*);
+[Chlamydiae phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Chlamydiae)](*<-lang_ru;;*);
+[Def.(Chlamydiae phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Chlamydiae - это бактериальный тип и класс, представители которого чрезвычайно разнообразны, включая патогены людей и животных, симбионтов вездесущих простейших и морские формы, еще недостаточно изученные. Все хламидии, о которых люди знали в течение многих десятилетий, являются облигатными внутриклеточными бактериями; в 2020 году многие дополнительные хламидии были обнаружены на дне океана, и пока неизвестно, есть ли у всех них хозяева. Исторически считалось, что все хламидии имеют клеточную стенку, свободную от пептидогликанов, но исследования 2010-х годов продемонстрировали обнаруживаемое присутствие пептидогликана, а также других важных белков.
+
+Среди хламидий все, давно известные науке, растут только за счет заражения эукариотических клеток-хозяев. Они не меньше многих вирусов. Они имеют яйцевидную форму и окрашивают грамотрицательные клетки. Они зависят от репликации внутри клеток-хозяев; таким образом, некоторые виды называются облигатными внутриклеточными патогенами, а другие - симбионтами вездесущих простейших. Большинство внутриклеточных хламидий находится в теле включения или вакуоли. Вне клеток они выживают только как внеклеточная инфекционная форма. Эти хламидии могут расти только там, где растут их клетки-хозяева, и развиваться в соответствии с характерным двухфазным циклом развития. Следовательно, клинически значимые хламидии нельзя размножать в бактериальной культуральной среде в клинической лаборатории. Их наиболее успешно изолировать, пока они еще находятся внутри своих клеток-хозяев.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Chlamydiae are a bacterial phylum and class whose members are remarkably diverse, including pathogens of humans and animals, symbionts of ubiquitous protozoa, and marine forms not yet well understood. All of the Chlamydiae that humans have known about for many decades are obligate intracellular bacteria; in 2020 many additional Chlamydiae were discovered in ocean-floor environments, and it is not yet known whether they all have hosts. Historically it was believed that all Chlamydiae had a peptidoglycan-free cell wall, but studies in the 2010s demonstrated a detectable presence of peptidoglycan, as well as other important proteins.
+
+Among the Chlamydiae, all of the ones long known to science grow only by infecting eukaryotic host cells. They are as small as or smaller than many viruses. They are ovoid in shape and stain Gram-negative. They are dependent on replication inside the host cells; thus, some species are termed obligate intracellular pathogens and others are symbionts of ubiquitous protozoa. Most intracellular Chlamydiae are located in an inclusion body or vacuole. Outside cells, they survive only as an extracellular infectious form. These Chlamydiae can grow only where their host cells grow, and develop according to a characteristic biphasic developmental cycle. Therefore, clinically relevant Chlamydiae cannot be propagated in bacterial culture media in the clinical laboratory. They are most successfully isolated while still inside their host cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Chlamydiae)](*<-lang_ru;;*);
+[Stat.(Chlamydiae phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Chlamydiia_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Chlamydiae_phylum<-concept_bacteria_phylum;;
+concept_Chlamydiae_phylum<=nrel_inclusion:{
+concept_Chlamydiia_class
+
+};;

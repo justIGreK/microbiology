@@ -1,0 +1,37 @@
+concept_nucleus<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Ядро] (*<-lang_ru;;*);
+[Nucleus] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Ядро)](*<-lang_ru;;*);
+[Def.(Nucleus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organoid;
+concept_cell;
+concept_DNA
+};;
+<=nrel_sc_text_translation:...(*
+->[Ядро - это клеточный органоид, в котором хранится генетическая информация в виде молекулы ДНК.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Nucleus is a cellular organoid, which stores genetic information in the form of a DNA molecule.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Ядро)](*<-lang_ru;;*);
+[Stat.(Nucleus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_chromosome;
+concept_DNA;
+concept_protein
+};;
+<=nrel_sc_text_translation:...(*
+->[В ядре заключена большая часть генетического материала клетки, представленного хромосомами, длинными линейными молекулами ДНК, связанными с белками.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The nucleus contains most of the genetic material of the cell, represented by chromosomes, long linear DNA moleculse associated with proteins.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_nucleus<=nrel_inclusion:concept_organoid;;

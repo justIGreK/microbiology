@@ -1,0 +1,33 @@
+concept_undulipodia<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Ундулиподия] (*<-lang_ru;;*);
+[Undulipodia] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Ундулиподия)](*<-lang_ru;;*);
+[Def.(Undulipodia)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_flagella
+};;
+<=nrel_sc_text_translation:...(*
+->[Ундулиподия -  внешняя, внеклеточная часть жгутика.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Undulipodias - outer, extracellular part of the flagellum.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Ундулиподия)](*<-lang_ru;;*);
+[Stat.(Undulipodia)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_eukaryota;
+concept_prokaryote;
+concept_flagella
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот термин предложен, чтобы различать жгутики эукариот и аналогичные им жгутики прокариот.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This term was proposed to distinguish between eukaryotic flagella and similar prokaryotic flagella.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

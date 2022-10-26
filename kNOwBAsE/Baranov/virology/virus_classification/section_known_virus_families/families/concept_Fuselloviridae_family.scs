@@ -1,0 +1,39 @@
+concept_Fuselloviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Fuselloviridae] (*<-lang_ru;;*);
+[Fuselloviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Fuselloviridae)](*<-lang_ru;;*);
+[Def.(Fuselloviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Fuselloviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Fuselloviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Fuselloviridae)](*<-lang_ru;;*);
+[Stat.(Fuselloviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphafusellovirus_genus;
+concept_Betafusellovirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Alphafusellovirus, Betafusellovirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Fuselloviridae family contains the following genera: Alphafusellovirus, Betafusellovirus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Fuselloviridae_family<-concept_virus_family;;
+concept_Fuselloviridae_family<=nrel_inclusion:
+concept_Alphafusellovirus_genus;
+concept_Betafusellovirus_genus;;
+
+concept_Fuselloviridae_family<-incertae_sedis;;

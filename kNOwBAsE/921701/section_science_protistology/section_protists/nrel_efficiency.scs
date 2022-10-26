@@ -1,0 +1,15 @@
+nrel_efficiency<-sc_node_norole_relation;;
+
+nrel_efficiency=> nrel_main_idtf:[Эффективность*](* <- lang_ru;; *);;
+nrel_efficiency=> nrel_main_idtf:[Efficiency*](* <- lang_en;; *);;
+
+
+nrel_efficiency => nrel_first_domain: 
+concept_protist;;
+nrel_efficiency => nrel_second_domain: number;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_efficiency;;

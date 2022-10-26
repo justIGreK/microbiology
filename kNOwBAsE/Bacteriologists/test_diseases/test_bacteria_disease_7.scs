@@ -1,0 +1,13 @@
+test_bacteria_disease_7<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тест-заболевание 7] (*<-lang_ru;;*);
+[Test_disease7] (*<-lang_en;;*);;
+
+
+test_bacteria_disease_7<-concept_disease;;
+test_bacteria_disease_7<-concept_human_bacteria_disease;;
+
+test_bacteria_disease_7=>nrel_dead:[3100];;
+test_bacteria_disease_7=>nrel_ill:[9150];;
+
+test_bacteria_disease_7=>nrel_disease_object:concept_human;;

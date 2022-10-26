@@ -1,0 +1,32 @@
+concept_gas_exchange<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Газообмен] (*<-lang_ru;;*);
+[Gas exchange] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Газообмен)](*<-lang_ru;;*);
+[Def.(Gas exchange)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_body
+};;
+<=nrel_sc_text_translation:...(*
+->[Газообмен — обмен газов между организмом и внешней средой.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Gas exchange — exchange of gases between the body and the external environment.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Газообмен)](*<-lang_ru;;*);
+[Stat.(Gas exchange)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_metabolism;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Газообмен необходим почти для всех организмов, без него невозможен нормальный обмен веществ и энергии, а, следовательно, и сама жизнь.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Gas exchange is necessary for almost all organisms, without it normal metabolism and energy are impossible, and, consequently, life itself.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

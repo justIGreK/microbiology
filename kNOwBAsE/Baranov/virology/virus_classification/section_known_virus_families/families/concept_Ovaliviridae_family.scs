@@ -1,0 +1,37 @@
+concept_Ovaliviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Ovaliviridae] (*<-lang_ru;;*);
+[Ovaliviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Ovaliviridae)](*<-lang_ru;;*);
+[Def.(Ovaliviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Ovaliviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ovaliviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Ovaliviridae)](*<-lang_ru;;*);
+[Stat.(Ovaliviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphaovalivirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя род Alphaovalivirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ovaliviridae family contains Alphaovalivirus genus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Ovaliviridae_family<-concept_virus_family;;
+concept_Ovaliviridae_family<=nrel_inclusion:
+concept_Alphaovalivirus_genus;;
+
+concept_Ovaliviridae_family<-incertae_sedis;;

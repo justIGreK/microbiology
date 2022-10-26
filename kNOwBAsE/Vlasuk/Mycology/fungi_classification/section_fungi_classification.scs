@@ -1,0 +1,29 @@
+
+section_of_fungi_taxonomy<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Таксономия грибов] (*<-lang_ru;;*);
+[Section. fungi taxonomy] (*<-lang_en;;*);;
+
+section_of_fungi_taxonomy-> rrel_key_sc_element:
+concept_fungi_domain;
+concept_fungi_kingdom;
+concept_fungi_phylum;
+concept_fungi_class;
+concept_fungi_order;
+concept_fungi_family;
+concept_fungi_genus;
+concept_fungi_species;;
+
+section_of_fungi_taxonomy<= nrel_section_decomposition:{
+section_of_known_fungi_taxonomy
+};;
+
+concept_fungi_domain<-sc_node_not_relation;;
+concept_fungi_kingdom<-sc_node_not_relation;;
+concept_fungi_phylum<-sc_node_not_relation;;
+concept_fungi_class<-sc_node_not_relation;;
+concept_fungi_order<-sc_node_not_relation;;
+concept_fungi_family<-sc_node_not_relation;;
+concept_fungi_genus<-sc_node_not_relation;;
+concept_fungi_species<-sc_node_not_relation;;
+

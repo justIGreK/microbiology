@@ -1,0 +1,31 @@
+concept_DNA<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ДНК] (*<-lang_ru;;*);
+[DNA] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(ДНК)](*<-lang_ru;;*);
+[Def.(DNA)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule
+};;
+<=nrel_sc_text_translation:...(*
+->[Дезоксирибонуклеи́новая кислота (ДНК) — макромолекула, обеспечивающая хранение, передачу из поколения в поколение и реализацию генетической программы развития и функционирования живых организмов. Молекула ДНК хранит биологическую информацию в виде генетического кода, состоящего из последовательности нуклеотидов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Deoxyribonucleic acid (DNA) is a molecule composed of two polynucleotide chains that coil around each other to form a double helix carrying genetic instructions for the development, functioning, growth and reproduction of all known organisms and many viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(ДНК)](*<-lang_ru;;*);
+[Stat.(DNA)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_nucleotide
+};;
+<=nrel_sc_text_translation:...(*
+->[В нуклеотидах ДНК встречается четыре вида азотистых оснований (аденин (A), гуанин (G), тимин (T) и цитозин (C))](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Each nucleotide is composed of one of four nitrogen-containing nucleobases (cytosine (C), guanine (G), adenine (A) or thymine (T))](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

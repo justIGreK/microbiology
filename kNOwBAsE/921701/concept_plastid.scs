@@ -1,0 +1,36 @@
+concept_plastid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Пластиды] (*<-lang_ru;;*);
+[Plastid] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Пластиды)](*<-lang_ru;;*);
+[Def.(Plastid)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organelle;
+concept_protozoa;
+concept_photosynthesis;
+concept_aglae
+};;
+<=nrel_sc_text_translation:...(*
+->[Пластиды -  полуавтономные органеллы высших растений, водорослей и некоторых фотосинтезирующих простейших.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Plastids - semi-autonomous organelles of higher plants, algae and some photosynthetic protozoa.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Пластиды)](*<-lang_ru;;*);
+[Stat.(Plastid)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_membrane;
+concept_protein;
+concept_genome
+};;
+<=nrel_sc_text_translation:...(*
+->[Пластиды имеют от двух до четырёх мембран, собственный геном и белоксинтезирующий аппарат.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Plastids have from two to four membranes, their own genome and protein synthesizing apparatus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

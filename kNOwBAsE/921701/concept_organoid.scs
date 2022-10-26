@@ -1,0 +1,31 @@
+concept_organoid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Органоид] (*<-lang_ru;;*);
+[Organoid] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Органоид)](*<-lang_ru;;*);
+[Def.(Organoid)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Органоиды - постоянные компоненты клетки, жизненно необходимые для ее существования.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Organoids is permanent components of the cell, vital for it's existance.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Ограноид)](*<-lang_ru;;*);
+[Stat.(Органоид)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cytoplasm
+};;
+<=nrel_sc_text_translation:...(*
+->[Органоиды располагаются во внутренней части клетки - цитоплазме.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Organoids are located in the inner part of the cell - the cytoplasm.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

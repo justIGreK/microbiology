@@ -1,0 +1,15 @@
+sc_node_struct -> subject_domain_of_kokki_bacteria;;
+subject_domain_of_kokki_bacteria <- subject_domain;;
+subject_domain_of_kokki_bacteria => nrel_main_idtf:
+	[Предметная область Kokki Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of Kokki Bacteria] (* <- lang_en;; *);;
+
+subject_domain_of_kokki_bacteria -> rrel_maximum_studied_object_class: 
+    concept_diplococc_bacteria;
+    concept_sarcinas_bacteria;;
+       
+
+subject_domain_of_kokki_bacteria => nrel_particular_subject_domain:
+	subject_domain_of_streptococci_bacteria;
+	subject_domain_of_staphylococci_bacteria;;
+    

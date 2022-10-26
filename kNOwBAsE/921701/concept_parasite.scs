@@ -1,0 +1,35 @@
+concept_parasite<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Паразит] (*<-lang_ru;;*);
+[Parasite] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Паразит)](*<-lang_ru;;*);
+[Def.(Parasite)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Паразит -  один из типов сосуществования организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Parasite - one of the types of coexistence of organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Паразит)](*<-lang_ru;;*);
+[Stat.(Parasite)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_bacteria;
+concept_fungi;
+concept_animal;
+concept_angisperm
+};;
+<=nrel_sc_text_translation:...(*
+->[Паразитизм встречается среди различных групп организмов: животных , бактерий, грибов и даже у покрытосеменных растений.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Parasitism occurs among various groups of organisms: animals, bacteria, fungi and even angiosperms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

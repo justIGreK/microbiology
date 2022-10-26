@@ -1,0 +1,44 @@
+concept_Spirulinaceae_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Spirulinaceae] (*<-lang_ru;;*);
+[Spirulinaceae order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Spirulinaceae)](*<-lang_ru;;*);
+[Def.(Spirulinaceae order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Spirulinaceae - это семейство цианобактерий, единственное семейство в отряде Spirulinales. Его члены примечательны наличием свернутых в спираль трихом.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Spirulinaceae is a family of cyanobacteria, the only family in the order Spirulinales. Its members are notable for having coiled trichomes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Spirulinaceae)](*<-lang_ru;;*);
+[Stat.(Spirulinaceae order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Glaucospira_family;
+concept_Halospirulina_family;
+concept_Spirulina_family
+
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Spirulinaceae_order<-concept_bacteria_order;;
+concept_Spirulinaceae_order<=nrel_inclusion:{
+concept_Glaucospira_family;
+concept_Halospirulina_family;
+concept_Spirulina_family
+};;

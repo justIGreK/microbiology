@@ -1,0 +1,9 @@
+test_species_45<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Барак Байден] (*<-lang_ru;;*);
+[Barack Baiden] (*<-lang_en;;*);;
+
+
+test_species_45<-concept_unhuman;;
+
+test_species_45=>nrel_causes_disease:test_disease_15;;

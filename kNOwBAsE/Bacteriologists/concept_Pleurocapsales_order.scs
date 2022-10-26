@@ -1,0 +1,58 @@
+concept_Pleurocapsales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Pleurocapsales] (*<-lang_ru;;*);
+[Pleurocapsales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Pleurocapsales)](*<-lang_ru;;*);
+[Def.(Pleurocapsales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Pleurocapsales - это отряд коккоидных цианобактерий. Плеврокапсалы характеризуются наличием боцитов, специализированных клеток, в которых происходит множественное деление.
+
+Их экология в основном эндолитическая и известковая, они встречаются внутри горных пород и в условиях низкой освещенности. Считалось, что Pleurocapsales связаны с Chroococcidiopsis, но недавняя работа с филогенетикой гена 16S рДНК показала, что Chroococcidiopsis принадлежит к собственному отряду Chroococcidiopsidales.
+
+Некоторые роды Pleurocapsales образуют псевдоразветвления, такие как Pleurocapsa sp., Odorella sp. И все роды семейства Hyellaceae.
+
+Исторически отряд Pleurocapsales был одним из наименее изученных отрядов цианобактерий из-за его эндолитической экологии, затрудняющей наблюдение.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Pleurocapsales are an order of coccooid cyanobacteria. Pleurocapsales are characterized by having boocytes, specialized cells where multiple fission takes place.
+
+Their ecology is mainly endolytic and calcareous, they are found inside rocks and in low light conditions. Pleurocapsales were thought to be related to Chroococcidiopsis but recent work with phylogenetics of the 16S rDNA gene has shown that Chroococcidiopsis belongs to its own order Chroococcidiopsidales.
+
+Some genera within Pleurocapsales form pseudo-ramifications such as Pleurocapsa sp., Odorella sp, and all the genera within the Hyellaceae family.
+
+Historically, the order Pleurocapsales has been one of the least studied order of cyanobacteria, due to its endolytic ecology making them difficult to observe.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Pleurocapsales)](*<-lang_ru;;*);
+[Stat.(Pleurocapsales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Dermocarpellaceae_family;
+concept_Hydrococcaceae_family;
+concept_Hyellaceae_family;
+concept_Xenococcaceae_family
+
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Pleurocapsales_order<-concept_bacteria_order;;
+concept_Pleurocapsales_order<=nrel_inclusion:{
+concept_Dermocarpellaceae_family;
+concept_Hydrococcaceae_family;
+concept_Hyellaceae_family;
+concept_Xenococcaceae_family
+};;

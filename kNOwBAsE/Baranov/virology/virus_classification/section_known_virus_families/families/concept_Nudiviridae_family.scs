@@ -1,0 +1,43 @@
+concept_Nudiviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Nudiviridae] (*<-lang_ru;;*);
+[Nudiviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Nudiviridae)](*<-lang_ru;;*);
+[Def.(Nudiviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Nudiviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Nudiviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Nudiviridae)](*<-lang_ru;;*);
+[Stat.(Nudiviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphanudivirus_genus;
+concept_Betanudivirus_genus;
+concept_Deltanudivirus_genus;
+concept_Gammanudivirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Alphanudivirus, Betanudivirus, Deltanudivirus, Gammanudivirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Nudiviridae family contains the following genera: Alphanudivirus, Betanudivirus, Deltanudivirus, Gammanudivirus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Nudiviridae_family<-concept_virus_family;;
+concept_Nudiviridae_family<=nrel_inclusion:
+concept_Alphanudivirus_genus;
+concept_Betanudivirus_genus;
+concept_Deltanudivirus_genus;
+concept_Gammanudivirus_genus;;
+
+concept_Nudiviridae_family<-incertae_sedis;;

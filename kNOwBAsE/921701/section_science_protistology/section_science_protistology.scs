@@ -1,0 +1,11 @@
+
+section_science_protistology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Научная протистология] (*<-lang_ru;;*);
+[Section. Science protistology] (*<-lang_en;;*);;
+
+
+section_science_protistology<= nrel_section_decomposition:{
+section_of_protists
+};;
+

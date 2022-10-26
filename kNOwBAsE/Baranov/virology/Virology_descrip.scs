@@ -1,0 +1,44 @@
+
+concept_animal<-sc_node_not_relation;;
+concept_plant<-sc_node_not_relation;;
+concept_archaea<-sc_node_not_relation;;
+
+virology<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Вирусология] (*<-lang_ru;;*);
+[Virology] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Вирусология)](*<-lang_ru;;*);
+[Def.(Virology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+microbiology
+};;
+<=nrel_sc_text_translation:...(*
+->[Вирусология - раздел микробиологии, предметом изучения которого являются вирусы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Virology is microbiology section which is focused on study of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Вирусология)](*<-lang_ru;;*);
+[Stat.(Virology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_animal;
+concept_plant;
+concept_bacteria;
+concept_archaea
+};;
+<=nrel_sc_text_translation:...(*
+->[Вирусы поражают все типы организмов, от растений и животных до бактерий и архей.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Viruses infect all types of life forms, from animals and plants to microorganisms, including bacteria and archaea.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+virology <= nrel_inclusion:science;;
+virology <= nrel_inclusion:microbiology;;

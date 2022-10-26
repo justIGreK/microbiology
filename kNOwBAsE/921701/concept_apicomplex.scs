@@ -1,0 +1,33 @@
+concept_apicomplex<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Апикомплекс] (*<-lang_ru;;*);
+[Apicomplex] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Апикомплекс)](*<-lang_ru;;*);
+[Def.(Apicomplex)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_alveolata;
+concept_protozoa
+};;
+<=nrel_sc_text_translation:...(*
+->[Апикомплекс — тип простейших из группы альвеолят.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Apicomplex — type of protozoa from the group of alveolates.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Апикомплекс)](*<-lang_ru;;*);
+[Stat.(Apicomplex)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_invertebrates;
+concept_parasite
+};;
+<=nrel_sc_text_translation:...(*
+->[Все представители типа являются облигатными паразитами позвоночных и беспозвоночных животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[All representatives of the type are obligate parasites of vertebrates and invertebrates.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

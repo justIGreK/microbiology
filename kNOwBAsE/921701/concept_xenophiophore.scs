@@ -1,0 +1,31 @@
+concept_xenophiophore<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Ксенофиофоры] (*<-lang_ru;;*);
+[Xenophiophore] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Ксенофиофоры)](*<-lang_ru;;*);
+[Def.(Xenophiophore)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_foraminifera
+};;
+<=nrel_sc_text_translation:...(*
+->[Ксенофиофоры —  надсемейство фораминифер, представители которых живут даже на дне океана на глубине 10 640 м.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Xenophiophore — the superfamily of foraminifera, whose representatives live even on the ocean floor at a depth of 10 640 m.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Ксенофиофоры)](*<-lang_ru;;*);
+[Stat.(Xenophiophore)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Тела ксенофиофор содержат относительно много свинца, урана и ртути — тяжёлых металлов, крайне ядовитых для обычных живых клеток.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Xenophyophore bodies contain relatively much lead, uranium and mercury - heavy metals that are extremely poisonous for ordinary living cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,32 @@
+concept_chromophore<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Хромофор] (*<-lang_ru;;*);
+[Chromophore] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Хромофор)](*<-lang_ru;;*);
+[Def.(Chromophore)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule;
+concept_color
+};;
+<=nrel_sc_text_translation:...(*
+->[Хромофор —   часть молекулы, отвечающая за его цвет.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chromophore — is the part of a molecule responsible for its color.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Хромофор)](*<-lang_ru;;*);
+[Stat.(Chromophore)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule
+};;
+<=nrel_sc_text_translation:...(*
+->[Хромофор - это область в молекуле, где разность энергий между двумя отдельными молекулярными орбиталями попадает в диапазон видимого спектра.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The chromophore is a region in the molecule where the energy difference between two separate molecular orbitals falls within the range of the visible spectrum.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

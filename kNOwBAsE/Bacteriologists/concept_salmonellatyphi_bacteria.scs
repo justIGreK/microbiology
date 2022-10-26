@@ -1,0 +1,34 @@
+concept_salmonellatyphi_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[salmonellatyphi бактерия] (*<-lang_ru;;*);
+[salmonellatyphi Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(salmonellatyphi бактерия)](*<-lang_ru;;*);
+[Def.(salmonellatyphi bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид небольших грамотрицательных палочковидных бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A species of small gram-negative rod-shaped bacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(salmonellatyphi бактерия)](*<-lang_ru;;*);
+[Stat.(salmonellatyphi bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот вид сальмонеллы провоцирует брюшной тиф, симптомы которого – высокая температура, сильные боли в животе, мигрень и общее состояние слабости.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This type of salmonella provokes typhoid fever, the symptoms of which are high fever, severe abdominal pain, migraines and a general state of weakness.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_salmonellatyphi_bacteria<=nrel_inclusion:concept_microorganism;; 

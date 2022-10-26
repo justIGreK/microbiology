@@ -1,0 +1,56 @@
+concept_Cyanophyceae_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[class Cyanophyceae] (*<-lang_ru;;*);
+[Cyanophyceae class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(class Cyanophyceae)](*<-lang_ru;;*);
+[Def.(Cyanophyceae class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_class
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(class Cyanophyceae)](*<-lang_ru;;*);
+[Stat.(Cyanophyceae class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Chroococcales_order;
+concept_Chroococcidiopsidales_order;
+concept_Gloeobacterales_order;
+concept_Nostocales_order;
+concept_Oscillatoriales_order;
+concept_Pleurocapsales_order;
+concept_Spirulinales_order;
+concept_Synechococcales_order;
+concept_Plastids_order
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Cyanophyceae_class<-concept_bacteria_class;;
+concept_Cyanophyceae_class<=nrel_inclusion:{
+concept_Chroococcales_order;
+concept_Chroococcidiopsidales_order;
+concept_Gloeobacterales_order;
+concept_Nostocales_order;
+concept_Oscillatoriales_order;
+concept_Pleurocapsales_order;
+concept_Spirulinales_order;
+concept_Synechococcales_order;
+concept_Plastids_order
+
+};;

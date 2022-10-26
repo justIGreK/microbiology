@@ -1,0 +1,8 @@
+section_biological_latin_terminology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Различные латинские биологические понятия] (*<-lang_ru;;*);
+[Section. Various latin biological concepts] (*<-lang_en;;*);;
+
+
+section_biological_latin_terminology-> rrel_key_sc_element:
+incertae_sedis;;

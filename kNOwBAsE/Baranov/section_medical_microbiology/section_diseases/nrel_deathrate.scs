@@ -1,0 +1,15 @@
+nrel_deathrate<-sc_node_norole_relation;;
+
+nrel_deathrate=> nrel_main_idtf:[Смертность*](* <- lang_ru;; *);;
+nrel_deathrate=> nrel_main_idtf:[Deathrate*](* <- lang_en;; *);;
+
+
+nrel_deathrate => nrel_first_domain: 
+concept_disease;;
+nrel_deathrate => nrel_second_domain: number;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_deathrate;;

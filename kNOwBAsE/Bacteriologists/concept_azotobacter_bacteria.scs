@@ -1,0 +1,34 @@
+concept_aspergillusfumigatus_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[aspergillusfumigatus бактерия] (*<-lang_ru;;*);
+[aspergillusfumigatus Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(aspergillusfumigatus бактерия)](*<-lang_ru;;*);
+[Def.(aspergillusfumigatus bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид палочковидных бактерий, который является патогеном для организма человека.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A species of rod-shaped bacteria that is a pathogen for the human body.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(aspergillusfumigatus бактерия)](*<-lang_ru;;*);
+[Stat.(aspergillusfumigatus bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Споры аспергилл мы вдыхаем ежедневно, но аспергиллез, как правило, развивается у людей с ослабленным иммунитетом.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[We inhale aspergillus spores every day, but aspergillosis usually develops in people with weakened immune systems.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_aspergillusfumigatus_bacteria<=nrel_inclusion:concept_microorganism;; 

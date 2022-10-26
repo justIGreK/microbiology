@@ -1,0 +1,41 @@
+concept_Monodnaviria_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм Monodnaviria] (*<-lang_ru;;*);
+[Monodnaviria realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм Monodnaviria)](*<-lang_ru;;*);
+[Def.(Monodnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_realm
+};;
+<=nrel_sc_text_translation:...(*
+->[Monodnaviria - реалм ДНК-содержащих вирусов. Вирус относится к данному реалму, если его геном представлен одноцепочечной ДНК, кодирующий репликационную эндонуклеазу суперсемейства HUH, или если он происходит от такого вируса, то есть его геном может быть представлен и двуцепочечной ДНК.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Monodnaviria is a realm of viruses that includes all single-stranded DNA viruses that encode an endonuclease of the HUH superfamily
+ that initiates rolling circle replication of the circular viral genome.
+ Viruses descended from such viruses are also included in the realm, including certain linear single-stranded DNA (ssDNA) viruses and circular double-stranded DNA (dsDNA) viruses. These atypical members typically replicate through means other than rolling circle replication.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм Monodnaviria)](*<-lang_ru;;*);
+[Stat.(Monodnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Loebvirae_kingdom;
+concept_Sangervirae_kingdom;
+concept_Trapavirae_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот реалм делится на три царства: Loebvirae, Sangervirae и Trapavirae.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This realm is divided into three kingdoms: Loebvirae, Sangervirae and Trapavirae.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Monodnaviria_realm<-concept_virus_realm;;
+concept_Monodnaviria_realm<=nrel_inclusion:
+concept_Loebvirae_kingdom;
+concept_Sangervirae_kingdom;
+concept_Trapavirae_kingdom;;

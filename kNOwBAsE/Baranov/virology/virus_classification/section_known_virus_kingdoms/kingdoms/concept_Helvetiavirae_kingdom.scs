@@ -1,0 +1,35 @@
+concept_Helvetiavirae_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство Helvetiavirae] (*<-lang_ru;;*);
+[Helvetiavirae kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство Helvetiavirae)](*<-lang_ru;;*);
+[Def.(Helvetiavirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Helvetiavirae - царство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Helvetiavirae is a kingdom of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство Helvetiavirae)](*<-lang_ru;;*);
+[Stat.(Helvetiavirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Dividoviricota_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Это царство включает в себя тип Dividoviricota](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This kingdom includes Dividoviricota phylum](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Helvetiavirae_kingdom<-concept_virus_kingdom;;
+concept_Helvetiavirae_kingdom<=nrel_inclusion:
+concept_Dividoviricota_phylum;;

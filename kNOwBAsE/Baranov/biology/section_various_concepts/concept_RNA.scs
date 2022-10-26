@@ -1,0 +1,32 @@
+concept_RNA<-sc_node_not_relation;
+=>nrel_main_idtf:
+[РНК] (*<-lang_ru;;*);
+[RNA] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(РНК)](*<-lang_ru;;*);
+[Def.(RNA)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus
+};;
+<=nrel_sc_text_translation:...(*
+->[Рибонуклеи́новая кислота́ (РНК) — одна из трёх основных макромолекул, которые содержатся в клетках всех живых организмов и играют важную роль в кодировании, прочтении, регуляции и выражении генов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ribonucleic acid (RNA) is a polymeric molecule essential in various biological roles in coding, decoding, regulation and expression of genes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(РНК)](*<-lang_ru;;*);
+[Stat.(RNA)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus;
+concept_genome
+};;
+<=nrel_sc_text_translation:...(*
+->[Многие вирусы кодируют свою генетическую информацию с помощью РНК-генома.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Many viruses encode their genetic information using an RNA genome.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

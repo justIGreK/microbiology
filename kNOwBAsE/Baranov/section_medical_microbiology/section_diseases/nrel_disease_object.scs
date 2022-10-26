@@ -1,0 +1,18 @@
+nrel_disease_object<-sc_node_norole_relation;;
+
+nrel_disease_object=> nrel_main_idtf:[Объект заболевания*](* <- lang_ru;; *);;
+nrel_disease_object=> nrel_main_idtf:[Disease object*](* <- lang_en;; *);;
+
+
+nrel_disease_object => nrel_first_domain: concept_disease;;
+nrel_disease_object => nrel_second_domain:
+concept_human;
+concept_animal;
+concept_plant;
+concept_organism;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_deathrate;;

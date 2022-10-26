@@ -1,0 +1,35 @@
+concept_bizzozeronii_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Bizzozeronii бактерия] (*<-lang_ru;;*);
+[Bizzozeronii Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Bizzozeronii бактерия)](*<-lang_ru;;*);
+[Def.(Bizzozeronii bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_spiral_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактерии,которые являются видами в пределах Helicobacter рода из грамотрицательных бактерий .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteria that are species within the Helicobacter genus are made from gram-negative bacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Bizzozeronii бактерия)](*<-lang_ru;;*);
+[Stat.(Bizzozeronii bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Люди, инфицированные H. bizzozeronii , склонны к развитию одних и тех же желудочно-кишечных заболеваний, а именно воспаления желудка, язвы желудка,  язвы двенадцатиперстной кишки, рака желудка, не являющегося лимфомой, и экстранодальных маргинальных B-клеточных лимфом. желудка.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[People infected with H. bizzozeronii are prone to developing the same gastrointestinal diseases, namely stomach inflammation, stomach ulcers, duodenal ulcers, non-lymphoma stomach cancer, and extranodal marginal B-cell lymphomas. stomach.
+](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_bizzozeronii_bacteria<=nrel_inclusion:concept_microorganism;;

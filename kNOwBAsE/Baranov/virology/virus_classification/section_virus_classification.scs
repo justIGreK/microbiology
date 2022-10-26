@@ -1,0 +1,29 @@
+
+section_of_virus_ICTV_classification<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Классификация вирусов] (*<-lang_ru;;*);
+[Section. Virus classification] (*<-lang_en;;*);;
+
+section_of_virus_ICTV_classification-> rrel_key_sc_element:
+concept_virus_realm;
+concept_virus_kingdom;
+concept_virus_phylum;
+concept_virus_class;
+concept_virus_order;
+concept_virus_family;
+concept_virus_genus;
+concept_virus_species;;
+
+section_of_virus_ICTV_classification<= nrel_section_decomposition:{
+section_of_known_virus_ICTV_classification_levels
+};;
+
+concept_virus_realm<-sc_node_not_relation;;
+concept_virus_kingdom<-sc_node_not_relation;;
+concept_virus_phylum<-sc_node_not_relation;;
+concept_virus_class<-sc_node_not_relation;;
+concept_virus_order<-sc_node_not_relation;;
+concept_virus_family<-sc_node_not_relation;;
+concept_virus_genus<-sc_node_not_relation;;
+concept_virus_species<-sc_node_not_relation;;
+

@@ -1,0 +1,18 @@
+section_various_biological_concepts<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Различные биологические понятия] (*<-lang_ru;;*);
+[Section. Various biological concepts] (*<-lang_en;;*);;
+
+
+section_various_biological_concepts-> rrel_key_sc_element:
+concept_organism;
+concept_cell;
+concept_RNA;
+concept_DNA;
+concept_eukaryota;
+concept_human;
+concept_animal;
+concept_nucleus;
+concept_organoid;
+concept_cytoplasm;;
+

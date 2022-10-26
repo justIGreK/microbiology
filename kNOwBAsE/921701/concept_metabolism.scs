@@ -1,0 +1,32 @@
+concept_metabolism<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Метаболизм] (*<-lang_ru;;*);
+[Metabolism] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Метаболизм)](*<-lang_ru;;*);
+[Def.(Metabolism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Метаболизм —  это набор химических реакций, которые возникают в живом организме для поддержания жизни.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Metabolism — it is a set of chemical reactions that occur in a living organism to maintain life.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Метаболизм)](*<-lang_ru;;*);
+[Stat.(Metabolism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_molecule;
+concept_body
+};;
+<=nrel_sc_text_translation:...(*
+->[Особенности метаболизма влияют на то, будет ли пригодна определённая молекула для использования организмом в качестве источника энергии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Metabolic characteristics affect whether a particular molecule is suitable for use by the body as an energy source.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

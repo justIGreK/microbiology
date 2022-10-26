@@ -1,0 +1,34 @@
+concept_Streptococcusmutans_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Streptococcusmutans бактерия] (*<-lang_ru;;*);
+[Streptococcusmutans Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Streptococcusmutans бактерия)](*<-lang_ru;;*);
+[Def.(Streptococcusmutans bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_rodshaped_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактерии,которые являются видом грамположительных, факультативно анаэробных бактерий рода стрептококков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteria that divide into a species of gram-positive, facultatively anaerobic bacteria of the genus streptococci.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Streptococcusmutans бактерия)](*<-lang_ru;;*);
+[Stat.(Streptococcusmutans bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Streptococcusmutans обычно обнаруживаемая в ротовой полости человека, вносит существенный вклад в возникновение кариеса.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Streptococcusmutans commonly found in the human oral cavity, contributes significantly to caries.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Streptococcusmutans_bacteria<=nrel_inclusion:concept_microorganism;;

@@ -1,0 +1,46 @@
+concept_Gram_positive_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Gram-positive] (*<-lang_ru;;*);
+[Gram-positive phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Gram-positive)](*<-lang_ru;;*);
+[Def.(Gram-positive phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[
+
+В бактериологии грамположительные бактерии - это бактерии, которые дают положительный результат в тесте окрашивания по Граму, который традиционно используется для быстрой классификации бактерий на две широкие категории в соответствии с их типом клеточной стенки.
+
+Грамположительные бактерии поглощают краситель кристаллического фиолетового, использованный в тесте, и затем кажутся пурпурными при просмотре в оптический микроскоп. Это связано с тем, что толстый слой пептидогликана в стенке бактериальной клетки сохраняет пятно после того, как оно смывается с остальной части образца на стадии обесцвечивания теста. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[In bacteriology, gram-positive bacteria are bacteria that give a positive result in the Gram stain test, which is traditionally used to quickly classify bacteria into two broad categories according to their type of cell wall.
+
+Gram-positive bacteria take up the crystal violet stain used in the test, and then appear to be purple-coloured when seen through an optical microscope. This is because the thick peptidoglycan layer in the bacterial cell wall retains the stain after it is washed away from the rest of the sample, in the decolorization stage of the test.
+](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Gram_positive)](*<-lang_ru;;*);
+[Stat.(Gram_positive phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+
+concept_empty
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Gram_positive_phylum<-concept_bacteria_phylum;;
+concept_Gra_positive_phylum<=nrel_inclusion:{
+concept_empty
+};;

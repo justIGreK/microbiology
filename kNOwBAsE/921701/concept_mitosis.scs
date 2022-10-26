@@ -1,0 +1,32 @@
+concept_mitosis<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Митоз] (*<-lang_ru;;*);
+[Mitosis] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Митоз)](*<-lang_ru;;*);
+[Def.(Mitosis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_eukaryota;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Митоз — непрямое деление клетки, наиболее распространённый способ репродукции эукариотических клеток.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Mitosis — indirect cell division, the most common way of reproduction of eukaryotic cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Митоз)](*<-lang_ru;;*);
+[Stat.(Mitosis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_ontogenesis
+};;
+<=nrel_sc_text_translation:...(*
+->[Митоз — один из фундаментальных процессов онтогенеза.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Mitosis is one of the fundamental processes of ontogenesis.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

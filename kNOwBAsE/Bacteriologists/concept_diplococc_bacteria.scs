@@ -1,0 +1,36 @@
+concept_diplococc_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[diplococc бактерия] (*<-lang_ru;;*);
+[diplococc Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(diplococc бактерия)](*<-lang_ru;;*);
+[Def.(diplococc bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[ Округлые бактерии (кокки), обычно встречающиеся парами. Иногда (в организме) они бывают окружены капсулой.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Rounded bacteria (cocci), usually found in pairs. Sometimes (in the body) they are surrounded by a capsule.
+](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(diplococc бактерия)](*<-lang_ru;;*);
+[Stat.(diplococc bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Вызывают менингококковую инфекцию, которая может протекать с поражением слизистой оболочки носоглотки (назофарингит), оболочек головного мозга (менингит), септицемией. Широко распространено бактерионосительство.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[They cause meningococcal infection, which can occur with damage to the mucous membrane of the nasopharynx (nasopharyngitis), the membranes of the brain (meningitis), septicemia. Bacteria carriers are widespread.
+](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_diplococc_bacteria<=nrel_inclusion:concept_microorganism;;   

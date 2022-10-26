@@ -1,0 +1,43 @@
+concept_Baculoviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Baculoviridae] (*<-lang_ru;;*);
+[Baculoviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Baculoviridae)](*<-lang_ru;;*);
+[Def.(Baculoviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Baculoviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Baculoviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Baculoviridae)](*<-lang_ru;;*);
+[Stat.(Baculoviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphabaculovirus_genus;
+concept_Betabaculovirus_genus;
+concept_Gammabaculovirus_genus;
+concept_Deltabaculovirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Alphabaculovirus, Betabaculovirus, Gammabaculovirus, Deltabaculovirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Baculoviridae family contains the following genera: Alphabaculovirus, Betabaculovirus, Gammabaculovirus, Deltabaculovirus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Baculoviridae_family<-concept_virus_family;;
+concept_Baculoviridae_family<=nrel_inclusion:
+concept_Alphabaculovirus_genus;
+concept_Betabaculovirus_genus;
+concept_Gammabaculovirus_genus;
+concept_Deltabaculovirus_genus;;
+
+concept_Baculoviridae_family<-incertae_sedis;;

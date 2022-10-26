@@ -1,0 +1,35 @@
+concept_animal_like_protist<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Животноподобный протист] (*<-lang_ru;;*);
+[Animal-like protist] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Животноподобный протист)](*<-lang_ru;;*);
+[Def.(Animal-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist;
+concept_animal;
+concept_single_celled_eukaryota
+};;
+<=nrel_sc_text_translation:...(*
+->[Животноподобные протисты - это одноклеточные эукариоты, которые имеют некоторые общие черты с животными.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Animal-like protists - single-celled eukaryotes that share some traits with animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Животноподобный протист)](*<-lang_ru;;*);
+[Stat.(Animal-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_flagellate;
+concept_ciliate;
+concept_sporozoa
+};;
+<=nrel_sc_text_translation:...(*
+->[Животноподобные протисты включают жгутиконосцев, инфузорий и спорозойных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Animal-like protists include the flagellates, ciliates, and the sporozoans.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

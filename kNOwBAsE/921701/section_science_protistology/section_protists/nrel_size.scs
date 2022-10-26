@@ -1,0 +1,15 @@
+nrel_size<-sc_node_norole_relation;;
+
+nrel_size=> nrel_main_idtf:[Размер*](* <- lang_ru;; *);;
+nrel_size=> nrel_main_idtf:[Size*](* <- lang_en;; *);;
+
+
+nrel_size => nrel_first_domain: 
+concept_protist;;
+nrel_size => nrel_second_domain: number;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_size;;

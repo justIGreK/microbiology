@@ -1,0 +1,68 @@
+concept_DPANN_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum DPANN] (*<-lang_ru;;*);
+[DPANN phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum DPANN)](*<-lang_ru;;*);
+[Def.(DPANN phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[DPANN - это аббревиатура, образованная инициалами первых пяти обнаруженных групп: Diapherotrites, Parvarchaeota, Aenigmarchaeota, Nanoarchaeota и Nanohaloarchaeota. Позднее были обнаружены Woesearchaeota и Pacearchaeota, которые были предложены в рамках супертипа DPANN. В 2017 г. в этот супертип был помещен еще один тип - Altiarchaeota. Монофилия DPANN до сих пор не считается установленной из-за высокой скорости мутаций включенных типов, что может привести к артефакту притяжения длинных ветвей (LBA), где клоны группируются базально или искусственно в основании филогенетических дерево без родства. Вместо этого эти анализы предполагают, что DPANN принадлежит к Euryarchaeota или является полифилетиком, занимающим различные позиции внутри Euryarchaeota.
+
+DPANN объединяет разные типы с разнообразным распределением в окружающей среде и метаболизмом, начиная от симбиотических и термофильных форм, таких как Nanoarchaeota, ацидофилов, таких как Parvarchaeota, и неэкстремофилов, таких как Aenigmarchaeota и Diapherotrites. DPANN также был обнаружен в богатых нитратами грунтовых водах на поверхности воды, но не ниже, что указывает на то, что эти таксоны все еще довольно трудно обнаружить.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[DPANN is an acronym formed by the initials of the first five groups discovered, Diapherotrites, Parvarchaeota, Aenigmarchaeota, Nanoarchaeota and Nanohaloarchaeota. Later Woesearchaeota and Pacearchaeota were discovered and proposed within the DPANN superphylum. In 2017, another phylum Altiarchaeota was placed into this superphylum. The monophyly of DPANN is not considered established until now, due to the high mutation rate of the included phyla, which can lead to the artifact of the long branch attraction (LBA) where the lineages are grouped basally or articifially at the base of the phylogenetic tree without being related. These analyzes instead suggest that DPANN belongs to Euryarchaeota or is polyphyletic occupying various positions within Euryarchaeota.
+
+The DPANN groups together different phyla with a variety of environmental distribution and metabolism, ranging from symbiotic and thermophilic forms such as Nanoarchaeota, acidophiles like Parvarchaeota and non-extremophiles like Aenigmarchaeota and Diapherotrites. DPANN was also detected in nitrate-rich groundwater, on the water surface but not below, indicating that these taxa are still quite difficult to locate. ](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum DPANN)](*<-lang_ru;;*);
+[Stat.(DPANN phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Aenigmarchaeota_phylum;
+concept_Diapherotrites_phylum;
+concept_Micrarchaeota_phylum;
+concept_Nanoarchaeota_phylum;
+concept_Nanohaloarchaeota_phylum;
+concept_Pacearchaeota_phylum;
+concept_Parvarchaeota_phylum;
+concept_Woesearchaeota_phylum;
+
+concept_Altiarchaeota_phylum;
+concept_Huberarchaeota_phylum;
+concept_Mamarchaeota_phylum;
+concept_Undinarchaeota_phylum
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_DPANN_phylum<-concept_bacteria_phylum;;
+concept_DPANN_phylum<=nrel_inclusion:{
+concept_Aenigmarchaeota_phylum;
+concept_Diapherotrites_phylum;
+concept_Micrarchaeota_phylum;
+concept_Nanoarchaeota_phylum;
+concept_Nanohaloarchaeota_phylum;
+concept_Pacearchaeota_phylum;
+concept_Parvarchaeota_phylum;
+concept_Woesearchaeota_phylum;
+
+concept_Altiarchaeota_phylum;
+concept_Huberarchaeota_phylum;
+concept_Mamarchaeota_phylum;
+concept_Undinarchaeota_phylum
+
+};;

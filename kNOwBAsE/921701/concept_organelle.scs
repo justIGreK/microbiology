@@ -1,0 +1,32 @@
+concept_organelle<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Органелла] (*<-lang_ru;;*);
+[Organelle] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Органелла)](*<-lang_ru;;*);
+[Def.(Organelle)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Органелла - постоянные компоненты клетки, жизненно необходимые для её существования.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Organelle - permanent components of the cell, vital for its existence.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Органелла)](*<-lang_ru;;*);
+[Stat.(Organelle)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cytoplasm;
+concept_hyaloplasm
+};;
+<=nrel_sc_text_translation:...(*
+->[Органеллы клетки располагаются в цитоплазме, состоящей из гиалоплазмы, образующей её внутреннюю среду.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cell organelles are located in the cytoplasm, consisting of hyaloplasm, which forms its internal environment.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

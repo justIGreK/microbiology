@@ -1,0 +1,17 @@
+sc_node_struct -> subject_domain_of_rodshaped_bacteria;;
+subject_domain_of_rodshaped_bacteria <- subject_domain;;
+subject_domain_of_rodshaped_bacteria => nrel_main_idtf:
+	[Предметная область Шаровидных Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of Rodshaped Bacteria] (* <- lang_en;; *);;
+
+subject_domain_of_rodshaped_bacteria -> rrel_maximum_studied_object_class: 
+    concept_clostridiumtetani_bacteria;
+    concept_aspergillusfumigatus_bacteria;
+    concept_treponemapallidum_bacteria;
+    concept_rodshaped_bacteria;;
+
+subject_domain_of_rodshaped_bacteria => nrel_particular_subject_domain:
+	subject_domain_of_kokki_bacteria;
+    subject_domain_of_pseudomonadaceae_bacteria;
+	subject_domain_of_coccobacillus_bacteria;;
+    

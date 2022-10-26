@@ -1,0 +1,18 @@
+section_microbiology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Микробиология] (*<-lang_ru;;*);
+[Section. Microbiology] (*<-lang_en;;*);;
+
+section_microbiology<= nrel_section_decomposition:{
+section_virology;
+section_bacteriology;
+section_protistology;
+section_mycology;
+section_medical_microbiology
+};;
+
+section_microbiology-> rrel_key_sc_element:
+test_species_45;
+microbiology;
+concept_microorganism;;
+

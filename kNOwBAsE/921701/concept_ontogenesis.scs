@@ -1,0 +1,35 @@
+concept_ontogenesis<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Онтогенез] (*<-lang_ru;;*);
+[Ontogenesis] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Онтогенез)](*<-lang_ru;;*);
+[Def.(Ontogenesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_body;
+concept_morphological_tranformation;
+concept_asexual;
+concept_biochemical_tranformation
+};;
+<=nrel_sc_text_translation:...(*
+->[Онтогенез - индивидуальное развитие организма, совокупность последовательных морфологических и биохимических преобразований, претерпеваемых организмом от оплодотворения (при половом размножении) или от момента отделения от материнской особи (при бесполом размножении) до конца жизни.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A ontogenesis is a individual development of the body, a set of sequential morphological and biochemical transformations undergone by the body from fertilization (during sexual reproduction) or from the moment of separation from the maternal individual (during asexual reproduction) until the end of life.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Онтогенез)](*<-lang_ru;;*);
+[Stat.(Ontogenesis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_developmental_biology;
+concept_biology
+};;
+<=nrel_sc_text_translation:...(*
+->[Раздел современной биологии, изучающий онтогенез, называется биологией развития.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The branch of modern biology that studies ontogenesis is called developmental biology.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,43 @@
+concept_parachlamydiaacanthamoebae_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[parachlamydiaacanthamoebae бактерия] (*<-lang_ru;;*);
+[parachlamydiaacanthamoebae Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(klebpestis бактерия)](*<-lang_ru;;*);
+[Def.(klebpestis bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Это бактерии, которые относятся к категории микроорганизмов, связанных с хозяином.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[These are bacteria that belong to the category of host-related microorganisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(parachlamydiaacanthamoebae бактерия)](*<-lang_ru;;*);
+[Stat.(parachlamydiaacanthamoebae bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Эта бактерия живет в свободноживущих амебах, которые являются сложной частью их воспроизводства .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This bacterium lives in free-living amoebas, which are a complex part of their reproduction.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_parachlamydiaacanthamoebae_bacteria<=nrel_inclusion:concept_microorganism;; 
+
+concept_parachlamydiaacanthamoebae_bacteria<-concept_disease;;
+
+concept_parachlamydiaacanthamoebae_bacteria<-concept_human_bacteria_disease;;
+
+concept_parachlamydiaacanthamoebae_bacteria=>nrel_dead:[120];;
+concept_parachlamydiaacanthamoebae_bacteria=>nrel_ill:[400];;
+
+concept_parachlamydiaacanthamoebae_bacteria=>nrel_disease_object:concept_human;;

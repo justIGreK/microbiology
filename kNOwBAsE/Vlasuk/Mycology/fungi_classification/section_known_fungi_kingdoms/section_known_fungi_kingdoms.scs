@@ -1,0 +1,10 @@
+
+section_of_known_fungi_kingdoms<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные королевства грибов] (*<-lang_ru;;*);
+[Section. Known fungi kingdoms] (*<-lang_en;;*);;
+
+
+section_of_known_fungi_kingdoms-> rrel_key_sc_element:
+concept_Fungi_kingdom;
+concept_Chromista_kingdom;;

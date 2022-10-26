@@ -1,0 +1,35 @@
+concept_prokaryote<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Прокариот] (*<-lang_ru;;*);
+[Prokaryote] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Прокариот)](*<-lang_ru;;*);
+[Def.(Prokaryote)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_nucleus;
+concept_membrane
+};;
+<=nrel_sc_text_translation:...(*
+->[Прокариот - это клеточный организм, в котором отсутствует ядро, заключенное в ядерную мембрану.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A prokaryote is a cellular organism that lacks a nuclear enclosed in a nuclear membrane.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Прокариот)](*<-lang_ru;;*);
+[Stat.(Prokaryote)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_mitochondria;
+concept_eukaryota;
+concept_membrane
+};;
+<=nrel_sc_text_translation:...(*
+->[Прокариоты лишены митохондрий или каких-либо других эукариотических мембраносвязанных органелл.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Prokaryote lack mitochondria, or any other eukaryotic membrane-bound organelles.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

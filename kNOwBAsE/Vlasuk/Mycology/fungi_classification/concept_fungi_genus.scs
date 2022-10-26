@@ -1,0 +1,32 @@
+concept_fungi_genus<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Род грибов] (*<-lang_ru;;*);
+[fungi genus] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Род грибов)](*<-lang_ru;;*);
+[Def.(fungi genus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[Род грибов - один из уровней классификации грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi genus is one of the levels of fungi classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Род грибов)](*<-lang_ru;;*);
+[Stat.(fungi genus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_species
+};;
+<=nrel_sc_text_translation:...(*
+->[Роды делятся на виды.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Genera are divided into species.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

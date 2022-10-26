@@ -1,0 +1,35 @@
+concept_cilia<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реснички] (*<-lang_ru;;*);
+[Cilia] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реснички)](*<-lang_ru;;*);
+[Def.(Cilia)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_eukaryota;
+concept_organelle
+};;
+<=nrel_sc_text_translation:...(*
+->[Реснички - органеллы, представляющие собой тонкие (диаметром 0,1—0,6 мкм) волосковидные структуры на поверхности эукариотических клеток. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cilia - organelles, which are thin (0.1-0.6 microns in diameter) hair-like structures on the surface of eukaryotic cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реснички)](*<-lang_ru;;*);
+[Stat.(Cilia)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_membrane;
+concept_cytoplasm_membrane;
+concept_plasmalemma
+};;
+<=nrel_sc_text_translation:...(*
+->[Реснички покрыты мембраной, являющейся продолжением плазмалеммы — цитоплазматической мембраны](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The cilia are covered with a membrane that is a continuation of the plasmalemma - the cytoplasmic membrane](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

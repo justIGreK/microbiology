@@ -1,0 +1,35 @@
+concept_organoid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Хлорофил] (*<-lang_ru;;*);
+[Chlorophyll] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Хлорофил)](*<-lang_ru;;*);
+[Def.(Chlorophyll)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_algae;
+concept_plant;
+concept_chloroplast;
+concept_cyanobacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Хлорофилл-это любой из нескольких родственных зеленых пигментов, обнаруженных в мезосомах цианобактерий и в хлоропластах водорослей и растений.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chlorophyll is any of several related green pigments found in the mesosomes of cyanobacteria and in the chloroplasts of algae and plants.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Хлорофил)](*<-lang_ru;;*);
+[Stat.(Chlorophyll)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_photosynthesis;
+concept_plant
+};;
+<=nrel_sc_text_translation:...(*
+->[Хлорофилл необходим для фотосинтеза, позволяя растениям поглощать энергию света.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chlorophyll is essential in photosynthesis, allowing plants to absorb energy from light.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

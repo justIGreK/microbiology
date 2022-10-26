@@ -1,0 +1,32 @@
+concept_virus_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тип вирусов] (*<-lang_ru;;*);
+[Virus phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Тип вирусов)](*<-lang_ru;;*);
+[Def.(Virus phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus
+};;
+<=nrel_sc_text_translation:...(*
+->[Тип вирусов - один из уровней классификации вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Virus phylum is one of the levels of virus classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Тип вирусов)](*<-lang_ru;;*);
+[Stat.(Virus phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_class
+};;
+<=nrel_sc_text_translation:...(*
+->[Типы делятся на классы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Phylums are divided into classes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

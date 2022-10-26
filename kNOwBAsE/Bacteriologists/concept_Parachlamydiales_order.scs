@@ -1,0 +1,39 @@
+concept_Parachlamydiales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Parachlamydiales] (*<-lang_ru;;*);
+[Parachlamydiales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Parachlamydiales)](*<-lang_ru;;*);
+[Def.(Parachlamydiales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Parachlamydiales)](*<-lang_ru;;*);
+[Stat.(Parachlamydiales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_empty
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Parachlamydiales_order<-concept_bacteria_order;;
+concept_Parachlamydiales_order<=nrel_inclusion:{
+concept_empty
+};;

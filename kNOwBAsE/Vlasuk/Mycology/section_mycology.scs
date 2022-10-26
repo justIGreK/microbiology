@@ -1,0 +1,13 @@
+section_mycology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Микология] (*<-lang_ru;;*);
+[Section. Mycology] (*<-lang_en;;*);;
+
+section_mycology<= nrel_section_decomposition:{
+section_subject_domain_of_fungi;
+section_subject_domain_of_fungi_study_methods
+};;
+
+section_mycology-> rrel_key_sc_element:
+mycology;;
+

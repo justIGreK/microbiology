@@ -1,0 +1,121 @@
+scp_program -> proc_deathrate_calculation (* 
+
+
+ ->rrel_params: ... (* 
+  -> rrel_1: rrel_in: _parameter;; 
+  -> rrel_2: rrel_out: _deathrate;; 
+ *);; 
+
+
+ ->rrel_operators: ... (*
+
+//проверяем, не была ли смертность вычислена ранее
+->rrel_init: .proc_deathrate_calculation1 (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _parameter ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com5 ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _deathrate ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_deathrate ;;
+ 
+    =>nrel_then: .proc_deathrate_calculation7b;; 
+    =>nrel_else: .proc_deathrate_calculation2;; 
+  *);; 
+
+//генерируем переменную, в которой будем хранить значение смертности, и присвоим ей начальное значение 0
+-> .proc_deathrate_calculation2 (* 
+  <- contAssign;; 
+	-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _deathrate;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+ 
+    =>nrel_goto: .proc_deathrate_calculation3;; 
+  *);; 
+
+//считыванием необходимые для вычислений данные
+  -> .proc_deathrate_calculation3 (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _parameter ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com4 ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _dead ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_dead ;;
+ 
+    =>nrel_then: .proc_deathrate_calculation3a;; 
+    =>nrel_else: .proc_deathrate_calculation7a;; 
+  *);; 
+ 
+  -> .proc_deathrate_calculation3a (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _parameter ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com5 ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _ill ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc5;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_ill ;;
+ 
+    =>nrel_then: .proc_deathrate_calculation4;; 
+    =>nrel_else: .proc_deathrate_calculation7a;; 
+  *);; 
+
+  // Вычисление
+  -> .proc_deathrate_calculation4 (* 
+		<- contDiv ;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _deathrate;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _dead ;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _ill ;;
+ 
+		=> nrel_goto: .proc_deathrate_calculation5 ;;
+
+  *);; 
+ 
+  // Связывание результата вычисления с входным параметром (заболеванием) отношением Смертность*
+  -> .proc_deathrate_calculation5 (* 
+
+		<- genElStr5;;
+
+		-> rrel_1: rrel_fixed: rrel_scp_var: _parameter;;
+		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _deathrate;;
+		-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_deathrate;;
+ 
+    =>nrel_goto: .proc_deathrate_calculation7;; 
+  *);; 
+
+// вывод сообщения об успешном вычислении 
+  -> .proc_deathrate_calculation7 (* 
+
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Deathrate calculation done];; 
+ 
+ 
+    =>nrel_goto: .proc_deathrate_calculation_return;;  
+  *);; 
+
+// вывод сообщения об ошибке (не получилось определить аттрибуты)  
+  -> .proc_deathrate_calculation7a (* 
+
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Error while looking for attributes];; 
+ 
+ 
+    =>nrel_goto: .proc_deathrate_calculation_return;;  
+  *);; 
+
+// вывод сообщения о том, что смертность была вычислена ранее (такое возможно, если раньше вызывались агенты, использующие данную программу)
+  -> .proc_deathrate_calculation7b (* 
+
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Deathrate was calculated earlier];; 
+ 
+ 
+    =>nrel_goto: .proc_deathrate_calculation_return;;  
+  *);; 
+  -> .proc_deathrate_calculation_return (* 
+  <- return;; 
+  *);; 
+*);;
+*);;

@@ -1,0 +1,37 @@
+concept_Heunggongvirae_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство Heunggongvirae] (*<-lang_ru;;*);
+[Heunggongvirae kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство Heunggongvirae)](*<-lang_ru;;*);
+[Def.(Heunggongvirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Heunggongvirae - царство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Heunggongvirae is a kingdom of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство Heunggongvirae)](*<-lang_ru;;*);
+[Stat.(Heunggongvirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Peploviricota_phylum;
+concept_Uroviricota_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Это царство включает в себя 2 типа: Peploviricota и Uroviricota.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This kingdom includes 2 phyla: Peploviricota and Uroviricota.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Heunggongvirae_kingdom<-concept_virus_kingdom;;
+concept_Heunggongvirae_kingdom<=nrel_inclusion:
+concept_Peploviricota_phylum;
+concept_Uroviricota_phylum;;

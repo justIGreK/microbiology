@@ -1,0 +1,16 @@
+
+section_of_known_bacteria_class<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные классы бактерий] (*<-lang_ru;;*);
+[Section. Known classes phyla] (*<-lang_en;;*);;
+
+
+section_of_known_bacteria_class-> rrel_key_sc_element:
+concept_Chlamydiae_class;
+concept_Cyanophyceae_class;
+concept_Hadarchaeota_class;
+concept_Halobacteriota_class;
+concept_Hydrothermarchaeota_class;
+concept_Methanobacteriota_class;
+concept_Thermoplasmatota_class;
+concept_Thermoprotei_class;;

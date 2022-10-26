@@ -1,0 +1,35 @@
+concept_eukaryota<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Эукариот] (*<-lang_ru;;*);
+[Eukaryota] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Эукариот)](*<-lang_ru;;*);
+[Def.(Eukaryota)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_nucleus
+};;
+<=nrel_sc_text_translation:...(*
+->[Эукариоты - домен(надцарство) живых организмов, в клетке которых содержится ядро.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Eukaryota is a domain(super-kingdom) of living organisms, whos cells contains nucleus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Эукариот)](*<-lang_ru;;*);
+[Stat.(Eukaryota)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist;
+concept_fungus;
+concept_plant;
+concept_animal
+};;
+<=nrel_sc_text_translation:...(*
+->[К эукариотам относятся животные, растения, грибы, а также группы организмов под общим названием протисты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Eukaryotes include animals, fungi, plants and alsa groups of organisms under general name protists.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

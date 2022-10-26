@@ -1,0 +1,44 @@
+
+concept_fungi<-sc_node_not_relation;;
+concept_plant<-sc_node_not_relation;;
+concept_enviroment<-sc_node_not_relation;;
+
+mycology<-sc_node_not_relation;
+=>nrel_main_idtf:
+[микология] (*<-lang_ru;;*);
+[mycology] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(микология)](*<-lang_ru;;*);
+[Def.(mycology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+microbiology
+};;
+<=nrel_sc_text_translation:...(*
+->[Микология — наука о грибах; раздел микробиологии, изучающий грибы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[mycology - science about fungi;section of microbiology, studies fungi.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(микология)](*<-lang_ru;;*);
+[Stat.(mycology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi;
+concept_animal;
+concept_plant;
+concept_enviroment;
+concept_simbiont;
+concept_parasite
+};;
+<=nrel_sc_text_translation:...(*
+->[Грибы  встречаются почти во всех земных местообитаниях. Грибы часто являются симбионтами и паразитами растений и животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Fungi  are found in almost all terrestrial habitats. Fungi are often symbionts and parasites of plants and animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+mycology <= nrel_inclusion:science;;

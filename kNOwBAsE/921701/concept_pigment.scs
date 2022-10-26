@@ -1,0 +1,31 @@
+concept_pigment<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Пигмент] (*<-lang_ru;;*);
+[Pigment] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Пигмент)](*<-lang_ru;;*);
+[Def.(Pigment)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Пигмент - окрашенные вещества, входящие в состав тканей организмов](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Pigment - colored substances that make up the tissues of organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Пигмент)](*<-lang_ru;;*);
+[Stat.(Pigment)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_chromophore
+};;
+<=nrel_sc_text_translation:...(*
+->[Цвет пигментов определяется наличием в их молекулах хромофорных групп, избирательно поглощающих свет в определённой части видимого спектра солнечного света.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The color of pigments is determined by the presence of chromophore groups in their molecules, which selectively absorb light in a certain part of the visible spectrum of sunlight.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

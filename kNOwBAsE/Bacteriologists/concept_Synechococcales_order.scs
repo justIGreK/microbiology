@@ -1,0 +1,61 @@
+concept_Synechococcales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Synechococcales] (*<-lang_ru;;*);
+[Synechococcales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Synechococcales)](*<-lang_ru;;*);
+[Def.(Synechococcales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Synechococcales - это отряд цианобактерий, насчитывающий более 70 родов. Он включает как нитчатые, так и одноклеточные типы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Synechococcales are an order of cyanobacteria, with over 70 genera. It includes both filamentous and single-celled types.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Synechococcales)](*<-lang_ru;;*);
+[Stat.(Synechococcales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Acaryochloridaceae_family;
+concept_Chamaesiphonaceae_family;
+concept_Coelosphaeriaceae_family;
+concept_Heteroleibleiniaceae_family;
+concept_Leptolyngbyaceae_family;
+concept_Merismopediaceae_family;
+concept_Prochloraceae_family;
+concept_Pseudanabaenaceae_family;
+concept_Romeriaceae_family;
+concept_Schizotrichaceae_family;
+concept_Synechococcaceae_family
+
+
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Synechococcales_order<-concept_bacteria_order;;
+concept_Synechococcales_order<=nrel_inclusion:{
+concept_Acaryochloridaceae_family;
+concept_Chamaesiphonaceae_family;
+concept_Coelosphaeriaceae_family;
+concept_Heteroleibleiniaceae_family;
+concept_Leptolyngbyaceae_family;
+concept_Merismopediaceae_family;
+concept_Prochloraceae_family;
+concept_Pseudanabaenaceae_family;
+concept_Romeriaceae_family;
+concept_Schizotrichaceae_family;
+concept_Synechococcaceae_family
+};;

@@ -1,0 +1,31 @@
+concept_body<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тело] (*<-lang_ru;;*);
+[Body] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Тело)](*<-lang_ru;;*);
+[Def.(Body)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Тело -  это физический материал организма.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Body - is the physical material of an organism.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Тело)](*<-lang_ru;;*);
+[Stat.(Body)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_physiology
+};;
+<=nrel_sc_text_translation:...(*
+->[Изучение функций и механизмов в организме - это физиология.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The study of functions and mechanisms in a body is physiology.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

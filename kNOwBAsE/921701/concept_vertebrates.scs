@@ -1,0 +1,32 @@
+concept_vertebrates<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Позвоночные] (*<-lang_ru;;*);
+[Vertebrates] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Позвоночные)](*<-lang_ru;;*);
+[Def.(Vertebrates)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_chordate;
+concept_animal
+};;
+<=nrel_sc_text_translation:...(*
+->[Позвоночные - подтип хордовых животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Vertebrates - subtype of chordate animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Позвоночные)](*<-lang_ru;;*);
+[Stat.(Vertebrates)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_animal
+};;
+<=nrel_sc_text_translation:...(*
+->[Позвоночные - доминирующая на земле и в воздушной среде группа животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Vertebrates - the dominant group of animals on the ground and in the air.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

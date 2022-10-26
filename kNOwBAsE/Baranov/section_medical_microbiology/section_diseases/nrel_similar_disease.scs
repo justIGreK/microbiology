@@ -1,0 +1,12 @@
+nrel_similar_disease<-sc_node_norole_relation;;
+
+nrel_similar_disease=> nrel_main_idtf:[Похожее заболевание*](* <- lang_ru;; *);;
+nrel_similar_disease=> nrel_main_idtf:[Similar disease*](* <- lang_en;; *);;
+
+
+nrel_similar_disease => nrel_first_domain: 
+concept_disease;;
+nrel_similar_disease => nrel_second_domain: concept_disease;;
+
+
+arity_2->nrel_similar_disease;;

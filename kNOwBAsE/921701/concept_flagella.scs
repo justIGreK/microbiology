@@ -1,0 +1,37 @@
+concept_flagella<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Жгутик] (*<-lang_ru;;*);
+[Flagella] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Жгутик)](*<-lang_ru;;*);
+[Def.(Flagella)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_prokaryote;
+concept_eukaryota;
+concept_bacteria;
+concept_archaea;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Жгутик - поверхностная структура, присутствующая у многих прокариотических (бактерий и архей) и эукариотических клеток и служащая для их движения в жидкой среде или по поверхности твёрдых сред.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Flagella - surface structure present in many prokaryotic (bacteria and archaea) and eukaryotic cells and serving for their movement in a liquid medium or on the surface of solid media.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Жгутик)](*<-lang_ru;;*);
+[Stat.(Flagella)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_membrane;
+concept_axoneme
+};;
+<=nrel_sc_text_translation:...(*
+->[Жгутик эукариот представляет собой тонкий вырост на поверхности клетки, покрытый клеточной мембраной и содержащий аксонему.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Eukaryotic flagella is a thin outgrowth on the cell surface, covered with a cell membrane and containing an axoneme.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

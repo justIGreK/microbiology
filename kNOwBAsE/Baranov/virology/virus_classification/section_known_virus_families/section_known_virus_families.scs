@@ -1,0 +1,32 @@
+
+section_of_known_virus_families<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные семейства вирусов] (*<-lang_ru;;*);
+[Section. Known virus families] (*<-lang_en;;*);;
+
+
+section_of_known_virus_families-> rrel_key_sc_element:
+concept_Alphasatellitidae_family;
+concept_Ampullaviridae_family;
+concept_Anelloviridae_family;
+concept_Avsunviroidae_family;
+concept_Baculoviridae_family;
+concept_Bicaudaviridae_family;
+concept_Clavaviridae_family;
+concept_Finnlakeviridae_family;
+concept_Fuselloviridae_family;
+concept_Globuloviridae_family;
+concept_Guttaviridae_family;
+concept_Halspiviridae_family;
+concept_Hytrosaviridae_family;
+concept_Nimaviridae_family;
+concept_Nudiviridae_family;
+concept_Ovaliviridae_family;
+concept_Plasmaviridae_family;
+concept_Polydnaviridae_family;
+concept_Portogloboviridae_family;
+concept_Pospiviroidae_family;
+concept_Spiraviridae_family;
+concept_Thaspiviridae_family;
+concept_Tolecusatellitidae_family;
+concept_Tristromaviridae_family;;

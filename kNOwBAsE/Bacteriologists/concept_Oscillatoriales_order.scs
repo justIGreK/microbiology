@@ -1,0 +1,51 @@
+concept_Oscillatoriales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Oscillatoriales] (*<-lang_ru;;*);
+[Oscillatoriales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Oscillatoriales)](*<-lang_ru;;*);
+[Def.(Oscillatoriales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Oscillatoriales)](*<-lang_ru;;*);
+[Stat.(Oscillatoriales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Borziaceae_family;
+concept_Coleofasciculaceae_family;
+concept_Cyanothecaceae_family;
+concept_Gomontiellaceae_family;
+concept_Homoeotrichaceae_family;
+concept_Microcoleaceae_family;
+concept_Oscillatoriaceae_family
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Oscillatoriales_order<-concept_bacteria_order;;
+concept_Oscillatoriales_order<=nrel_inclusion:{
+concept_Borziaceae_family;
+concept_Coleofasciculaceae_family;
+concept_Cyanothecaceae_family;
+concept_Gomontiellaceae_family;
+concept_Homoeotrichaceae_family;
+concept_Microcoleaceae_family;
+concept_Oscillatoriaceae_family
+};;

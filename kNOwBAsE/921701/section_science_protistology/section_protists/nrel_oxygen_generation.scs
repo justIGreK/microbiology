@@ -1,0 +1,15 @@
+nrel_oxygen_generation<-sc_node_norole_relation;;
+
+nrel_oxygen_generation=> nrel_main_idtf:[Выработка кислорода*](* <- lang_ru;; *);;
+nrel_oxygen_generation=> nrel_main_idtf:[Oxygen generation*](* <- lang_en;; *);;
+
+
+nrel_oxygen_generation => nrel_first_domain: 
+concept_protist;;
+nrel_oxygen_generation => nrel_second_domain: number;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_oxygen_generation;;

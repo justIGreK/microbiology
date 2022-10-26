@@ -1,0 +1,51 @@
+concept_Riboviria_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм Riboviria] (*<-lang_ru;;*);
+[Riboviria realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм Riboviria)](*<-lang_ru;;*);
+[Def.(Riboviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_realm
+};;
+<=nrel_sc_text_translation:...(*
+->[Riboviria - реалм РНК-содержащих вирусов, которые реплицируются с помощью РНК-зависимых РНК-полимераз и всех вирусов, кодирующих собственную РНК-зависимую ДНК-полимеразу.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Riboviria is a realm of viruses that includes all viruses that use a homologous RNA-dependent polymerase for replication. 
+It includes RNA viruses that encode an RNA-dependent RNA polymerase. It also includes reverse-transcribing viruses (with either RNA or DNA genomes) that encode an RNA-dependent DNA polymerase.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм Riboviria)](*<-lang_ru;;*);
+[Stat.(Riboviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Pararnavirae_kingdom;
+concept_Orthornavirae_kingdom;
+concept_Polymycoviridae_family;
+concept_Sarthroviridae_family;
+concept_Albetovirus_genera;
+concept_Aumaivirus_genera;
+concept_Papanivirus_genera;
+concept_Virtovirus_genera;
+incertae_sedis
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот реалм включает в себя всего два царства: Orthornavirae и Pararnavirae. Также данный реалм содержит 2 семейства и 4 рода incertae sedis.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Riboviria contains two kingdoms: Orthornavirae and Pararnavirae. Additionally, Riboviria contains two incertae sedis families and four incertae sedis genera.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Riboviria_realm<-concept_virus_realm;;
+concept_Riboviria_realm<=nrel_inclusion:
+concept_Pararnavirae_kingdom;
+concept_Orthornavirae_kingdom;
+concept_Polymycoviridae_family;
+concept_Sarthroviridae_family;
+concept_Albetovirus_genera;
+concept_Aumaivirus_genera;
+concept_Papanivirus_genera;
+concept_Virtovirus_genera;;

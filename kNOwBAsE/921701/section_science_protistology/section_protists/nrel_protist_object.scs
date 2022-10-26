@@ -1,0 +1,18 @@
+nrel_protist_object<-sc_node_norole_relation;;
+
+nrel_protist_object=> nrel_main_idtf:[Объект протист*](* <- lang_ru;; *);;
+nrel_protist_object=> nrel_main_idtf:[Protist object*](* <- lang_en;; *);;
+
+
+nrel_protist_object => nrel_first_domain: concept_protist;;
+nrel_protist_object => nrel_second_domain:
+concept_human;
+concept_animal;
+concept_plant;
+concept_organism;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_efficiency;;

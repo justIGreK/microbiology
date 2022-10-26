@@ -1,0 +1,13 @@
+sc_node_struct -> subject_domain_of_spherical_bacteria;;
+subject_domain_of_spherical_bacteria <- subject_domain;;
+subject_domain_of_spherical_bacteria => nrel_main_idtf:
+	[Предметная область Спиральных Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of Spherical Bacteria] (* <- lang_en;; *);;
+
+subject_domain_of_spherical_bacteria -> rrel_maximum_studied_object_class: concept_spherical_bacteria;;
+
+subject_domain_of_spherical_bacteria => nrel_particular_subject_domain:
+	subject_domain_of_campylobacter_bacteria;
+	subject_domain_of_helibacter_bacteria;
+    subject_domain_of_crable_bacteria;;
+	

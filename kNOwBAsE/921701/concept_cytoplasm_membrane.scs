@@ -1,0 +1,33 @@
+concept_cytoplasm_membrane<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Цитоплазматическая мембрана] (*<-lang_ru;;*);
+[Cytoplasm membrane] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Цитоплазматическая мембрана)](*<-lang_ru;;*);
+[Def.(Cytoplasm membrane)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Цитоплазматическая мембрана - обязательная структура любой клетки, расположена под клеточной стенкой бактерии и отделяющая содержимое клетки от клеточной стенки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cytoplasm membrane - mandatory structure of any cell, located under the cell wall of the bacterium and separating the contents of the cell from the cell wall.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Цитоплазматическая мембрана)](*<-lang_ru;;*);
+[Stat.(Cytoplasm membrane)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Толщина цитоплазматической мембраны бактериальной клетки обычно составляет около 6–8 нм.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The thickness of the cytoplasmic membrane of a bacterial cell is usually about 6-8 nm.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

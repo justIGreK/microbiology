@@ -1,0 +1,34 @@
+concept_klebsiellapneumoniae_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[klebsiellapneumoniae бактерия] (*<-lang_ru;;*);
+[klebsiellapneumoniae Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(klebsiellapneumoniae бактерия)](*<-lang_ru;;*);
+[Def.(klebsiellapneumoniae bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[ вид мелких грамотрицательных палочковидных бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[a species of small gram-negative rod-shaped bacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(klebsiellapneumoniae бактерия)](*<-lang_ru;;*);
+[Stat.(klebsiellapneumoniae bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Является возбудителем бактериальной дизентерии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[It is the causative agent of bacterial dysentery.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_klebsiellapneumoniae_bacteria<=nrel_inclusion:concept_microorganism;;   

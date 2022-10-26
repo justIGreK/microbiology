@@ -1,0 +1,54 @@
+
+section_subject_domain_of_bacteria<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Предметная область вирусов] (*<-lang_ru;;*);
+[Section. Subject domain of bacteria] (*<-lang_en;;*);;
+
+section_subject_domain_of_bacteria<= nrel_section_decomposition:{
+section_of_bacteria_morphologic_classification 
+};;
+
+section_subject_domain_of_bacteria-> rrel_key_sc_element:
+concept_bacteria;
+concept_rod_bacteria;
+concept_sphere_bacteria;
+concept_spiral_bacteria;
+nrel_complementation_of_bacteria;
+nrel_host_enviroment;
+subject_domain_of_bacteria;;
+
+section_subject_domain_of_bacteria= [*
+subject_domain_of_bacteria<-sc_node_struct;;
+
+subject_domain_of_bacteria<-subject_domain;
+=>nrel_main_idtf:
+[Предметная область бактерий] (*<-lang_ru;;*);
+[Subject domain of bacterias] (*<-lang_en;;*);;
+
+concept_bacteria<-sc_node_not_relation;;
+concept_rod_bacteria<-sc_node_not_relation;;
+concept_sphere_bacteria<-sc_node_not_relation;;
+concept_spiral_bacteria<-sc_node_not_relation;;
+
+nrel_complementation_of_bacterias<-sc_node_norole_relation;;
+nrel_bacteria_host<-sc_node_norole_relation;;
+
+subject_domain_of_bacteria->rrel_maximum_studied_object_class:concept_bacteria;;
+
+subject_domain_of_bacteria->rrel_not_maximum_studied_object_class:
+concept_rod_bacteria;
+concept_sphere_bacteria;
+concept_spiral_bacteria;;
+
+
+subject_domain_of_bacteria->rrel_explored_relation:
+nrel_complementation_of_bacterias;
+nrel_bacteria_host;;
+
+concept_bacteria=>nrel_inclusion:
+concept_rod_bacteria;
+concept_sphere_bacteria;
+concept_spiral_bacteria;;
+
+*];;
+

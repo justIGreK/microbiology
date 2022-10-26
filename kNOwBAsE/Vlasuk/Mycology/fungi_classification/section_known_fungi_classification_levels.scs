@@ -1,0 +1,16 @@
+
+section_of_known_fungi_taxonomy<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные уровни таксономии грибов] (*<-lang_ru;;*);
+[Section. Known fungi taxonomy levels] (*<-lang_en;;*);;
+
+section_of_known_fungi_taxonomy<= nrel_section_decomposition:{
+section_of_known_fungi_domain;
+section_of_known_fungi_kingdoms;
+section_of_known_fungi_genera;
+section_of_known_fungi_phyla;
+section_of_known_fungi_families;
+section_of_known_fungi_orders;
+section_of_known_fungi_species;
+section_of_known_fungi_classes
+};;

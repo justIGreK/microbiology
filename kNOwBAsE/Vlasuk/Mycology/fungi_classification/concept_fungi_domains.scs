@@ -1,0 +1,32 @@
+concept_fungi_domain<-sc_node_not_relation;
+=>nrel_main_idtf:
+[домен грибов] (*<-lang_ru;;*);
+[fungi domain] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(домен грибов)](*<-lang_ru;;*);
+[Def.(fungi domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[домен грибов - высший уровень классификации грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi domain is the highest level of fungi classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(домен грибов)](*<-lang_ru;;*);
+[Stat.(fungi domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[домены делятся на царства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[domains are divided into kingdoms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

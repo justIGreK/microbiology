@@ -1,0 +1,35 @@
+concept_plant_like_protist<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Растениеподобный протист] (*<-lang_ru;;*);
+[Plant-like protist] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Растениеподобный протист)](*<-lang_ru;;*);
+[Def.(Plant-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist;
+concept_chlorophyll;
+concept_photosynthesis
+};;
+<=nrel_sc_text_translation:...(*
+->[Растениеподобные протисты - это протисты, которые содержат хлорофил и создают пищу при помощи фотосинтеза.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Plant-like protists are protists that contain chlorophyll and make food by photosynthesis.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Растениеподобный протист)](*<-lang_ru;;*);
+[Stat.(Plant-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_single_celled_organisms;
+concept_multicellular_organisms;
+concept_seaweed
+};;
+<=nrel_sc_text_translation:...(*
+->[Они включают в себя одноклеточные диатомовые водоросли и многоклеточные водоросли.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[They include single-celled diatoms and multicellular seaweed.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

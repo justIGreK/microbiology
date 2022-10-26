@@ -1,0 +1,15 @@
+nrel_ill<-sc_node_norole_relation;;
+
+nrel_ill=> nrel_main_idtf:[Число заболевших*](* <- lang_ru;; *);;
+nrel_ill=> nrel_main_idtf:[Ill*](* <- lang_en;; *);;
+
+
+nrel_ill => nrel_first_domain: 
+concept_disease;;
+nrel_ill => nrel_second_domain: number;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_ill;;

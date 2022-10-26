@@ -1,0 +1,32 @@
+concept_euglena<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Эвглена] (*<-lang_ru;;*);
+[Euglena] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Эвглена)](*<-lang_ru;;*);
+[Def.(Euglena)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_single_celled_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Эвглена —  род одноклеточных организмов из класса эвгленид.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Euglena — genus of single celled organisms from the euglenid class.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Эвглена)](*<-lang_ru;;*);
+[Stat.(Euglena)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_heterotrophic;
+concept_autotrophic
+};;
+<=nrel_sc_text_translation:...(*
+->[Эвглена способна питаться как гетеротрофно, так и автотрофно.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Euglena is able to eat both heterotrophic and autotrophic.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

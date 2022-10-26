@@ -1,0 +1,31 @@
+incertae_sedis<-sc_node_not_relation;
+=>nrel_main_idtf:
+[incertae sedis] (*<-lang_ru;;*);
+[incertae sedis] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(incertae sedis)](*<-lang_ru;;*);
+[Def.(incertae sedis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+incertae_sedis
+};;
+<=nrel_sc_text_translation:...(*
+->[incertae sedis — латинское выражение, указывающее на то, что положение таксона в системе неясно.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[incertae sedis is a term used for a taxonomic group where its broader relationships are unknown or undefined.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(incertae sedis)](*<-lang_ru;;*);
+[Stat.(incertae sedis)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+incertae_sedis
+};;
+<=nrel_sc_text_translation:...(*
+->[Таксон может рассматриваться как группа неясного систематического положения из-за недостаточности информации, из-за отсутствия консенсуса между специалистами или по другим причинам.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Reasons for using it include poor description, controversy, etc.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,251 @@
+agent_proc_prot_search_operation2
+=>nrel_main_idtf: 
+ [агентная scp-программа поиска] (* <- lang_ru;; *); 
+ [agent scp-program of search] (* <- lang_en;; *); 
+<- agent_scp_program;; 
+// Указываем, что программа является агентной scp-программой 
+scp_program ->agent_proc_prot_search_operation2  (* 
+ // Множество параметров агентной программы 
+ ->rrel_params: .agent_proc_prot_search_operation2_params (* 
+  -> rrel_1: rrel_in: _event;; 
+  -> rrel_2: rrel_in: _input_arc;; 
+ *);; 
+ // Множество операторов агентной программы 
+ ->rrel_operators: .agent_proc_prot_search_operation2_operator_set (* 
+  // Первый исполняемый оператор программы 
+  ->rrel_init: .agent_proc_prot_search_operation2_operator1 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_assign: rrel_scp_var: _temp;; 
+    -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _quest;; 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator2;; 
+  *);; 
+  //  В rrel_1 устанавливаем имя придуманного нами  класса вопросов 
+// Агент будет просыпаться, только когда обнаружит наш вопрос. 
+  -> .agent_proc_prot_search_operation2_operator2 (* 
+  <- searchElStr3;; 
+    ->rrel_1: rrel_fixed: rrel_scp_const: question_prot_search_operation2;;  
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _quest;; 
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator3;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator_return;; 
+  *);; 
+  // Найдём параметр запроса – его подал на вход сам пользователь 
+  -> .agent_proc_prot_search_operation2_operator3 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _param;; 
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator3a;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator_return;; 
+  *);; 
+
+  // является ли входной параметр водорослью
+  -> .agent_proc_prot_search_operation2_operator3a (* 
+
+  <- searchElStr3;; 
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_algae;;
+	-> rrel_2: rrel_assign:rrel_pos_const_perm : rrel_scp_var: _arc_check2;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator3b;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator_not_algae;; 
+  *);; 
+
+// определение аттрибутов входной водосли и вычисление эталонного значения эффективности
+  -> .agent_proc_prot_search_operation2_operator3b (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _param ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com_etal ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _size_etal ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_etal;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_size ;;
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator3c;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator_return;; 
+  *);; 
+ 
+  -> .agent_proc_prot_search_operation2_operator3c (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _param ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com_etal2 ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _oxygen_generation_etal ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_etal2;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_oxygen_generation;;
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator3d;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator_return;; 
+  *);; 
+
+  -> .agent_proc_prot_search_operation2_operator3d (* 
+		<- contDiv ;;
+
+		-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _div_res_etal;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _size_etal ;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _oxygen_generation_etal ;;
+ 
+		=> nrel_goto: .agent_proc_prot_search_operation2_operator4 ;;
+
+  *);; 
+
+  // Сгенерировать узел, в который мы поместим конструкцию ответа 
+-> .agent_proc_prot_search_operation2_operator4 (* 
+  <- genEl;; 
+    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;; 
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator5;; 
+  *);; 
+
+  // поместим все водоросли в отдельное множество
+-> .agent_proc_prot_search_operation2_operator5 (*
+ 
+	<- searchSetStr3 ;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_algae;;
+	-> rrel_2: rrel_assign:rrel_pos_const_perm : rrel_scp_var: _arc666;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _some_algae_tmp;;
+
+	-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_algae;;
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator6;; 
+  *);; 
+
+// выбираем одну водоросль
+-> .agent_proc_prot_search_operation2_operator6
+(*
+	<- searchElStr3;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set_of_algae;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm : rrel_scp_var: _arc_cycle_delete;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_algae_cycle;;
+
+	=> nrel_then : .agent_proc_prot_search_operation2_operator7;;
+// если водорослей нету (не были найдены вообще или все найденные отработаны), переход к генерации ответа
+	=> nrel_else: .agent_proc_prot_search_operation2_operator_gen_answer ;;
+*);;
+
+// убираем его из мн-ва найденных заболеваний (как просмотренное)
+-> .agent_proc_prot_search_operation2_operator7
+(*
+	<- eraseEl;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc_cycle_delete;;
+
+	=>nrel_goto: .agent_proc_prot_search_operation2_operator8;; 
+*);;
+
+// определение аттрибутов для отрабатываемой водоросли и вычисление значения ее эффективности для сравнения
+  -> .agent_proc_prot_search_operation2_operator8 (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _some_algae_cycle ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com_comp ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _size_comp ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_comp;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_size ;;
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator9;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator6;; 
+  *);; 
+ 
+  -> .agent_proc_prot_search_operation2_operator9 (* 
+	<- searchElStr5 ;;
+
+			-> rrel_1 : rrel_fixed : rrel_scp_var : rrel_node: _some_algae_cycle ;;
+			-> rrel_2 : rrel_assign: rrel_scp_var: rrel_common : _com_comp2 ;;
+			-> rrel_3 : rrel_assign: rrel_scp_var: rrel_link: _oxygen_generation_comp ;;
+			-> rrel_4 : rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_comp2;;
+			-> rrel_5 : rrel_fixed: rrel_scp_const: nrel_oxygen_generation ;;
+ 
+    =>nrel_then: .agent_proc_prot_search_operation2_operator10;; 
+    =>nrel_else: .agent_proc_prot_search_operation2_operator6;; 
+  *);; 
+
+  -> .agent_proc_prot_search_operation2_operator10 (* 
+		<- contDiv ;;
+
+		-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _div_res_comp;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _size_comp ;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _oxygen_generation_comp ;;
+ 
+		=> nrel_goto: .agent_proc_prot_search_operation2_operator11 ;;
+
+  *);; 
+
+
+// сравнение с эталонным значением эффективности
+  -> .agent_proc_prot_search_operation2_operator11 (* 
+		<- ifGr ;;
+
+		-> rrel_1: rrel_scp_var: _div_res_comp ;;
+		-> rrel_2: rrel_scp_var: _div_res_etal ;;
+ 
+// если больше, переходим к следующему этапу
+    =>nrel_then: .agent_proc_prot_search_operation2_operator12;; 
+// если нет, возврат в начало цикла (выбор нового заболевания из множества)
+    =>nrel_else: .agent_proc_prot_search_operation2_operator6;; 
+
+  *);; 
+
+  -> .agent_proc_prot_search_operation2_operator12 (*
+
+  <- genElStr3;; 
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;; 
+    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+    	-> rrel_3: rrel_fixed: rrel_scp_var: _some_algae_cycle;; 
+
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator13;; 
+  *);; 
+
+  -> .agent_proc_prot_search_operation2_operator13 (* 
+
+    // связывание входной водоросли с отработанной водорослью из цикла отношением Более эффективное*
+
+  <- genElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _some_algae_cycle;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_lessEfficient;; 
+    // успешное завершение этапа цикла и возврат в начало
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator6;; 
+  *);; 
+
+ 
+  // Связываем ответ и вопрос отношением ответ* 
+  -> .agent_proc_prot_search_operation2_operator_gen_answer (* 
+  <- genElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _answer;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;; 
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator_gen_answer2;; 
+  *);; 
+ 
+  // сообщение об успешном завершении работы в терминал
+  -> .agent_proc_prot_search_operation2_operator_gen_answer2 (* 
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Job is done];; 
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator_return;; 
+  *);; 
+ // сообщение об ошибке (входной параметр не является водорослью)
+  -> .agent_proc_prot_search_operation2_operator_not_algae (* 
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Not algae];; 
+ 
+    =>nrel_goto: .agent_proc_prot_search_operation2_operator_return;; 
+  *);;
+  // Оператор завершения агентной программы   
+  -> .agent_proc_prot_search_operation2_operator_return (* 
+  <- return;; 
+  *);; 
+ *);; 
+*);;

@@ -1,0 +1,13 @@
+section_biology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Биология] (*<-lang_ru;;*);
+[Section. Biology] (*<-lang_en;;*);;
+
+section_biology<= nrel_section_decomposition:{
+section_microbiology;
+section_biological_latin_terminology;
+section_various_biological_concepts
+};;
+
+section_biology-> rrel_key_sc_element:
+biology;;

@@ -1,0 +1,32 @@
+concept_fungi_species<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Вид грибов] (*<-lang_ru;;*);
+[fungi species] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Вид грибов)](*<-lang_ru;;*);
+[Def.(fungi species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид грибов - один из уровней таксонимии грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi species is one of the levels of fungi taxonomy.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Вид грибов)](*<-lang_ru;;*);
+[Stat.(fungi species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_species
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид - низший уровень таксонимии грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Species is the lowest level of fungi taxonomy.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

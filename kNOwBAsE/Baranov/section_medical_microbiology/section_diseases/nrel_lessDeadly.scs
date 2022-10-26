@@ -1,0 +1,11 @@
+nrel_lessDeadly<-sc_node_norole_relation;;
+
+nrel_lessDeadly=> nrel_main_idtf:[Менее смертельное заболевание*](* <- lang_ru;; *);;
+nrel_lessDeadly=> nrel_main_idtf:[Less deadly disease*](* <- lang_en;; *);;
+
+
+nrel_lessDeadly => nrel_first_domain: 
+concept_disease;;
+nrel_lessDeadly => nrel_second_domain: concept_disease;;
+
+arity_2->nrel_lessDeadly;;

@@ -1,0 +1,32 @@
+concept_virus_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм вирусов] (*<-lang_ru;;*);
+[Virus realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм вирусов)](*<-lang_ru;;*);
+[Def.(Virus realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus
+};;
+<=nrel_sc_text_translation:...(*
+->[Реалм вирусов - высший уровень классификации вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Virus realm is the highest level of virus classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм вирусов)](*<-lang_ru;;*);
+[Stat.(Virus realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Реалмы делятся на царства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Realms are divided into kingdoms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

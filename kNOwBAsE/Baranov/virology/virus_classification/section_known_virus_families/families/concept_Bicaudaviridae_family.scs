@@ -1,0 +1,37 @@
+concept_Bicaudaviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Bicaudaviridae] (*<-lang_ru;;*);
+[Bicaudaviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Bicaudaviridae)](*<-lang_ru;;*);
+[Def.(Bicaudaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Bicaudaviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bicaudaviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Bicaudaviridae)](*<-lang_ru;;*);
+[Stat.(Bicaudaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Bicaudavirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя род Bicaudavirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bicaudaviridae family contains Bicaudavirus genus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Bicaudaviridae_family<-concept_virus_family;;
+concept_Bicaudaviridae_family<=nrel_inclusion:
+concept_Bicaudavirus_genus;;
+
+concept_Bicaudaviridae_family<-incertae_sedis;;

@@ -1,0 +1,34 @@
+concept_Streptococcusfaecium_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Streptococcusfaecium бактерия] (*<-lang_ru;;*);
+[Streptococcusfaecium Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Streptococcusfaecium бактерия)](*<-lang_ru;;*);
+[Def.(Streptococcusfaecium bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид  бактерий,из рода kokki, который является патогеном для организма человека.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A species of bacteria, from the genus kokki, which is a pathogen for the human body.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Streptococcusfaecium бактерия)](*<-lang_ru;;*);
+[Stat.(Streptococcusfaecium bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Споры Streptococcusfaecium мы вдыхаем ежедневно, но аспергиллез, как правило, развивается у людей с ослабленным иммунитетом.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[We inhale Streptococcusfaecium spores every day, but aspergillosis usually develops in people with weakened immune systems.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Streptococcusfaecium_bacteria<=nrel_inclusion:concept_microorganism;; 

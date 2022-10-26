@@ -1,0 +1,11 @@
+microbiology_knowledge_base
+=> nrel_main_idtf:
+	[База знаний ИСС по микробиологии]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Microbiology knowledge base]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:section_microbiology;;

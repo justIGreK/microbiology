@@ -1,0 +1,36 @@
+concept_alveolata<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Альвеолята] (*<-lang_ru;;*);
+[Alveolata] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Альвеолята)](*<-lang_ru;;*);
+[Def.(Alveolata)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_dinoflagellate;
+concept_protist;
+concept_sporozoa;
+concept_ciliate
+};;
+<=nrel_sc_text_translation:...(*
+->[Альвеолята — надтип протистов, объединяющий ряд таксономических групп, в том числе инфузорий, споровиков и динофлагеллят.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Alveolata — protist supertype, uniting a number of taxonomic groups, including ciliates, sporozoans, and dinoflagellates.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Альвеолята)](*<-lang_ru;;*);
+[Stat.(Alveolata)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cilia;
+concept_flagella;
+concept_mitochondria
+};;
+<=nrel_sc_text_translation:...(*
+->[Альвеоляты имеют митохондрии с трубчатыми кристами, а их жгутики или реснички имеют четкую структуру.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Alveolates have mitochondria with tubular cristae, and their flagella or cilia have a distinct structure.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

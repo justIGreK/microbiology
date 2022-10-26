@@ -1,0 +1,51 @@
+concept_Archaebacteria_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Королевство Archaebacteria] (*<-lang_ru;;*);
+[Archaebacteria Kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Королевство Archaebacteria)](*<-lang_ru;;*);
+[Def.(Archaebacteria Kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Archaebacteria Архебактерии описаны как облигатные анаэробы; то есть они могут жить только в местах без кислорода. Их бескислородная среда и наблюдения, что среда обитания архебактерий часто может быть суровой (настолько суровой, что бактерии и эукариотические организмы, такие как люди, не могут выжить).](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Archaebacteria are described as being obligate anaerobes;
+ that is, they can only live in areas without oxygen. 
+Their oxygen-free environments, and the observations that habitats of Archaebacteria
+ can frequently be harsh (so harsh that bacteria and eukaryotic organisms such as
+ humans cannot survive).](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Королевство Archaebacteria)](*<-lang_ru;;*);
+[Stat.(Archaebacteria Kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Euryarchaeota_phylum;
+concept_Crenarchaeota_phylum;
+concept_Korarchaeota_phylum;
+concept_Aigarchaeota_phylum;
+concept_Thaumarchaeota_phylum;
+concept_DPANN_phylum
+
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот Королевство делится на 4 phylum:Euryarchaeota, Crenarchaeota, Korarchaeota и anoarchebacteria .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This Kingdom is divided into 4 phylums: Euryarchaeota, Crenarchaeota, Korarchaeota and anoarchebacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Archaebacteria_kingdom<-concept_bacteria_kingdom;;
+concept_Archaebacteria_kingdom<=nrel_inclusion:{
+concept_Euryarchaeota_phylum;
+concept_Crenarchaeota_phylum;
+concept_Korarchaeota_phylum;
+concept_Aigarchaeota_phylum;
+concept_Thaumarchaeota_phylum;
+concept_DPANN_phylum
+};;

@@ -1,0 +1,44 @@
+concept_Gloeobacterales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Gloeobacterales] (*<-lang_ru;;*);
+[Gloeobacterales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Gloeobacterales)](*<-lang_ru;;*);
+[Def.(Gloeobacterales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Gloeobacter - это род цианобактерий. Это родственная группа всем остальным цианобактериям. Gloeobacter уникален среди цианобактерий тем, что не имеет тилакоидов, характерных для всех других цианобактерий и хлоропластов. Вместо этого светособирающие комплексы (также называемые фикобилисомами), которые состоят из разных белков, располагаются внутри плазматической мембраны среди (цитоплазмы). Впоследствии протонный градиент в Gloeobacter создается над плазматической мембраной, где он формируется над тилакоидной мембраной у цианобактерий и хлоропластов.
+
+Секвенирован весь геном G. violaceus (штамм PCC 7421) и G. kilaueensis. Многие гены фотосистем I и II были обнаружены отсутствующими, что, вероятно, связано с тем, что фотосинтез у этих бактерий происходит не в тилакоидной мембране, как у других цианобактерий, а в плазматической мембране.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Gloeobacter is a genus of cyanobacteria. It is the sister group to all other cyanobacteria. Gloeobacter is unique among cyanobacteria in not having thylakoids, which are characteristic for all other cyanobacteria and chloroplasts. Instead, the light-harvesting complexes (also called phycobilisomes), that consist of different proteins, sit on the inside of the plasma membrane among the (cytoplasm). Subsequently, the proton gradient in Gloeobacter is created over the plasma membrane, where it forms over the thylakoid membrane in cyanobacteria and chloroplasts.
+
+The whole genome of G. violaceus (strain PCC 7421) and of G. kilaueensis have been sequenced. Many genes for photosystem I and II were found missing, likely related to the fact that photosynthesis in these bacteria does not take place in the thylakoid membrane as in other cyanobacteria, but in the plasma membrane.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Gloeobacterales)](*<-lang_ru;;*);
+[Stat.(Gloeobacterales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Gloeobacteraceae_family
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Gloeobacterales_order<-concept_bacteria_order;;
+concept_Gloeobacterales_order<=nrel_inclusion:{
+concept_Gloeobacteraceae_family
+
+};;

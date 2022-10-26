@@ -1,0 +1,19 @@
+
+section_of_protists<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Протисты] (*<-lang_ru;;*);
+[Section. Protists] (*<-lang_en;;*);;
+
+
+section_of_protists<= nrel_section_decomposition:{
+section_of_known_protists
+};;
+
+section_of_diseases-> rrel_key_sc_element:
+nrel_size;
+nrel_protist_object;
+nrel_oxygen_generation;
+nrel_efficiency;
+nrel_lessEfficient;
+nrel_moreEfficient;
+concept_algae;;

@@ -1,0 +1,8 @@
+
+section_of_known_virus_species<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные виды вирусов] (*<-lang_ru;;*);
+[Section. Known virus species] (*<-lang_en;;*);;
+
+section_of_known_virus_species-> rrel_key_sc_element:
+test_virus_species_1;;

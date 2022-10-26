@@ -1,0 +1,32 @@
+concept_multi_celled_organism<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Многоклеточный организм] (*<-lang_ru;;*);
+[Multi-celled organism] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Многоклеточный организм)](*<-lang_ru;;*);
+[Def.(Multi-celled organism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_body
+};;
+<=nrel_sc_text_translation:...(*
+->[Многокле́точный органи́зм — внесистематическая категория живых организмов, тело которых состоит из многих клеток, большая часть которых дифференцирована, тоесть они различаются по строению и выполняемым функциям.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A multi-celled organism is a non-systematic category of living organisms, the body of which consists of many cells, most of which are differentiated, that is, they differ in structure and functions.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Многоклеточный организм)](*<-lang_ru;;*);
+[Stat.(Multi-celled organism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_coloniality
+};;
+<=nrel_sc_text_translation:...(*
+->[Ученые считают многоклеточность более развитой формой колониальности.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Scientists consider multicellularity to be a more developed form of coloniality.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

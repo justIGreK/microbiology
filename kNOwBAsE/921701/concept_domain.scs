@@ -1,0 +1,32 @@
+concept_domain<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Домен] (*<-lang_ru;;*);
+[Domain] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Домен)](*<-lang_ru;;*);
+[Def.(Domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_kingdome;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Домен — самый верхний уровень (ранг) группировки организмов в системе, включающий в себя одно или несколько царств.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Domain — the highest level (rank) of the grouping of organisms in the system, which includes one or more kingdoms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Домен)](*<-lang_ru;;*);
+[Stat.(Domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_term
+};;
+<=nrel_sc_text_translation:...(*
+->[Термин был предложен в 1990 г. Карлом Вёзе.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The term was coined in 1990 by Karl Woese.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,34 @@
+concept_spiral_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Спиральная бактерия] (*<-lang_ru;;*);
+[Spiral Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Спиральная бактерия)](*<-lang_ru;;*);
+[Def.(Spiral bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактерии,которые делятся на Вибрионы и спириллы.Изогнутость тел вибрионов не превышает одной четверти оборота спирали. Спириллы образуют изгибы из одного или нескольких оборотов](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteria that divide into Vibrions and spirilli.The curvature of the bodies of vibrions does not exceed one quarter of the turn of the spiral. Spirillae form bends of one or more turns](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Спиральная бактерия)](*<-lang_ru;;*);
+[Stat.(Spiral bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Некоторые бактерии обладают подвижностью, что отчетливо видно при наблюдении методом висячей капли  или другими методами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Some bacteria have mobility, which is clearly visible when observed by the hanging drop method (see) or other methods.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_spiral_bacteria<=nrel_inclusion:concept_microorganism;;

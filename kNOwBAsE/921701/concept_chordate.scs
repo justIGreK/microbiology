@@ -1,0 +1,36 @@
+concept_chordate<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Хордовые] (*<-lang_ru;;*);
+[Chordate] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Хордовые)](*<-lang_ru;;*);
+[Def.(Chordate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_animal;
+concept_entoderma;
+concept_skeleton;
+concept_chord;
+concept_spine
+};;
+<=nrel_sc_text_translation:...(*
+->[Хордовые - тип вторичных животных, для которых характерно наличие энтодермального осевого скелета в виде хорды, которая у высших форм заменяется позвоночником.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chordate are type of deuterostome animals, which are characterized by the presence of an entodermal axial skeleton in the form of a chord, which in higher forms is replaced by a spine.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Хордовые)](*<-lang_ru;;*);
+[Stat.(Chordate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_nervous_system;
+concept_animal
+};;
+<=nrel_sc_text_translation:...(*
+->[По степени развития нервной системы тип хордовых занимает высшее место среди всех животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[In terms of the degree of development of the nervous system, chordate type occupies the highest place among all animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

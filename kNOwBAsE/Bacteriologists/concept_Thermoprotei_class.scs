@@ -1,0 +1,48 @@
+concept_Thermoprotei_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[class Thermoprotei] (*<-lang_ru;;*);
+[Thermoprotei class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(class Thermoprotei)](*<-lang_ru;;*);
+[Def.(Thermoprotei class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_class
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(class Thermoprotei)](*<-lang_ru;;*);
+[Stat.(Thermoprotei class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Acidilobales_order;
+concept_Desulfurococcales_order;
+concept_Fervidicoccales_order;
+concept_Sulfolobales_order;
+concept_Thermoproteales_order
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Thermoprotei_class<-concept_bacteria_class;;
+concept_Thermoprotei_class<=nrel_inclusion:{
+concept_Acidilobales_order;
+concept_Desulfurococcales_order;
+concept_Fervidicoccales_order;
+concept_Sulfolobales_order;
+concept_Thermoproteales_order
+
+};;

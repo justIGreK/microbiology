@@ -1,0 +1,35 @@
+concept_Pararnavirae_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство Pararnavirae] (*<-lang_ru;;*);
+[Pararnavirae kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство Pararnavirae)](*<-lang_ru;;*);
+[Def.(Pararnavirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Pararnavirae - царство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Pararnavirae is a kingdom of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство Pararnavirae)](*<-lang_ru;;*);
+[Stat.(Pararnavirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Artverviricota_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Это царство включает в себя тип Artverviricota](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This kingdom includes Artverviricota phylum](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Pararnavirae_kingdom<-concept_virus_kingdom;;
+concept_Pararnavirae_kingdom<=nrel_inclusion:
+concept_Artverviricota_phylum;;

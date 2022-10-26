@@ -1,0 +1,32 @@
+concept_bacteria_domain<-sc_node_not_relation;
+=>nrel_main_idtf:
+[домэйн бактерий] (*<-lang_ru;;*);
+[bacteria domain] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(домэйн бактерий)](*<-lang_ru;;*);
+[Def.(bacteria domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[домэйн бактерий - высший уровень классификации бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[bacteria domain is the highest level of bacteria classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(домэйн бактерий)](*<-lang_ru;;*);
+[Stat.(bacteria domain)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[домэйны делятся на царства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[domains are divided into kingdoms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

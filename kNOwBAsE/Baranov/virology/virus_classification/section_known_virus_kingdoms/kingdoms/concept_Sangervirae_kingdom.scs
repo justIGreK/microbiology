@@ -1,0 +1,35 @@
+concept_Sangervirae_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство Sangervirae] (*<-lang_ru;;*);
+[Sangervirae kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство Sangervirae)](*<-lang_ru;;*);
+[Def.(Sangervirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Sangervirae - царство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Sangervirae is a kingdom of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство Sangervirae)](*<-lang_ru;;*);
+[Stat.(Sangervirae kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Phixviricota_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Это царство включает в себя тип Phixviricota](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This kingdom includes Phixviricota phylum](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Sangervirae_kingdom<-concept_virus_kingdom;;
+concept_Sangervirae_kingdom<=nrel_inclusion:
+concept_Phixviricota_phylum;;

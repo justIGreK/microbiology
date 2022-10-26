@@ -1,0 +1,41 @@
+concept_Chroococcidiopsidales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Chroococcidiopsidales] (*<-lang_ru;;*);
+[Chroococcidiopsidales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Chroococcidiopsidales)](*<-lang_ru;;*);
+[Def.(Chroococcidiopsidales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[
+Chroococcidiopsis - это фотосинтезирующие коккоидные бактерии, и хотя в пределах этого рода существует множество видов и культур с разнообразием фенотипов, некоторые члены отряда Chroococidiopsidales известны своей способностью выживать в суровых условиях окружающей среды, включая как высокие, так и низкие температуры, ионизирующее излучение и высокая соленость. Организмы, способные жить в таких суровых условиях, называют экстремофилами. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Chroococcidiopsis is a photosynthetic, coccoidal bacterium and while a diversity of species and cultures exist within the genus, with a diversity of phenotypes, some members of the order Chroococidiopsidales are known for their ability to survive harsh environmental conditions, including both high and low temperatures, ionizing radiation, and high salinity. Organisms capable of living in such harsh conditions are referred to as extremophiles.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Chroococcidiopsidales)](*<-lang_ru;;*);
+[Stat.(Chroococcidiopsidales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+
+concept_Chroococcidiopsidaceae_family
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Chroococcidiopsidales_order<-concept_bacteria_order;;
+concept_Chroococcidiopsidales_order<=nrel_inclusion:{
+concept_Chroococcidiopsidaceae_family
+};;

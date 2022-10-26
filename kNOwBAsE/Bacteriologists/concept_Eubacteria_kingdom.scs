@@ -1,0 +1,48 @@
+concept_Eubacteria_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Королевство Eubacteria] (*<-lang_ru;;*);
+[Eubacteria Kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Королевство Eubacteria)](*<-lang_ru;;*);
+[Def.(Eubacteria Kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Эубактерии, или «настоящие» бактерии, представляют собой одноклеточные прокариотические микроорганизмы, которые обладают рядом характеристик и встречаются в различных условиях во всех частях мира. Под это название подпадают все типы бактерий, кроме архебактерий .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[ Eubacteria, or “true” bacteria, are single-celled prokaryotic microorganisms that have a range of characteristics and are found in various conditions throughout all parts of the world. All types of bacteria fall under this title, except for archaebacteria..](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Королевство Eubacteria)](*<-lang_ru;;*);
+[Stat.(Eubacteria Kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Spirochetes_phylum;
+concept_Chlamydias_phylum;
+concept_Gram_positive_phylum;
+concept_Cyanobacteria_phylum;
+concept_Proteobacteria_phylum
+
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот Королевство делится на 5 phylum:Cyanobacteria, Gram-positive,
+Proteobacteria, Chlamydias и Spirochetes .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This Kingdom is divided into 5 phylums:
+ Cyanobacteria, Gram-positive,Proteobacteria, 
+Chlamydias and Spirochetes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Eubacteria_kingdom<-concept_bacteria_kingdom;;
+concept_Eubacteria_kingdom<=nrel_inclusion:{
+concept_Spirochetes_phylum;
+concept_Chlamydias_phylum;
+concept_Gram_positive_phylum;
+concept_Cyanobacteria_phylum;
+concept_Proteobacteria_phylum
+};;

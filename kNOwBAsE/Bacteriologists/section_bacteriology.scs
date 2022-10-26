@@ -1,0 +1,13 @@
+section_bacteriology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Бактериология] (*<-lang_ru;;*);
+[Section. bacteriology] (*<-lang_en;;*);;
+
+section_bacteriology<= nrel_section_decomposition:{
+section_subject_domain_of_bacteria;
+section_subject_domain_of_bacteria_study_methods
+};;
+
+section_bacteriology-> rrel_key_sc_element:
+bacteriology;;
+

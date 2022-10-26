@@ -1,0 +1,35 @@
+concept_Ribozyviria_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм Ribozyviria] (*<-lang_ru;;*);
+[Ribozyviria realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм Ribozyviria)](*<-lang_ru;;*);
+[Def.(Ribozyviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_realm
+};;
+<=nrel_sc_text_translation:...(*
+->[Ribozyviria - реалм вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ribozyviria is a realm of satellite nucleic acids.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм Ribozyviria)](*<-lang_ru;;*);
+[Stat.(Ribozyviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Kolmioviridae_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот реалм включает в себя всего семейство Kolmioviridae.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ribozyviria realm includes Kolmioviridae family.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Ribozyviria_realm<-concept_virus_realm;;
+concept_Ribozyviria_realm<=nrel_inclusion:
+concept_Kolmioviridae_family;;

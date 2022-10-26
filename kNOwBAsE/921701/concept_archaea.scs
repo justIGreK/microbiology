@@ -1,0 +1,35 @@
+concept_archaea<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Археи] (*<-lang_ru;;*);
+[Archaea] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Археи)](*<-lang_ru;;*);
+[Def.(Archaea)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_domain;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Археи — домен живых организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Archaea — domain of living organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Археи)](*<-lang_ru;;*);
+[Stat.(Archaea)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organelle;
+concept_membrana;
+concept_nucleus;
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Археи представляют собой одноклеточные микроорганизмы, не имеющие ядра, а также каких-либо мембранных органелл.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Archaea are unicellular microorganisms that do not have a nucleus or any membrane organelles.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

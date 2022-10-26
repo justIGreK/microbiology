@@ -1,0 +1,35 @@
+concept_axoneme<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Аксонема] (*<-lang_ru;;*);
+[Axoneme] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Аксонема)](*<-lang_ru;;*);
+[Def.(Axoneme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cytoskeletal;
+concept_undulipodia;
+concept_cilia;
+concept_eukaryota;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Аксонема - сложно организованный цитоскелетный комплекс, составляющий основу ундулиподий или цилий (жгутиков и ресничек) эукариотных клеток.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Axoneme - a complexly organized cytoskeletal complex that forms the basis of undulipodia or cilia (flagella and cilia) of eukaryotic cells.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Аксонема)](*<-lang_ru;;*);
+[Stat.(Axoneme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protein
+};;
+<=nrel_sc_text_translation:...(*
+->[К настоящему времени в составе аксонемы и примыкающих к ней структур идентифицировано уже более 250 различных белков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[To date, more than 250 different proteins have been identified in the axoneme and adjacent structures.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

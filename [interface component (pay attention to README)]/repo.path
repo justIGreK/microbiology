@@ -1,0 +1,11 @@
+# common
+ims.ostis.kb_copy
+
+# private
+kb
+
+# components
+sc-web/components/scg/kb
+../kb
+../problem-solver/scp
+../interface

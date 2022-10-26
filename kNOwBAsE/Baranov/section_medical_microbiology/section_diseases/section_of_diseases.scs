@@ -1,0 +1,22 @@
+
+section_of_diseases<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Заболевания] (*<-lang_ru;;*);
+[Section. Diseases] (*<-lang_en;;*);;
+
+
+section_of_diseases<= nrel_section_decomposition:{
+section_of_known_diseases
+};;
+
+section_of_diseases-> rrel_key_sc_element:
+nrel_causes_disease;
+nrel_deathrate;
+nrel_disease_object;
+nrel_similar_disease;
+nrel_asDeadly;
+nrel_moreDeadly;
+nrel_lessDeadly;
+nrel_ill;
+nrel_dead;
+concept_disease;;

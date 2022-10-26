@@ -1,0 +1,32 @@
+concept_fungi_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство грибов] (*<-lang_ru;;*);
+[fungi family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство грибов)](*<-lang_ru;;*);
+[Def.(fungi family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[Семейство грибов - один из уровней классификации грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi family is one of the levels of fungi classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство грибов)](*<-lang_ru;;*);
+[Stat.(fungi family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Семейства делятся на роды.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Families are divided into genera.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

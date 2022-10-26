@@ -1,0 +1,18 @@
+
+section_of_known_bacteria_order<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные ордены бактерий] (*<-lang_ru;;*);
+[Section. Known bacteria order] (*<-lang_en;;*);;
+
+
+section_of_known_bacteria_order-> rrel_key_sc_element:
+concept_Nostocales_order;
+concept_Chlamydiales_order;
+concept_Chroococcales_order;
+concept_Spirulinaceae_order;
+concept_Pleurocapsales_order;
+concept_Gloeobacterales_order;
+concept_Gloeobacterales_order;
+concept_Synechococcales_order;
+concept_Parachlamydiales_order;
+concept_Chroococcidiopsidales_order;;

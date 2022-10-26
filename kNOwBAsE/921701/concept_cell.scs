@@ -1,0 +1,35 @@
+concept_cell<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Клетка] (*<-lang_ru;;*);
+[Cell] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Клетка)](*<-lang_ru;;*);
+[Def.(Cell)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_biology
+};;
+<=nrel_sc_text_translation:...(*
+->[Клетка является основной структурной, функциональной и биологической единицей всех известных организмов..](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cell is the basic structural, functional, and biological unit of all known organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Клетка)](*<-lang_ru;;*);
+[Stat.(Cell)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cytoplasm;
+concept_biomolecula;
+concept_protein;
+concept_membrane
+};;
+<=nrel_sc_text_translation:...(*
+->[Клетки состоят из цитоплазмы, заключенной в мембрану, которая содержит множество биомолекул, таких как белки и нуклеиновые кислоты..](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Cells consist of cytoplasm enclosed within a membrane, which contains many biomolecules such as proteins and nucleic acids.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

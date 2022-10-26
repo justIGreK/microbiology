@@ -1,0 +1,33 @@
+concept_autotrophic<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Автотрофы] (*<-lang_ru;;*);
+[Autotrophic] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Автотрофы)](*<-lang_ru;;*);
+[Def.(Autotrophic)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Автотрофы —  организмы, синтезирующие органические вещества из неорганических.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Autotrophic — organisms synthesizing organic matter from inorganic.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Автотрофы)](*<-lang_ru;;*);
+[Stat.(Autotrophic)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_heterotrophic;
+concept_organism;
+concept_body
+};;
+<=nrel_sc_text_translation:...(*
+->[Автотрофные организмы для построения своего тела используют неорганические вещества почвы, воды и воздуха.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Autotrophic organisms use inorganic substances from soil, water and air to build their bodies.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

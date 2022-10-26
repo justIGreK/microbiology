@@ -1,0 +1,48 @@
+
+section_subject_domain_of_protists<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Протисты] (*<-lang_ru;;*);
+[Section. Protists] (*<-lang_en;;*);;
+
+section_subject_domain_of_protists<= nrel_section_decomposition:{
+section_of_protists_classification 
+};;
+
+section_subject_domain_of_protists-> rrel_key_sc_element:
+concept_fungus_like_protist;
+concept_animal_like_protist;
+concept_plant_like_protist;;
+
+section_subject_domain_of_protists= [*
+subject_domain_of_protists<-sc_node_struct;;
+
+subject_domain_of_protists<-subject_domain;
+=>nrel_main_idtf:
+[Предметная область протистов] (*<-lang_ru;;*);
+[Subject domain of protists] (*<-lang_en;;*);;
+
+concept_protist<-sc_node_not_relation;;
+concept_fungus_like_protist<-sc_node_not_relation;;
+concept_animal_like_protist<-sc_node_not_relation;;
+concept_plant_like_protist<-sc_node_not_relation;;
+
+nrel_complementation_of_viruses<-sc_node_norole_relation;;
+nrel_virus_host<-sc_node_norole_relation;;
+
+subject_domain_of_protists->rrel_maximum_studied_object_class:concept_protist;;
+
+subject_domain_of_protists->rrel_not_maximum_studied_object_class:
+concept_fungus_like_protist;
+concept_animal_like_protist;
+concept_plant_like_protist;;
+
+subject_domain_of_protists->rrel_explored_relation:
+nrel_food;
+nrel_patasite;;
+
+concept_protist=>nrel_inclusion:
+concept_fungus_like_protist;
+concept_animal_like_protist;
+concept_plant_like_protist;;
+*];;
+

@@ -1,0 +1,32 @@
+concept_invertebrates<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Беспозвоночные] (*<-lang_ru;;*);
+[Invertebrates] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Беспозвоночные)](*<-lang_ru;;*);
+[Def.(Invertebrates)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_insects;
+concept_worms
+};;
+<=nrel_sc_text_translation:...(*
+->[Беспозвоночные - обобщающее название для насекомых и червей.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Invertebrates - generic name for insects and worms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Беспозвоночные)](*<-lang_ru;;*);
+[Stat.(Invertebrates)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_vertebrates
+};;
+<=nrel_sc_text_translation:...(*
+->[Беспозвоночные противопостовляются позвоночным.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Invertebrates versus vertebrates.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

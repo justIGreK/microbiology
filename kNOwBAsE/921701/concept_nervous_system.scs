@@ -1,0 +1,31 @@
+concept_nervous_system<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Нервная система] (*<-lang_ru;;*);
+[Nervous system] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Нервная система)](*<-lang_ru;;*);
+[Def.(Nervous system)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_morphology
+};;
+<=nrel_sc_text_translation:...(*
+->[Нервная система - целостная морфологическая и функциональная совокупность различных взаимосвязанных нервных структур.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The nervous system is an integral morphological and functional set of various interconnected nervous structures.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Нервная система)](*<-lang_ru;;*);
+[Stat.(Nervous system)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_sensitivity
+};;
+<=nrel_sc_text_translation:...(*
+->[Нервная система действует как интегративная система, связывая в одно целое чувствительность, двигательную активность и работу других регуляторных систем.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The nervous system acts as an integrative system, linking sensitivity, motor activity and the work of other regulatory systems.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

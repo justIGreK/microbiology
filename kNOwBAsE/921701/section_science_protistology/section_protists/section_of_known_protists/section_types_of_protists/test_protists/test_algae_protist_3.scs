@@ -1,0 +1,11 @@
+test_algae_protist_3<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тест-протист водоросли 3] (*<-lang_ru;;*);
+[Test_algae_protist 3] (*<-lang_en;;*);;
+
+test_algae_protist_3<-concept_protist;;
+
+test_algae_protist_3<-concept_algae;;
+
+test_algae_protist_3=>nrel_size:[3];;
+test_algae_protist_3=>nrel_oxygen_generation:[777];;

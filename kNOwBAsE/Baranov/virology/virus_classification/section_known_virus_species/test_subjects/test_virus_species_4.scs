@@ -1,0 +1,9 @@
+test_virus_species_4<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Тест-вид 4] (*<-lang_ru;;*);
+[Test_species4] (*<-lang_en;;*);;
+
+
+test_virus_species_4<-concept_virus_species;;
+
+test_virus_species_4=>nrel_causes_disease:test_virus_disease_4;;

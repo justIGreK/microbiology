@@ -1,0 +1,32 @@
+concept_clade<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Клада] (*<-lang_ru;;*);
+[Clade] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Клада)](*<-lang_ru;;*);
+[Def.(Clade)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Клада-группа организмов, содержащая общего предка и всех его прямых потомков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Clade its a group of organisms containing a common ancestor and all of its direct descendants.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Клада)](*<-lang_ru;;*);
+[Stat.(Clade)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_cladogram
+};;
+<=nrel_sc_text_translation:...(*
+->[Любая клада рассматривается как монофилетическая группа организмов и может быть изображена с помощью кладограммы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Any clade is considered as a monophyletic group of organisms and can be depicted using a cladogram.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

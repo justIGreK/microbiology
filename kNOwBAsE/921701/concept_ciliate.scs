@@ -1,0 +1,35 @@
+concept_ciliate<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Инфузория ] (*<-lang_ru;;*);
+[Ciliate] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Инфузория)](*<-lang_ru;;*);
+[Def.(Ciliate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_flagella;
+concept_protozoan;
+concept_organelle;
+concept_eukaryota;
+concept_cilia
+};;
+<=nrel_sc_text_translation:...(*
+->[Инфузории - это группа простейших, для которых характерно наличие волосковидных органелл, называемых ресничками, которые идентичны по структуре жгутикам эукариот, но в целом короче и присутствуют в гораздо большем количестве, с другим волнистым рисунком, чем жгутики.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The ciliates - are a group of protozoans characterized by the presence of hair-like organelles called cilia, which are identical in structure to eukaryotic flagella, but are in general shorter and present in much larger numbers, with a different undulating pattern than flagella.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Инфузория)](*<-lang_ru;;*);
+[Stat.(Ciliate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_asexual
+};;
+<=nrel_sc_text_translation:...(*
+->[Инфузории размножаются бесполым путем, путем разного рода делений.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Ciliates reproduce asexually, by various kinds of fission.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

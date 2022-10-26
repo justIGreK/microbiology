@@ -1,0 +1,44 @@
+concept_Spirochaete_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Spirochaete] (*<-lang_ru;;*);
+[Spirochaete phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Spirochaete)](*<-lang_ru;;*);
+[Def.(Spirochaete phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Спирохеты, которые содержат характерные дидермальные (двухмембранные) грамотрицательные бактерии, большинство из которых имеют длинные спирально скрученные (в форме штопора или спирали, отсюда и название) клетки. диаметры от 0,09 до 3 мкм.
+
+Спирохеты отличаются от других бактериальных типов расположением их жгутиков, называемых эндофлагеллами, которые иногда называют осевыми филаментами. Эндофлагеллы закрепляются на каждом конце (полюсе) бактерии в периплазматическом пространстве (между внутренней и внешней мембранами), где они выступают назад, увеличивая длину клетки. Они вызывают вращательное движение, которое позволяет спирохете двигаться. При размножении спирохета подвергается бесполому поперечному бинарному делению. Большинство спирохет являются свободноживущими и анаэробными, но есть многочисленные исключения. Бактерии-спирохеты разнообразны по своей патогенной способности и экологическим нишам, в которых они обитают, а также по молекулярным характеристикам, включая содержание гуанин-цитозина и размер генома.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Spirochaetes which contains distinctive diderm (double-membrane) gram-negative bacteria, most of which have long, helically coiled (corkscrew-shaped or spiraled, hence the name) cells.Spirochaetes are chemoheterotrophic in nature, with lengths between 3 and 500 μm and diameters around 0.09 to at least 3 μm.
+
+Spirochaetes are distinguished from other bacterial phyla by the location of their flagella, called endoflagella which are sometimes called axial filaments. Endoflagella are anchored at each end (pole) of the bacterium within the periplasmic space (between the inner and outer membranes) where they project backwards to extend the length of the cell. These cause a twisting motion which allows the spirochaete to move about. When reproducing, a spirochaete will undergo asexual transverse binary fission. Most spirochaetes are free-living and anaerobic, but there are numerous exceptions. Spirochaetes bacteria are diverse in their pathogenic capacity and the ecological niches that they inhabit, as well as molecular characteristics including guanine-cytosine content and genome size.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Spirochaete)](*<-lang_ru;;*);
+[Stat.(Spirochaete phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Spirochaetia_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Spirochaete_phylum<-concept_bacteria_phylum;;
+concept_Spirochaete_phylum<=nrel_inclusion:{
+concept_Spirochaetia_class
+
+};;

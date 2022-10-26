@@ -1,0 +1,33 @@
+concept_spine<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Позвоночник] (*<-lang_ru;;*);
+[Spine] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Позвоночник)](*<-lang_ru;;*);
+[Def.(Spine)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_skeleton;
+concept_vertebrates
+};;
+<=nrel_sc_text_translation:...(*
+->[Позвоночник - несущий элемент скелета позвоночных животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The spine is a supporting element of the skeleton of vertebrates.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Позвоночник)](*<-lang_ru;;*);
+[Stat.(Spine)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_vertebrae;
+concept_animal
+};;
+<=nrel_sc_text_translation:...(*
+->[Позвоночник построен из позвонков, которые у разных животных имеют разное строение.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The spine is built from vertebrae, which have different structures in different animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

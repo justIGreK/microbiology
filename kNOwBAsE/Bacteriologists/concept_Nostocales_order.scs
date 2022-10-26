@@ -1,0 +1,68 @@
+concept_Nostocales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Nostocales] (*<-lang_ru;;*);
+[Nostocales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Nostocales)](*<-lang_ru;;*);
+[Def.(Nostocales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Nostocales - это отряд цианобактерий, содержащий большинство его видов. Он включает нитевидные формы, как простые, так и разветвленные, а также те, которые встречаются в виде отдельных нитей или нескольких нитей внутри оболочки. Некоторые члены показывают уменьшение ширины от основания, а некоторые имеют гетероцисты.
+
+С экологической точки зрения, Nostocales (Sphaerospermopsis aphanizomenoides) в значительной степени игнорируется и широко не изучается. Однако недавнее исследование предполагает, что инвазивные цианобактерии населяют озера умеренного пояса и процветают в них. Результаты с использованием анализа главных компонентов (PCA) и U-критерия Манна-Уитни показали, что концентрация общего фосфора является основной причиной увеличения численности S.aphanizomenoides. Известно, что Nostocales растет в условиях умеренного климата, состоящего из плохих условий освещения и высокой биомассы фитопланктона, обычно встречающейся в мелководных озерах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Nostocales are an order of cyanobacteria containing most of its species. It includes filamentous forms, both simple or branched, and both those occurring as single strands or multiple strands within a sheath. Some members show a decrease in width from the base, and some have heterocysts.
+
+Environmentally, Nostocales (Sphaerospermopsis aphanizomenoides) is largely disregarded and not widely studied. However, a recent study suggests that the invasive cyanobacterium is occupying temperate lakes and thriving in them. Using principal component analysis (PCA) and the Mann-Whitney U test, results showed that total phosphorus concentration was the primary causation for the increasing abundance of S.aphanizomenoides. Nostocales is known to grow in temperate environments consisting of poor light conditions and high phytoplankton biomass, commonly found in shallow lakes. ](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Nostocales)](*<-lang_ru;;*);
+[Stat.(Nostocales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Aphanizomenonaceae_family;
+concept_Capsosiraceae_family;
+concept_Chlorogloeopsidaceae_family;
+concept_Fortieaceae_family;
+concept_Gloeotrichiaceae_family;
+concept_Godleyaceae_family;
+concept_Hapalosiphonaceae_family;
+concept_Nostocaceae_family;
+concept_Rivulariaceae_family;
+concept_Scytonemataceae_family;
+concept_Stigonemataceae_family;
+concept_Symphyonemataceae_family;
+concept_Tolypothrichaceae_family
+
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Nostocales_order<-concept_bacteria_order;;
+concept_Nostocales_order<=nrel_inclusion:{
+concept_Aphanizomenonaceae_family;
+concept_Capsosiraceae_family;
+concept_Chlorogloeopsidaceae_family;
+concept_Fortieaceae_family;
+concept_Gloeotrichiaceae_family;
+concept_Godleyaceae_family;
+concept_Hapalosiphonaceae_family;
+concept_Nostocaceae_family;
+concept_Rivulariaceae_family;
+concept_Scytonemataceae_family;
+concept_Stigonemataceae_family;
+concept_Symphyonemataceae_family;
+concept_Tolypothrichaceae_family
+};;

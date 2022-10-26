@@ -1,0 +1,34 @@
+concept_Haemophilusducreyi_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Haemophilusducreyi бактерия] (*<-lang_ru;;*);
+[Haemophilusducreyi Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Haemophilusducreyi бактерия)](*<-lang_ru;;*);
+[Def.(Haemophilusducreyi bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_rodshaped_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактерии,которые являются видом вид грамотрицательных бактерий рода гемофил (Haemophilus), вызывающая венерическое заболевание — мягкий шанкр, широко распространённое в развивающихся странах всего мира.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The bacteria, which is a species of a type of gram-negative bacteria of the genus hemophilus (Haemophilus), causing a venereal disease - chancre, which is widespread in developing countries around the world.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Haemophilusducreyi бактерия)](*<-lang_ru;;*);
+[Stat.(Haemophilusducreyi bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Заболевание начинается с прыщеобразных образований на половых органах, которые с течением времени превращаются в язвы с гнойным налётом и неровными краями.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The disease begins with pimples on the genitals, which over time turn into ulcers with purulent plaque and uneven edges.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Haemophilusducreyi_bacteria<=nrel_inclusion:concept_microorganism;;

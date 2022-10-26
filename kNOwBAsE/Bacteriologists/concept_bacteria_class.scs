@@ -1,0 +1,32 @@
+concept_bacteria_class<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Класс бактерий] (*<-lang_ru;;*);
+[bacteria class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Класс вирусов)](*<-lang_ru;;*);
+[Def.(bacteria class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Класс бактерий - один из уровней классификации бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[bacteria class is one of the levels of bacteria classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Класс бактерий)](*<-lang_ru;;*);
+[Stat.(bacteria class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Классы делятся на порядки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Classes are divided into orders.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

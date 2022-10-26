@@ -1,0 +1,37 @@
+concept_organism<-sc_node_not_relation;;
+concept_microorganism<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Микроорганизм] (*<-lang_ru;;*);
+[Microorganism] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Микроорганизм)](*<-lang_ru;;*);
+[Def.(Microorganism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Микроорганизмы - общее название для различных форм микроскопических организмов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Microorganism is a microscopic organism.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Микроорганизм)](*<-lang_ru;;*);
+[Stat.(Microorganism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus;
+concept_bacteria;
+concept_fungi;
+concept_protist
+};;
+<=nrel_sc_text_translation:...(*
+->[Микроорганизмы включают в себя вирусы, бактерии, некоторые грибы и простейшие.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Microorganisms include viruses, bacteria, some types of fungi and protists.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_microorganism<=nrel_inclusion:concept_organism;;

@@ -1,0 +1,32 @@
+concept_lipid<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Липид] (*<-lang_ru;;*);
+[Lipid] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Липид)](*<-lang_ru;;*);
+[Def.(Lipid)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_substance
+};;
+<=nrel_sc_text_translation:...(*
+->[Липид - разнообразная по строению группа биоорганических веществ, с общим свойством — растворимостью в неполярных растворителях](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Lipid - a structurally diverse group of bioorganic substances, with a common property - solubility in non-polar solvents](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Липид)](*<-lang_ru;;*);
+[Stat.(Lipid)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_enzyme;
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Липиды влияют на проницаемость клеток и активность многих ферментов](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Lipids affect cell permeability and the activity of many enzymes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

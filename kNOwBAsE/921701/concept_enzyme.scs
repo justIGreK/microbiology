@@ -1,0 +1,32 @@
+concept_enzyme<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Ферменты] (*<-lang_ru;;*);
+[Enzyme] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Ферменты)](*<-lang_ru;;*);
+[Def.(Enzyme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protein;
+concept_ribozyme
+};;
+<=nrel_sc_text_translation:...(*
+->[Ферменты -  обычно сложные белковые соединения, РНК (рибозимы) или их комплексы, ускоряющие химические реакции в живых системах.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Enzymes - usually complex protein compounds, RNA (ribozymes) or their complexes, which accelerate chemical reactions in living systems.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Ферменты)](*<-lang_ru;;*);
+[Stat.(Enzyme)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_enzymology
+};;
+<=nrel_sc_text_translation:...(*
+->[Наука о ферментах называется энзимологией.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The science of enzymes is called enzymology.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

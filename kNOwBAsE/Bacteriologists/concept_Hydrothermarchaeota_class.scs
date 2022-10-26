@@ -1,0 +1,40 @@
+concept_Hydrothermarchaeota_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[class Hydrothermarchaeota] (*<-lang_ru;;*);
+[Hydrothermarchaeota class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(class Hydrothermarchaeota)](*<-lang_ru;;*);
+[Def.(Hydrothermarchaeota class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_class
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(class Hydrothermarchaeota)](*<-lang_ru;;*);
+[Stat.(Hydrothermarchaeota class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+
+concept_empty
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Hydrothermarchaeota_class<-concept_bacteria_class;;
+concept_Hydrothermarchaeota_class<=nrel_inclusion:{
+concept_empty
+
+};;

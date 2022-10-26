@@ -1,0 +1,42 @@
+concept_Chlamydiae_class<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Class Chlamydiae] (*<-lang_ru;;*);
+[Chlamydiae Class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Class Chlamydiae)](*<-lang_ru;;*);
+[Def.(Chlamydiae Class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_class
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Class Chlamydiae)](*<-lang_ru;;*);
+[Stat.(Chlamydiae Class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Chlamydiales_order;
+concept_Parachlamydiales_order
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Chlamydiae_class<-concept_bacteria_class;;
+concept_Chlamydiae_class<=nrel_inclusion:{
+concept_Chlamydiales_order;
+concept_Parachlamydiales_order
+
+};;

@@ -1,0 +1,41 @@
+concept_Avsunviroidae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Avsunviroidae] (*<-lang_ru;;*);
+[Avsunviroidae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Avsunviroidae)](*<-lang_ru;;*);
+[Def.(Avsunviroidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Avsunviroidae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Avsunviroidae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Avsunviroidae)](*<-lang_ru;;*);
+[Stat.(Avsunviroidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Avsunviroid_genus;
+concept_Elaviroid_genus;
+concept_Pelamoviroid_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Avsunviroid, Elaviroid, Pelamoviroid.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Avsunviroidae family contains the following genera: Avsunviroid, Elaviroid, Pelamoviroid.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Avsunviroidae_family<-concept_virus_family;;
+concept_Avsunviroidae_family<=nrel_inclusion:
+concept_Avsunviroid_genus;
+concept_Elaviroid_genus;
+concept_Pelamoviroid_genus;;
+
+concept_Avsunviroidae_family<-incertae_sedis;;

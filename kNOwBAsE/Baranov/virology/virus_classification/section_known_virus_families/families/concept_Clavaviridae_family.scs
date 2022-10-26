@@ -1,0 +1,37 @@
+concept_Clavaviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Clavaviridae] (*<-lang_ru;;*);
+[Clavaviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Clavaviridae)](*<-lang_ru;;*);
+[Def.(Clavaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Clavaviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Clavaviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Clavaviridae)](*<-lang_ru;;*);
+[Stat.(Clavaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Clavavirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя род Clavavirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Clavaviridae family contains Clavavirus genus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Clavaviridae_family<-concept_virus_family;;
+concept_Clavaviridae_family<=nrel_inclusion:
+concept_Clavavirus_genus;;
+
+concept_Clavaviridae_family<-incertae_sedis;;

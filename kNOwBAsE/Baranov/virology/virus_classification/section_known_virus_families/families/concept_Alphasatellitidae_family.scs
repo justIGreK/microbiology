@@ -1,0 +1,41 @@
+concept_Alphasatellitidae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Alphasatellitidae] (*<-lang_ru;;*);
+[Alphasatellitidae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Alphasatellitidae)](*<-lang_ru;;*);
+[Def.(Alphasatellitidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Alphasatellitidae - это одноцепочечные сателлитные ДНК, передача которых зависит от вируса.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Alphasatellites are single stranded satellite DNA that are dependent on a virus for transmission.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Alphasatellitidae)](*<-lang_ru;;*);
+[Stat.(Alphasatellitidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Geminialphasatellitinae_subfamily;
+concept_Nanoalphasatellitinae_subfamily;
+concept_Petromoalphasatellitinae_subfamily
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя 3 подсемейства: Geminialphasatellitinae, Nanoalphasatellitinae, Petromoalphasatellitinae.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Alphasatellitidae family contains 3 subfamilies: Geminialphasatellitinae, Nanoalphasatellitinae, Petromoalphasatellitinae.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Alphasatellitidae_family<-concept_virus_family;;
+concept_Alphasatellitidae_family<=nrel_inclusion:
+concept_Geminialphasatellitinae_subfamily;
+concept_Nanoalphasatellitinae_subfamily;
+concept_Petromoalphasatellitinae_subfamily;;
+
+concept_Alphasatellitidae_family<-incertae_sedis;;

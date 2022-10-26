@@ -1,0 +1,34 @@
+concept_single_celled_organism<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Одноклеточный организм] (*<-lang_ru;;*);
+[Single-celled organism] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Одноклеточный организм)](*<-lang_ru;;*);
+[Def.(Single-celled organism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell;
+concept_body
+};;
+<=nrel_sc_text_translation:...(*
+->[Однокле́точные органи́змы — парафилетическая группа живых организмов, тело которых состоит из одной клетки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Single-celled organisms — a paraphyletic group of living organisms, the body of which consists of one cell.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Одноклеточный организм)](*<-lang_ru;;*);
+[Stat.(Single-celled organism)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria;
+concept_mycoplasma;
+concept_xenophiophore
+};;
+<=nrel_sc_text_translation:...(*
+->[Одноклеточные организмы различаются по форме и размерам, которые варьируют от 0,3 мкм (некоторые бактерии, например, микоплазмы) до 20 см (некоторые ксенофиофоры).](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Single-celled organisms vary in shape and size, ranging from 0.3 μm (some bacteria, such as mycoplasma) to 20 cm (some xenophiophores).](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

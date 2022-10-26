@@ -1,0 +1,11 @@
+ui_start_sc_element -> microbiology_knowledge_base;;
+
+ui_start_sc_element<=nrel_project_decomposition:{
+test_virus_disease_1;
+test_disease_15;
+test_virus_disease_2;
+test_virus_disease_3;
+test_virus_disease_4;
+test_virus_disease_5
+};;
+

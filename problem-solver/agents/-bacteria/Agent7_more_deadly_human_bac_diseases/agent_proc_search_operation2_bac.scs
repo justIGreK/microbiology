@@ -1,0 +1,239 @@
+agent_proc_search_operation2_bac
+=>nrel_main_idtf: 
+ [агентная scp-программа поиска] (* <- lang_ru;; *); 
+ [agent scp-program of search] (* <- lang_en;; *); 
+<- agent_scp_program;; 
+// Указываем, что программа является агентной scp-программой 
+scp_program ->agent_proc_search_operation2_bac  (* 
+ // Множество параметров агентной программы 
+ ->rrel_params: .agent_proc_search_operation2_bac_params (* 
+  -> rrel_1: rrel_in: _event;; 
+  -> rrel_2: rrel_in: _input_arc;; 
+ *);; 
+ // Множество операторов агентной программы 
+ ->rrel_operators: .agent_proc_search_operation2_bac_operator_set (* 
+  // Первый исполняемый оператор программы 
+  ->rrel_init: .agent_proc_search_operation2_bac_operator1 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_assign: rrel_scp_var: _temp;; 
+    -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _quest;; 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator2;; 
+  *);; 
+  //  В rrel_1 устанавливаем имя придуманного нами  класса вопросов 
+// Агент будет просыпаться, только когда обнаружит наш вопрос. 
+  -> .agent_proc_search_operation2_bac_operator2 (* 
+  <- searchElStr3;; 
+    ->rrel_1: rrel_fixed: rrel_scp_const: question_search_operation2_bac;;  
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _quest;; 
+ 
+    =>nrel_then: .agent_proc_search_operation2_bac_operator3;; 
+    =>nrel_else: .agent_proc_search_operation2_bac_operator_return;; 
+  *);; 
+  // Найдём параметр запроса – его подал на вход сам пользователь 
+  -> .agent_proc_search_operation2_bac_operator3 (* 
+  <- searchElStr3;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_assign: rrel_scp_var: _param;; 
+ 
+    =>nrel_then: .agent_proc_search_operation2_bac_operator3a;; 
+    =>nrel_else: .agent_proc_search_operation2_bac_operator_return;; 
+  *);; 
+
+  // является ли входной параметр вирусным заболеванием человека 
+  -> .agent_proc_search_operation2_bac_operator3a (* 
+
+  <- searchElStr3;; 
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_human_bacteria_disease;;
+	-> rrel_2: rrel_assign:rrel_pos_const_perm : rrel_scp_var: _arc_check2;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+ 
+    =>nrel_then: .agent_proc_search_operation2_bac_operator3b;; 
+    =>nrel_else: .agent_proc_search_operation2_bac_operator_not_human_bacteria_disease;; 
+  *);; 
+
+// запуск вспомогательной программы для определения смертности
+
+  -> .agent_proc_search_operation2_bac_operator3b (* 
+  <- call;;// В первом параметре содержится название вызванной процедуры 
+  -> rrel_1: rrel_fixed: rrel_scp_const: proc_deathrate_calculation;; 
+  ->rrel_2:rrel_fixed:rrel_scp_const: 
+  // здесь описаны параметры, подаваемые на вход процедуре 
+.agent_proc_search_operation2_bac_operator3b_params (* 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+    -> rrel_2: rrel_assign: rrel_scp_var: _div_res_etal;; 
+   *);; 
+  // Знак scp-процесса, который может быть использован для того, чтобы  
+          // дождаться завершения созданного scp-процесса 
+  -> rrel_3: rrel_assign: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator3c;; 
+  *);; 
+  // scp-оператор ожидания завершения выполнения подпрограммы 
+  -> .agent_proc_search_operation2_bac_operator3c (* 
+  <- waitReturn;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator4;; 
+  *);;  
+
+  // Сгенерировать узел, в который мы поместим конструкцию ответа 
+-> .agent_proc_search_operation2_bac_operator4 (* 
+  <- genEl;; 
+    -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator5;; 
+  *);; 
+
+  // поместим все бактериальные заболевания человека в отдельное множество
+-> .agent_proc_search_operation2_bac_operator5 (*
+ 
+	<- searchSetStr3 ;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_human_bacteria_disease;;
+	-> rrel_2: rrel_assign:rrel_pos_const_perm : rrel_scp_var: _arc666;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _some_disease_tmp;;
+
+	-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _set_of_diseases;;
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator6;; 
+  *);; 
+
+// выбираем одно заболевание
+-> .agent_proc_search_operation2_bac_operator6
+(*
+	<- searchElStr3;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _set_of_diseases;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm : rrel_scp_var: _arc_cycle_delete;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _some_disease_cycle;;
+
+	=> nrel_then : .agent_proc_search_operation2_bac_operator7;;
+// если заболеваний нет (не были найдены вообще или все найденные отработаны), переход к генерации ответа
+	=> nrel_else: .agent_proc_search_operation2_bac_operator_gen_answer ;;
+*);;
+
+// убираем его из мн-ва найденных заболеваний (как просмотренное)
+-> .agent_proc_search_operation2_bac_operator7
+(*
+	<- eraseEl;;
+
+	-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc_cycle_delete;;
+
+	=>nrel_goto: .agent_proc_search_operation2_bac_operator7a;; 
+*);;
+
+// проверка того, не связано ли уже обрабатываемое заболевание отношением более смертельное* с входным заболеванием (такое возможно при повторном использовании агента на одном и том же заболевании
+  -> .agent_proc_search_operation2_bac_operator7a (* 
+
+  <- searchElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _some_disease_cycle;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_moreDeadly;; 
+	// возврат в начало цикла, если связано
+    =>nrel_then: .agent_proc_search_operation2_bac_operator6;; 
+    =>nrel_else: .agent_proc_search_operation2_bac_operator8;; 
+  *);; 
+
+//запуск подпрограммы для определение смертности обрабатываемого заболевания (для сравнения)
+
+  -> .agent_proc_search_operation2_bac_operator8 (* 
+  <- call;;// В первом параметре содержится название вызванной процедуры 
+  -> rrel_1: rrel_fixed: rrel_scp_const: proc_deathrate_calculation;; 
+  ->rrel_2:rrel_fixed:rrel_scp_const: 
+  // здесь описаны параметры, подаваемые на вход процедуре 
+.agent_proc_search_operation2_bac_operator8_params (* 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _some_disease_cycle;; 
+    -> rrel_2: rrel_assign: rrel_scp_var: _div_res_comp;; 
+   *);; 
+  // Знак scp-процесса, который может быть использован для того, чтобы  
+          // дождаться завершения созданного scp-процесса 
+  -> rrel_3: rrel_assign: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator8a;; 
+  *);; 
+  // scp-оператор ожидания завершения выполнения подпрограммы 
+  -> .agent_proc_search_operation2_bac_operator8a (* 
+  <- waitReturn;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _descr;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator11;; 
+  *);;  
+
+// сравнение с эталонным значением смертности
+  -> .agent_proc_search_operation2_bac_operator11 (* 
+		<- ifGr ;;
+
+		-> rrel_1: rrel_scp_var: _div_res_comp ;;
+		-> rrel_2: rrel_scp_var: _div_res_etal ;;
+ 
+// если больше, переходим к следующему этапу
+    =>nrel_then: .agent_proc_search_operation2_bac_operator12;; 
+// если нет, возврат в начало цикла (выбор нового заболевания из множества)
+    =>nrel_else: .agent_proc_search_operation2_bac_operator6;; 
+
+  *);; 
+
+// привязывание успешно обработанного заболевания к ответу
+  -> .agent_proc_search_operation2_bac_operator12 (*
+
+  <- genElStr3;; 
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;; 
+    	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;; 
+    	-> rrel_3: rrel_fixed: rrel_scp_var: _some_disease_cycle;; 
+
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator13;; 
+  *);; 
+
+  -> .agent_proc_search_operation2_bac_operator13 (* 
+
+    // связывание входного заболевания с отработанным заболеванием из цикла отношением Более смертельное*
+
+  <- genElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _some_disease_cycle;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_moreDeadly;; 
+    // успешное завершение этапа цикла и возврат в начало
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator6;; 
+  *);; 
+
+ 
+  // Связываем ответ и вопрос отношением ответ* 
+  -> .agent_proc_search_operation2_bac_operator_gen_answer (* 
+  <- genElStr5;; 
+    -> rrel_1: rrel_fixed: rrel_scp_var: _quest;; 
+    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;; 
+    -> rrel_3: rrel_fixed: rrel_scp_var: _answer;; 
+    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;; 
+    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator_gen_answer2;; 
+  *);; 
+ 
+  // сообщение об успешном завершении работы в терминал
+  -> .agent_proc_search_operation2_bac_operator_gen_answer2 (* 
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Job is done];; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator_return;; 
+  *);; 
+ // сообщение об ошибке (входной параметр не является вирусным заболеванием человека)
+  -> .agent_proc_search_operation2_bac_operator_not_human_bacteria_disease (* 
+  <- print;; 
+    -> rrel_1: rrel_fixed: rrel_scp_const: [Not human bacteria disease];; 
+ 
+    =>nrel_goto: .agent_proc_search_operation2_bac_operator_return;; 
+  *);;
+  // Оператор завершения агентной программы   
+  -> .agent_proc_search_operation2_bac_operator_return (* 
+  <- return;; 
+  *);; 
+ *);; 
+*);;

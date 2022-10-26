@@ -1,0 +1,37 @@
+concept_discipline<-sc_node_not_relation;;
+
+protistology<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Протистология] (*<-lang_ru;;*);
+[Protistology] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Протистология)](*<-lang_ru;;*);
+[Def.(Protistology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+microbiology;
+concept_protist
+};;
+<=nrel_sc_text_translation:...(*
+->[Протистология - раздел микробиологии, посвященный изучению протист.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Protistology is microbiology section which is focused on study of protists.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Протистология)](*<-lang_ru;;*);
+[Stat.(Protistology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_discipline
+};;
+<=nrel_sc_text_translation:...(*
+->[Протистология сформировалась как обособленная дисциплина в конце XIX века.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Protistology emerged as a separate discipline at the end of the XIX century.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+protistology <= nrel_inclusion:microbiology;;

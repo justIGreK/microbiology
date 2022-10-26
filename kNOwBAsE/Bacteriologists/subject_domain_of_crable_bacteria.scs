@@ -1,0 +1,10 @@
+sc_node_struct -> subject_domain_of_crable_bacteria;;
+subject_domain_of_crable_bacteria <- subject_domain;;
+subject_domain_of_crable_bacteria => nrel_main_idtf:
+	[Предметная область Crable Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of Crable Bacteria] (* <- lang_en;; *);;
+
+subject_domain_of_crable_bacteria -> rrel_maximum_studied_object_class: 
+concept_hyointestinalis_bacteria;
+concept_bordetellapertussis_bacteria;
+concept_bordetellabronchiseptica_bacteria;;

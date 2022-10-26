@@ -1,0 +1,13 @@
+section_virology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Вирусология] (*<-lang_ru;;*);
+[Section. Virology] (*<-lang_en;;*);;
+
+section_virology<= nrel_section_decomposition:{
+section_subject_domain_of_viruses;
+section_subject_domain_of_virus_study_methods
+};;
+
+section_virology-> rrel_key_sc_element:
+virology;;
+

@@ -1,0 +1,61 @@
+nrel_complementation_of_viruses<-sc_node_norole_relation;;
+
+nrel_complementation_of_viruses=> nrel_main_idtf:[Комплементация вирусов* ](* <- lang_ru;; *);;
+nrel_complementation_of_viruses=> nrel_main_idtf:[Complementation of viruses* ](* <- lang_en;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_complementation_of_viruses;;
+	
+	<= nrel_sc_text_translation: ...(*
+	->rrel_example:[Комплементация вирусов - негенетическое взаимодействие двух вирусов, репродуцирующихся в одной и той же клетке, при котором вирусоспецифический белок одного вируса способствует осуществлению определенного этапа репродукции другого вируса.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;
+	->[Complementation of viruses is a non-genetic interaction of two viruses that reproduce in the same cell, in which the virus-specific protein of one virus contributes to the implementation of a certain stage in the reproduction of another virus.]
+	(*
+	<-lang_en;;
+	=>nrel_format:format_html;;
+	*);;		
+	*);;
+	
+	
+	=>nrel_main_idtf:
+	[Опр. (Комплементация вирусов*)](*<-lang_ru;;*);
+	[Def. (Complementation of viruses*)](*<-lang_en;;*);;
+
+	
+	=> nrel_using_constants: 
+		{
+		concept_virus
+		};;
+*);;
+
+explanation ->...
+(*
+	->rrel_key_sc_element:nrel_complementation_of_viruses ;;
+	<= nrel_sc_text_translation: ...(*->[Комплементация вирусов бывает двусторонняя (реципрокная), в которой участвуют белки обоих совместно репродуцирующихся вирусов, и односторонняя (нереципрокная), в которой участвует белок лишь одного из совместно репродуцирующихся в клетке вирусов.]
+	(*
+	<-lang_ru;;
+	=>nrel_format:format_html;;
+	*);;	
+	*);;
+	=> nrel_main_idtf: [Утв.(Комплементация вирусов*)](*<- lang_ru;;*);;
+	=> nrel_using_constants: 
+		{
+		concept_virus
+		};;
+*);;
+
+
+
+nrel_complementation_of_viruses => nrel_first_domain: concept_virus;;
+nrel_complementation_of_viruses => nrel_second_domain: concept_virus;;
+
+arity_2=>nrel_measurement:2;;
+arity_2<-arity;;
+number->2;;
+
+arity_2->nrel_complementation_of_viruses;;

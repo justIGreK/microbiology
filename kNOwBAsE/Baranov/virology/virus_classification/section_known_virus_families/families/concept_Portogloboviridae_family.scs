@@ -1,0 +1,37 @@
+concept_Portogloboviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Portogloboviridae] (*<-lang_ru;;*);
+[Portogloboviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Portogloboviridae)](*<-lang_ru;;*);
+[Def.(Portogloboviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Portogloboviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Portogloboviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Portogloboviridae)](*<-lang_ru;;*);
+[Stat.(Portogloboviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphaportoglobovirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя род Alphaportoglobovirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Portogloboviridae family contains Alphaportoglobovirus genus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Portogloboviridae_family<-concept_virus_family;;
+concept_Portogloboviridae_family<=nrel_inclusion:
+concept_Alphaportoglobovirus_genus;;
+
+concept_Portogloboviridae_family<-incertae_sedis;;

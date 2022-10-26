@@ -1,0 +1,45 @@
+concept_Pospiviroidae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Pospiviroidae] (*<-lang_ru;;*);
+[Pospiviroidae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Pospiviroidae)](*<-lang_ru;;*);
+[Def.(Pospiviroidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Pospiviroidae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Pospiviroidae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Pospiviroidae)](*<-lang_ru;;*);
+[Stat.(Pospiviroidae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Apscaviroid_genus;
+concept_Cocadviroid_genus;
+concept_Coleviroid_genus;
+concept_Hostuviroid_genus;
+concept_Pospiviroid_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Apscaviroid, Cocadviroid, Coleviroid, Hostuviroid, Pospiviroid.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Pospiviroidae family contains the following genera: Apscaviroid, Cocadviroid, Coleviroid, Hostuviroid, Pospiviroid.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Pospiviroidae_family<-concept_virus_family;;
+concept_Pospiviroidae_family<=nrel_inclusion:
+concept_Apscaviroid_genus;
+concept_Cocadviroid_genus;
+concept_Coleviroid_genus;
+concept_Hostuviroid_genus;
+concept_Pospiviroid_genus;;
+
+concept_Pospiviroidae_family<-incertae_sedis;;

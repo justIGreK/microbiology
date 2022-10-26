@@ -1,0 +1,35 @@
+concept_Adnaviria_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм Adnaviria] (*<-lang_ru;;*);
+[Adnaviria realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм Adnaviria)](*<-lang_ru;;*);
+[Def.(Adnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_realm
+};;
+<=nrel_sc_text_translation:...(*
+->[Adnaviria - реалм вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Adnaviria is a virus realm.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм Adnaviria)](*<-lang_ru;;*);
+[Stat.(Adnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Zilligvirae_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот реалм включает в себя всего одно царство Zilligvirae.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Adnaviria contains only one kingdom of Zilligvirae.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Adnaviria_realm<-concept_virus_realm;;
+concept_Adnaviria_realm<=nrel_inclusion:
+concept_Zilligvirae_kingdom;;

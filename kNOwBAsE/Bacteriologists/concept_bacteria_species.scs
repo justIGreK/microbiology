@@ -1,0 +1,32 @@
+concept_bacteria_species<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Вид бактерий] (*<-lang_ru;;*);
+[bacteria species] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Вид бактерий)](*<-lang_ru;;*);
+[Def.(bacteria species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид бактерий - один из уровней таксонимии бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[bacteria species is one of the levels of bacteria taxonomy.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Вид бактерий)](*<-lang_ru;;*);
+[Stat.(bacteria species)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_species
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид - низший уровень таксонимии бактерий.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Species is the lowest level of bacteria taxonomy.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

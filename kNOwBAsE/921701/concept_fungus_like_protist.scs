@@ -1,0 +1,32 @@
+concept_fungus_like_protist<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Грибоподобный протист] (*<-lang_ru;;*);
+[Fungus-like protist] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Грибоподобный протист)](*<-lang_ru;;*);
+[Def.(Fungus-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist;
+concept_dead_organic_matter
+};;
+<=nrel_sc_text_translation:...(*
+->[Грибоподобные протисты - это протисты, которые поглощают пищу из мертвого органического вещества.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Fungus-like protists they are protists that absorb their food from dead organic matter.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Грибоподобный протист)](*<-lang_ru;;*);
+[Stat.(Fungus-like protist)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_single_celled_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Большинство из них - небольшие одноклеточные организмы..](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Most of them are small single-celled organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,39 @@
+concept_Tristromaviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Tristromaviridae] (*<-lang_ru;;*);
+[Tristromaviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Tristromaviridae)](*<-lang_ru;;*);
+[Def.(Tristromaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Tristromaviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Tristromaviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Tristromaviridae)](*<-lang_ru;;*);
+[Stat.(Tristromaviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Alphatristromavirus_genus;
+concept_Betatristromavirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя следующие роды: Alphatristromavirus, Betatristromavirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Tristromaviridae family contains the following genera: Alphatristromavirus, Betatristromavirus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Tristromaviridae_family<-concept_virus_family;;
+concept_Tristromaviridae_family<=nrel_inclusion:
+concept_Alphatristromavirus_genus;
+concept_Betatristromavirus_genus;;
+
+concept_Tristromaviridae_family<-incertae_sedis;;

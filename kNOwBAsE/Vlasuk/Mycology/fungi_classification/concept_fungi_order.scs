@@ -1,0 +1,32 @@
+concept_fungi_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Порядок грибов] (*<-lang_ru;;*);
+[fungi order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Порядок грибов)](*<-lang_ru;;*);
+[Def.(fungi order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[Порядок грибов - один из уровней классификации грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi order is one of the levels of fungi classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Порядок грибов)](*<-lang_ru;;*);
+[Stat.(fungi order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Порядки делятся на семейства.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Orders are divided into families.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

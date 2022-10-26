@@ -1,0 +1,34 @@
+concept_kingdome<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство] (*<-lang_ru;;*);
+[Kingdome] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство)](*<-lang_ru;;*);
+[Def.(Kingdome)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_taxon
+};;
+<=nrel_sc_text_translation:...(*
+->[Царство — таксономический ранг самого высокого уровня среди основных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Kingdome — taxonomic rank of the highest level among the main.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство)](*<-lang_ru;;*);
+[Stat.(Kingdome)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_super_kingdome;
+concept_eukaryota;
+concept_archaea;
+concept_bacteria
+};;
+<=nrel_sc_text_translation:...(*
+->[Все царства объединяют в три надцарства, или домена: Бактерии, Археи, Эукариоты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[All kingdoms are united into three super kingdoms, or domains: Bacteria, Archaea, Eukaryotes.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

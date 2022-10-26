@@ -1,0 +1,35 @@
+concept_flagellate<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Жгутиконосец] (*<-lang_ru;;*);
+[Flagellate] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Жгутиконосец)](*<-lang_ru;;*);
+[Def.(Flagellate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_flagella;
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Жгутиконосец - это клетка или организм с одним или несколькими хлыстообразными отростками, называемыми жгутиками.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A flagellate is a cell or organism with one or more whip-like appendages called flagella.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Жгутиконосец)](*<-lang_ru;;*);
+[Stat.(Flagellate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_prokaryote;
+concept_eukaryota;
+concept_means_of_motion
+};;
+<=nrel_sc_text_translation:...(*
+->[Слово жгутик также описывает особую конструкцию (или уровень организации), характерную для многих прокариот и эукариот, а также их средства передвижения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The word flagellate also describes a particular construction (or level of organization) characteristic of many prokaryotes and eukaryotes and their means of motion.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

@@ -1,0 +1,16 @@
+
+section_of_known_virus_ICTV_classification_levels<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные уровни классификации (таксоны) вирусов] (*<-lang_ru;;*);
+[Section. Known virus classification levels (taxons)] (*<-lang_en;;*);;
+
+section_of_known_virus_ICTV_classification_levels<= nrel_section_decomposition:{
+section_of_known_virus_realms;
+section_of_known_virus_kingdoms;
+section_of_known_virus_genera;
+section_of_known_virus_phyla;
+section_of_known_virus_families;
+section_of_known_virus_orders;
+section_of_known_virus_species;
+section_of_known_virus_classes
+};;

@@ -1,0 +1,40 @@
+concept_Crenarchaeota_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Crenarchaeota] (*<-lang_ru;;*);
+[Crenarchaeota phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Crenarchaeota)](*<-lang_ru;;*);
+[Def.(Crenarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[ Кренархеи, которые были культивированы и охарактеризованы, теплолюбивы. Многие из них также ацидофильны. Они встречаются в кислых термальных источниках и грязевых котлах, а также в подводных гидротермальных источниках. Температура выращивания может превышать 100 ° C, где гидростатическое давление предотвращает кипение. Большинство Crenarchaeota анаэробны. Для энергетического метаболизма обычным явлением является дыхание элементарной серы (S °), хотя многие другие акцепторы электронов, включая кислород (O2), используются различными видами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[ The Crenarchaeota that have been cultured and characterized are thermophilic. Many are also acidophilic. They occur in acidic thermal springs and mudpots and in submarine hydrothermal vents. Growth temperatures can exceed 100 °C where hydrostatic pressure prevents boiling. Most Crenarchaeota are anaerobic. For energy-generating metabolism, the respiration of elemental sulfur (S°) is common, although many other electron acceptors, including oxygen (O2), are used by various species.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Crenarchaeota)](*<-lang_ru;;*);
+[Stat.(Crenarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Thermoprotei_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Crenarchaeota_phylum<-concept_bacteria_phylum;;
+concept_Crenarchaeota_phylum<=nrel_inclusion:{
+concept_Thermoprotei_class
+
+};;

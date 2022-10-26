@@ -1,0 +1,67 @@
+section_bacteriology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Бактериология] (*<-lang_ru;;*);
+[Section. Bacteria] (*<-lang_en;;*);;
+
+section_bacteriology<= nrel_section_decomposition:{
+section_subject_domain_of_bacteria
+};;
+
+section_bacteriology-> rrel_key_sc_element:
+bacteriology;;
+
+section_subject_domain_of_bacteriology<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Предметная область бактерий] (*<-lang_ru;;*);
+[Section. Subject domain of bacteriology] (*<-lang_en;;*);;
+
+section_subject_domain_of_bacteriology<= nrel_section_decomposition:{
+section_subject_domain_of_general_bacteriology;
+section_subject_domain_of_medical_bacteriology;
+section_subject_domain_of_agrarian_bacteriology;
+section_subject_domain_of_technical_bacteriology
+};;
+
+section_subject_domain_of_bacteriology-> rrel_key_sc_element:
+concept_bacteria;
+concept_spherical_bacteria;
+concept_rodshaped_bacteria;
+concept_spiral_bacteria;
+subject_domain_of_bacteria;;
+
+section_subject_domain_of_bacteriology= [*
+subject_domain_of_bacteria<-sc_node_struct;;
+
+subject_domain_of_spherical_bacteria<-sc_node_struct;;
+subject_domain_of_rodshaped_bacteria<-sc_node_struct;;
+
+subject_domain_of_bacteriology<-subject_domain;
+=>nrel_main_idtf:
+[Предметная область бактериологии] (*<-lang_ru;;*);
+[Subject domain of bacteria] (*<-lang_en;;*);;
+
+subject_domain_of_bacteriology<= nrel_private_subject_domain:{
+subject_domain_of_spherical_bacteria;
+subject_domain_of_rodshaped_bacteria
+};;
+
+concept_bacteriology<-sc_node_not_relation;;
+concept_spherical_bacteria<-sc_node_not_relation;;
+concept_rodshaped_bacterias<-sc_node_not_relation;;
+concept_spiral_bacteria<-sc_node_not_relation;;
+
+nrel_complementation_of_bacteriology<-sc_node_norole_relation;;
+
+subject_domain_of_bacteriology->rrel_maximum_studied_object_class:concept_bacteria;;
+
+subject_domain_of_bacteriology->rrel_not_maximum_studied_object_class:
+concept_spherical_bacteria;
+concept_rodshaped_bacteria;;
+
+
+subject_domain_of_bacteriology->rrel_explored_relation:nrel_complementation_of_bacteria;;
+
+concept_bacteriology=>nrel_inclusion:
+concept_spherical_bacteria;
+concept_rodshaped_bacteria;;
+*];;

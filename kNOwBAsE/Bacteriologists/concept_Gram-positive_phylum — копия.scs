@@ -1,0 +1,40 @@
+concept_Korarchaeota_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Korarchaeota] (*<-lang_ru;;*);
+[Korarchaeota phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Korarchaeota)](*<-lang_ru;;*);
+[Def.(Korarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Korarchaeota)](*<-lang_ru;;*);
+[Stat.(Korarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Korarchaeia_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Korarchaeota_phylum<-concept_bacteria_phylum;;
+concept_Korarchaeota_phylum<=nrel_inclusion:{
+concept_Korarchaeia_class
+
+};;

@@ -1,0 +1,38 @@
+
+science<-sc_node_not_relation;;
+
+microbiology<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Микробиология] (*<-lang_ru;;*);
+[Microbiology] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Микробиология)](*<-lang_ru;;*);
+[Def.(Microbiology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+science;
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Микробиология  - наука, предметом изучения которой являются микроскопические существа, называемые микроорганизмами (микробами) (включающими в себя Одноклеточные организмы, Многоклеточные организмы и Бесклеточные), их биологические признаки и взаимоотношения с другими организмами.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Microbiology is the study of microorganisms (unicellular (single cell), multicellular (cell colony), or acellular (lacking cells)), their biological traits and their relations with other organisms.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Микробиология)](*<-lang_ru;;*);
+[Stat.(Microbiology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Изучение микроорганизмов с целью их возможного использования в дальнейшем или противодействия им.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Study of microorganisms for the purpose of their possible use in the future or to counter them.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+microbiology <= nrel_inclusion:science;;

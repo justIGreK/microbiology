@@ -1,0 +1,32 @@
+concept_protein<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Белок] (*<-lang_ru;;*);
+[Protein] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Белок)](*<-lang_ru;;*);
+[Def.(Protein)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_substance
+};;
+<=nrel_sc_text_translation:...(*
+->[Белок -  высокомолекулярные органические вещества, состоящие из альфа-аминокислот, соединённых в цепочку пептидной связью](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Protein - high molecular weight organic substances consisting of alpha-amino acids linked in a chain by a peptide bond](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Белок)](*<-lang_ru;;*);
+[Stat.(Protein)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_animal;
+concept_human
+};;
+<=nrel_sc_text_translation:...(*
+->[Белки — важная часть питания животных и человека](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Proteins are an important part of animal and human nutrition](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

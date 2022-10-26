@@ -1,0 +1,32 @@
+concept_foraminifera<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Фораминиферы] (*<-lang_ru;;*);
+[Foraminifera] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Фораминиферы)](*<-lang_ru;;*);
+[Def.(Foraminifera)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_clade;
+concept_protist
+};;
+<=nrel_sc_text_translation:...(*
+->[Фораминиферы —  кладка раковинных одноклеточных животных из группы протистов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[foraminifera — clade of unicellular shell animals from the protist group.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Фораминиферы)](*<-lang_ru;;*);
+[Stat.(Foraminifera)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist
+};;
+<=nrel_sc_text_translation:...(*
+->[Фораминиферы — одиночные преимущественно морские протисты.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Foraminifera are solitary, predominantly marine protists.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

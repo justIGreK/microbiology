@@ -1,0 +1,32 @@
+concept_virus_kingdom<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Царство вирусов] (*<-lang_ru;;*);
+[Virus kingdom] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Царство вирусов)](*<-lang_ru;;*);
+[Def.(Virus kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus
+};;
+<=nrel_sc_text_translation:...(*
+->[Царство вирусов - один из уровней классификации вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Virus kingdom is one of the levels of virus classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Царство вирусов)](*<-lang_ru;;*);
+[Stat.(Virus kingdom)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Царства делятся на типы.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Kingdoms are divided into phylums.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

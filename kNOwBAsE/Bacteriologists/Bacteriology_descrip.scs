@@ -1,0 +1,44 @@
+
+concept_animal<-sc_node_not_relation;;
+concept_plant<-sc_node_not_relation;;
+concept_enviroment<-sc_node_not_relation;;
+
+bacteriology<-sc_node_not_relation;
+=>nrel_main_idtf:
+[бактериология] (*<-lang_ru;;*);
+[bacteriology] (*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(бактериология)](*<-lang_ru;;*);
+[Def.(bacteriology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+microbiology
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактериоло́гия — наука о бактериях; раздел микробиологии, изучающий бактерии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteriology - science about bacteria;section of microbiology, studies bacteria.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(бактериология)](*<-lang_ru;;*);
+[Stat.(bacteriology)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_animal;
+concept_plant;
+concept_enviroment;
+concept_simbiont;
+concept_parasite
+};;
+<=nrel_sc_text_translation:...(*
+->[ Бактерии — встречаются почти во всех земных местообитаниях.  Бактерии часто являются симбионтами и паразитами растений и животных.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteria — are found in almost all terrestrial habitats. Bacteria are often symbionts and parasites of plants and animals.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+bacteriology <= nrel_inclusion:science;;

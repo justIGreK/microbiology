@@ -1,0 +1,40 @@
+concept_Varidnaviria_realm<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Реалм Varidnaviria] (*<-lang_ru;;*);
+[Varidnaviria realm] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Реалм Varidnaviria)](*<-lang_ru;;*);
+[Def.(Varidnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_realm
+};;
+<=nrel_sc_text_translation:...(*
+->[Varidnaviria - реалм ДНК-содержащих вирусов. Вирус считается относящимся к данному реалму, если его геном содержит ДНК, кодирующую основной белок капсида, который, в свою очередь, сворачивается по типу jelly-roll fold и образует псевдогексамерные капсомеры. Вирусы, которые не имеют основного белка капсида, но происхождение которых от членов реалма может быть убедительно показано, также включаются в данный таксон.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Varidnaviria is a realm of viruses that includes all DNA viruses that encode major capsid proteins that contain a vertical jelly roll fold.
+ The major capsid proteins (MCP) form into pseudohexameric subunits of the viral capsid, which stores the viral deoxyribonucleic acid (DNA), and are perpendicular, or vertical, to the surface of the capsid. 
+Apart from this, viruses in the realm also share many other characteristics, such as minor capsid proteins (mCP) with the vertical jelly roll fold,
+ an ATPase that packages viral DNA into the capsid, and a DNA polymerase that replicates the viral genome.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Реалм Varidnaviria)](*<-lang_ru;;*);
+[Stat.(Varidnaviria realm)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Bamfordvirae_kingdom;
+concept_Helvetiavirae_kingdom
+};;
+<=nrel_sc_text_translation:...(*
+->[Этот реалм содержит 2 царства: Bamfordvirae и Helvetiavirae.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This realm contains 2 kingdoms: Bamfordvirae and Helvetiavirae.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Varidnaviria_realm<-concept_virus_realm;;
+concept_Varidnaviria_realm<=nrel_inclusion:
+concept_Bamfordvirae_kingdom;
+concept_Helvetiavirae_kingdom;;

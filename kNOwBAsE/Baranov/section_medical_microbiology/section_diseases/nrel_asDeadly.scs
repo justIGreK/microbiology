@@ -1,0 +1,11 @@
+nrel_asDeadly<-sc_node_norole_relation;;
+
+nrel_asDeadly=> nrel_main_idtf:[Настолько же смертельное заболевание*](* <- lang_ru;; *);;
+nrel_asDeadly=> nrel_main_idtf:[As deadly disease as this one*](* <- lang_en;; *);;
+
+
+nrel_asDeadly => nrel_first_domain: 
+concept_disease;;
+nrel_asDeadly => nrel_second_domain: concept_disease;;
+
+arity_2->nrel_asDeadly;;

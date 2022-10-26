@@ -1,0 +1,32 @@
+concept_genome<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Геном] (*<-lang_ru;;*);
+[Genome] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Геном)](*<-lang_ru;;*);
+[Def.(Genome)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Геном-совокупность наследственного материала, заключённого в клетке организма.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Genome is a set of hereditary material enclosed in a cell of an organism.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Геном)](*<-lang_ru;;*);
+[Stat.(Genome)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_organism;
+concept_biology
+};;
+<=nrel_sc_text_translation:...(*
+->[Геном содержит биологическую информацию, необходимую для построения и поддержания организма.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The genome contains the biological information needed to build and maintain an organism.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

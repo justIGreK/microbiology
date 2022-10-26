@@ -1,0 +1,34 @@
+concept_azomonas_bacteria<-sc_node_not_relation;
+=>nrel_main_idtf:
+[azomonas бактерия] (*<-lang_ru;;*);
+[azomonas Bacteria] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(azomonas бактерия)](*<-lang_ru;;*);
+[Def.(azomonas bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_microorganism
+};;
+<=nrel_sc_text_translation:...(*
+->[Вид палочковидных бактерий, который обычно подвижны, от овальных до сферических, и выделяют большое количество капсульной слизи .](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[A species of rod-shaped bacteria that is usually motile, from oval to spherical, and secrete large amounts of capsular mucus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(azomonas бактерия)](*<-lang_ru;;*);
+[Stat.(azomonas bacteria)](*<-lang_en;;*);;
+=>nrel_using_constants:{    
+concept_cell;
+concept_organism
+};;
+<=nrel_sc_text_translation:...(*
+->[Бактерии рода Azomonas, как известно, образуют внутриклеточные включения полигидроксиалканоатов при определенных условиях окружающей среды (например, при недостатке таких элементов, как фосфор, азот или кислород в сочетании с избыточным поступлением источников углерода).](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Bacteria of the genus Azomonas are known to form intracellular inclusions of polyhydroxyalkanoates under certain environmental conditions (for example, when there is a lack of elements such as phosphorus, nitrogen or oxygen in combination with an excess intake of carbon sources).](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_azomonas_bacteria<=nrel_inclusion:concept_microorganism;; 

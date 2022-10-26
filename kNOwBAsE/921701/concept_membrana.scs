@@ -1,0 +1,32 @@
+concept_membrane<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Мембрана] (*<-lang_ru;;*);
+[Membrane] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Мембрана)](*<-lang_ru;;*);
+[Def.(Membrana)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protein;
+concept_lipid
+};;
+<=nrel_sc_text_translation:...(*
+->[Мембрана - эластическая молекулярная структура, состоящая из белков и липидов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Membrane - elastic molecular structure composed of proteins and lipids.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Мембрана)](*<-lang_ru;;*);
+[Stat.(Membrane)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_cell
+};;
+<=nrel_sc_text_translation:...(*
+->[Мембрана отделяет содержимое любой клетки от внешней среды, обеспечивая её целостность.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The membrane separates the contents of any cell from the external environment, ensuring its integrity.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

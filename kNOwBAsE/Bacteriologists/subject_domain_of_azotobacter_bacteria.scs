@@ -1,0 +1,9 @@
+sc_node_struct ->  subject_domain_of_azotobacter_bacteria;;
+ subject_domain_of_azotobacter_bacteria <- subject_domain;;
+ subject_domain_of_azotobacter_bacteria => nrel_main_idtf:
+	[Предметная область azotobacter Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of azotobacter Bacteria] (* <- lang_en;; *);;
+
+ subject_domain_of_azotobacter_bacteria -> rrel_maximum_studied_object_class: 
+    concept_azotobacterchroococcum_bacteria;;
+    

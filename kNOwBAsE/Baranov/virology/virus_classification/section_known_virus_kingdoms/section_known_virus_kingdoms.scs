@@ -1,0 +1,17 @@
+
+section_of_known_virus_kingdoms<-non_atomic_section;
+=>nrel_main_idtf:
+[Раздел. Известные царства вирусов] (*<-lang_ru;;*);
+[Section. Known virus kingdoms] (*<-lang_en;;*);;
+
+
+section_of_known_virus_kingdoms-> rrel_key_sc_element:
+concept_Bamfordvirae_kingdom;
+concept_Helvetiavirae_kingdom;
+concept_Pararnavirae_kingdom;
+concept_Orthornavirae_kingdom;
+concept_Loebvirae_kingdom;
+concept_Sangervirae_kingdom;
+concept_Trapavirae_kingdom;
+concept_Heunggongvirae_kingdom;;
+

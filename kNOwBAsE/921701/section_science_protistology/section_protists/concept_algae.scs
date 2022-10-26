@@ -1,0 +1,5 @@
+concept_algae<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Водоросль] (*<-lang_ru;;*);
+[ALgae] (*<-lang_en;;*);;
+

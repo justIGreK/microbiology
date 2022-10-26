@@ -1,0 +1,12 @@
+sc_node_struct ->  subject_domain_of_pseudomonadaceae_bacteria;;
+ subject_domain_of_pseudomonadaceae_bacteria <- subject_domain;;
+ subject_domain_of_pseudomonadaceae_bacteria => nrel_main_idtf:
+	[Предметная область pseudomonadaceae Бактерий ] (* <- lang_ru;; *);
+	[Subject domain of pseudomonadaceae Bacteria] (* <- lang_en;; *);;
+
+ subject_domain_of_pseudomonadaceae_bacteria -> rrel_maximum_studied_object_class: 
+    concept_azotobacter_bacteria;
+    concept_azomonas_bacteria;;
+
+ subject_domain_of_pseudomonadaceae_bacteria => nrel_particular_subject_domain:
+    subject_domain_of_azotobacter_bacteria;;

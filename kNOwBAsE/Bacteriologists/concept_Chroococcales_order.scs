@@ -1,0 +1,37 @@
+concept_Chroococcales_order<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Орден Chroococcales] (*<-lang_ru;;*);
+[Chroococcales order] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Орден Chroococcales)](*<-lang_ru;;*);
+[Def.(Chroococcales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Chroococcales - это отряд цианобактерий в некоторых классификациях, которые включают вредное цветение водорослей Microcystis aeruginosa. Молекулярные данные показывают, что представители Chroococcales могут не принадлежать к кладе.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The Chroococcales are an order of cyanobacteria in some classifications which includes the harmful algal bloom Microcystis aeruginosa. Molecular data indicate that the members of the Chroococcales may not be a clade.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Орден Chroococcales)](*<-lang_ru;;*);
+[Stat.(Chroococcales order)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_empty
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Chroococcales_order<-concept_bacteria_order;;
+concept_Chroococcales_order<=nrel_inclusion:{
+concept_empty
+};;

@@ -1,0 +1,32 @@
+concept_RNA_virus<-sc_node_not_relation;
+=>nrel_main_idtf:
+[РНК-содержащий вирус] (*<-lang_ru;;*);
+[RNA virus] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(РНК-содержащий вирус)](*<-lang_ru;;*);
+[Def.(RNA virus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus;
+concept_RNA
+};;
+<=nrel_sc_text_translation:...(*
+->[РНК-содержащие вирусы — это вирусы, генетический материал которых представлен РНК.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[RNA virus is a virus that has RNA (ribonucleic acid) as its genetic material.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(РНК-содержащий вирус)](*<-lang_ru;;*);
+[Stat.(RNA virus)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_RNA
+};;
+<=nrel_sc_text_translation:...(*
+->[Обычно нуклеиновая кислота одноцепочечная (оцРНК) но может быть и двуцепочечной (дцРНК).](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[This nucleic acid is usually single-stranded RNA (ssRNA) but may be double-stranded RNA (dsRNA).](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

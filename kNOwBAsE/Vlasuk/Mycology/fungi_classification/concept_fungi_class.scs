@@ -1,0 +1,32 @@
+concept_fungi_class<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Класс грибов] (*<-lang_ru;;*);
+[fungi class] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Класс грибов)](*<-lang_ru;;*);
+[Def.(fungi class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi
+};;
+<=nrel_sc_text_translation:...(*
+->[Класс грибов - один из уровней классификации грибов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[fungi class is one of the levels of fungi classification.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Класс грибов)](*<-lang_ru;;*);
+[Stat.(fungi class)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_fungi_order
+};;
+<=nrel_sc_text_translation:...(*
+->[Классы делятся на порядки.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Classes are divided into orders.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+

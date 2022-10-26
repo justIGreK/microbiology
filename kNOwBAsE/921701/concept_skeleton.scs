@@ -1,0 +1,31 @@
+concept_skeleton<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Скелет] (*<-lang_ru;;*);
+[Skeleton] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Скелет)](*<-lang_ru;;*);
+[Def.(Skeleton)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bone
+};;
+<=nrel_sc_text_translation:...(*
+->[Скелет - это совокупность костей, хрящевой ткани и укрепляющих их связок.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Skeleton is a set of bones, cartilaginous tissue and ligaments that strengthen them.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Скелет)](*<-lang_ru;;*);
+[Stat.(Skeleton)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_movement_apparatus
+};;
+<=nrel_sc_text_translation:...(*
+->[Скелет выполняет ряд функций биологического и механического значения и составляет пассивную часть аппарата движения.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[The skeleton performs a number of functions of biological and machanical significance and constitutes the passice part of the movement apparatus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

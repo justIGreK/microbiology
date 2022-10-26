@@ -1,0 +1,40 @@
+concept_Korarchaeota_phylum<-sc_node_not_relation;
+=>nrel_main_idtf:
+[phylum Korarchaeota] (*<-lang_ru;;*);
+[Korarchaeota phylum] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(phylum Korarchaeota)](*<-lang_ru;;*);
+[Def.(Korarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_bacteria_phylum
+};;
+<=nrel_sc_text_translation:...(*
+->[Корархеи - это тип гипертермофильных архей, ответвления которых расположены ближе всего к корню архей. Корархеоты были первоначально обнаружены в результате анализа микробным сообществом генов рибосомной РНК из образцов окружающей среды из горячего источника в Йеллоустонском национальном парке. Никаких чистых культур из этого типа еще не выделено, но секвенированные гены рибосомной РНК 16S принадлежат организмам, которые ветвятся около корня филогенетического дерева архей.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Korarchaeota is a phylum of hyperthermophilic Archaea that branches closest to the archaeal root. The Korarchaeota were originally discovered by microbial community analysis of ribosomal RNA genes from environmental samples of a hot spring in Yellowstone National Park. No pure cultures from this phylum have been isolated yet, but the sequenced 16S ribosomal RNA genes belong to organisms that branch near the root of the archaeal phylogenetic tree. ](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(phylum Korarchaeota)](*<-lang_ru;;*);
+[Stat.(Korarchaeota phylum)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Korarchaeia_class
+
+
+
+};;
+<=nrel_sc_text_translation:...(*
+->[.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Korarchaeota_phylum<-concept_bacteria_phylum;;
+concept_Korarchaeota_phylum<=nrel_inclusion:{
+concept_Korarchaeia_class
+
+};;

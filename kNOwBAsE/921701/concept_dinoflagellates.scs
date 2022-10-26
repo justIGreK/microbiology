@@ -1,0 +1,33 @@
+concept_dinoflagellate<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Динофлагеллят] (*<-lang_ru;;*);
+[Dinoflagellate] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Динофлагеллят)](*<-lang_ru;;*);
+[Def.(Dinoflagellate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_protist;
+concept_alveolate
+};;
+<=nrel_sc_text_translation:...(*
+->[Динофлагеллят-крупная группа протистов из надтипа альвеолят.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Dinoflagellate its a large group of protists from the alveolate supertype.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Динофлагеллят)](*<-lang_ru;;*);
+[Stat.(Dinoflagellate)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_single_celled_organism;
+concept_flagella
+};;
+<=nrel_sc_text_translation:...(*
+->[Динофлагелляты представлены преимущественно одноклеточными монадными формами, подвижные клетки снабжены двумя неравными жгутиками.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Dinoflagellates are represented mainly by unicellular monadic forms, mobile cells are equipped with two unequal flagella.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;

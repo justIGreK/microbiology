@@ -1,0 +1,37 @@
+concept_Halspiviridae_family<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Семейство Halspiviridae] (*<-lang_ru;;*);
+[Halspiviridae family] (*<-lang_en;;*);
+<-rrel_key_sc_element:...(*
+<-definition;;
+=>nrel_main_idtf:
+[Опр.(Семейство Halspiviridae)](*<-lang_ru;;*);
+[Def.(Halspiviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_virus_family
+};;
+<=nrel_sc_text_translation:...(*
+->[Halspiviridae - семейство вирусов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Halspiviridae is a family of viruses.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);
+
+<-rrel_key_sc_element:...(*
+<-explanation;;
+=>nrel_main_idtf:
+[Утв.(Семейство Halspiviridae)](*<-lang_ru;;*);
+[Stat.(Halspiviridae family)](*<-lang_en;;*);;
+=>nrel_using_constants:{
+concept_Salterprovirus_genus
+};;
+<=nrel_sc_text_translation:...(*
+->[Это семейство включает в себя род Salterprovirus.](* <- lang_ru;; => nrel_format: format_html;; *);;
+->[Halspiviridae family contains Salterprovirus genus.](* <- lang_en;; => nrel_format: format_html;; *);;
+*);;
+*);;
+
+concept_Halspiviridae_family<-concept_virus_family;;
+concept_Halspiviridae_family<=nrel_inclusion:
+concept_Salterprovirus_genus;;
+
+concept_Halspiviridae_family<-incertae_sedis;;
